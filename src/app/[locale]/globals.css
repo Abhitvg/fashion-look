@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #fffff0;
+  
+  --color-atelier-dark: #0a0a0a;
+  --color-atelier-soft: #141414;
+  --color-gold: #d4af37;
+  --color-gold-light: #f3e5ab;
+  --color-ivory: #fffff0;
+  --color-maroon: #800000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-atelier: var(--color-atelier-dark);
+  --color-atelier-soft: var(--color-atelier-soft);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --color-ivory: var(--color-ivory);
+  --color-maroon: var(--color-maroon);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  
+  /* Multilingual Support Fonts */
+  --font-devanagari: var(--font-noto-devanagari), var(--font-sans);
+  --font-nastaliq: var(--font-noto-nastaliq), var(--font-serif);
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  /* Smooth scroll globally */
+  html {
+    scroll-behavior: smooth;
+  }
+}
