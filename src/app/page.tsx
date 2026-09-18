@@ -42,40 +42,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. The Craft Moment (Ethos) */}
+      {/* 2. Our Legacy */}
       <section className="py-24 md:py-32 bg-atelier">
         <div className="container mx-auto px-4 md:px-6 max-w-7xl">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="relative h-[600px] w-full overflow-hidden">
-              <Image
-                src="/images/team/owner.jpg"
-                alt="Master Tailor at work"
-                fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              />
+          <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
+            
+            {/* Images */}
+            <div className="relative h-[500px] md:h-[600px] w-full mt-10 md:mt-0">
+              {/* Main Image (Tafshir) */}
+              <div className="absolute right-0 top-0 h-full w-[85%] rounded-2xl overflow-hidden border border-gold/10">
+                <Image
+                  src="/images/team/tafshir-shaikh.jpg"
+                  alt="Master Tailor Tafshir Shaikh"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              
+              {/* Floating Image (Shop) */}
+              <div className="absolute left-0 bottom-10 h-[60%] w-[60%] md:w-[55%] rounded-2xl overflow-hidden shadow-2xl border border-gold/10 z-10">
+                <Image
+                  src="/images/atelier/shop.jpg"
+                  alt="Fashion Look Atelier"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
+
+            {/* Content */}
             <div className="max-w-xl">
-              <h2 className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">
-                Our Heritage
+              <h2 className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4 font-sans">
+                OUR LEGACY
               </h2>
-              <h3 className="text-4xl md:text-5xl font-serif text-ivory mb-8 leading-tight">
-                Not merely selling clothes. <br />
-                <span className="italic text-ivory/70">Crafting your legacy.</span>
-              </h3>
-              <p className="text-ivory/70 text-lg leading-relaxed mb-6">
-                At Fashion Look, we believe a suit is more than fabric—it is an extension of your persona. Since 1998, we have blended traditional Indian tailoring heritage with modern precision to deliver garments that command respect.
+              <div className="mb-8">
+                <h3 className="text-4xl md:text-5xl font-serif text-ivory mb-2">
+                  Master Tailor
+                </h3>
+                <h3 className="text-4xl md:text-5xl font-serif text-ivory italic">
+                  Tafshir Shaikh
+                </h3>
+              </div>
+              
+              <p className="text-ivory/70 text-base md:text-lg leading-relaxed mb-6">
+                With 15+ years of bespoke craftsmanship, Master Tailor Tafshir Shaikh leads the atelier at Fashion Look. Every garment that leaves our shop is a testament to meticulous precision and an unyielding dedication to the perfect fit.
               </p>
-              <p className="text-ivory/70 text-lg leading-relaxed mb-10">
-                Every pattern is drafted from scratch, every lapel hand-rolled, and every button meticulously stitched. Precisely Yours.
+              
+              <p className="text-ivory/70 text-base md:text-lg leading-relaxed mb-10">
+                Our flagship studio in Seawoods offers a sanctuary for the modern gentleman — featuring an extensive curation of world-class fabrics from Raymond, Siyaram's, and Reid &amp; Taylor, in a premium setting designed to make your bespoke journey unforgettable.
               </p>
-              <Image
-                src="/brand/fashion-look-logo-original.png"
-                alt="Fashion Look Monogram"
-                width={150}
-                height={50}
-                className="opacity-50"
-              />
+              
+              <Button asChild size="lg" className="bg-gold hover:bg-gold-light text-atelier font-sans font-medium tracking-wide rounded-full px-8 h-12">
+                <Link href="/book">Consult with the Master</Link>
+              </Button>
             </div>
+            
           </div>
         </div>
       </section>
