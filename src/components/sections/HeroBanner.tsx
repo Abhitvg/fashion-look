@@ -42,14 +42,11 @@ export default function HeroBanner() {
           <p className="text-xs md:text-sm tracking-[0.4em] uppercase text-gold/80 mb-6 font-sans">
             Established 1998 · Navi Mumbai
           </p>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-ivory uppercase tracking-wider leading-[1.1] mb-4">
-            Fashion
-            <span className="block text-gold">Look</span>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-ivory uppercase tracking-wider leading-[1.1] mb-4 flex flex-col sm:flex-row items-center justify-center gap-x-4 sm:gap-x-6">
+            <span>Fashion</span>
+            <span className="text-gold">Look</span>
           </h1>
           <div className="h-px w-20 bg-gold/60 mx-auto my-8" />
-          <p className="text-base md:text-lg text-ivory/70 tracking-[0.2em] uppercase font-light mb-4">
-            Cloth & Stitching
-          </p>
           <p className="text-sm text-ivory/50 tracking-widest max-w-lg mx-auto mb-12 font-light leading-relaxed normal-case">
             Premium bespoke tailoring for the modern Indian gentleman. Suits, sherwanis, and luxury fabric gifting — crafted with precision, fitted to perfection.
           </p>

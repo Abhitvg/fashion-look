@@ -31,9 +31,6 @@ export default function Header() {
             <span className="text-2xl font-serif tracking-widest text-gold group-hover:text-gold-light transition-colors uppercase">
               Fashion Look
             </span>
-            <span className="text-xs tracking-[0.2em] text-foreground/70 mt-1 uppercase">
-              {t('subtitle')}
-            </span>
           </Link>
 
           {/* Desktop Nav */}

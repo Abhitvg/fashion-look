@@ -16,8 +16,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1 flex flex-col space-y-4">
             <span className="text-2xl font-serif tracking-widest text-gold uppercase">Fashion Look</span>
-            <p className="text-sm tracking-wider uppercase text-ivory/50">{t('subtitle')}</p>
-            <p className="text-xs text-ivory/30 max-w-xs leading-relaxed font-light">
+            <p className="text-xs text-ivory/30 max-w-xs leading-relaxed font-light mt-4">
               {t('description')}
             </p>
             <p className="text-xs tracking-[0.2em] text-gold/50 uppercase mt-4 italic">{t('established')}</p>
