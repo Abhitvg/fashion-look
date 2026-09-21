@@ -29,8 +29,58 @@ const notoNastaliqUrdu = Noto_Nastaliq_Urdu({
 });
 
 export const metadata: Metadata = {
-  title: "Fashion Look",
-  description: "Premium Bespoke Tailoring in Navi Mumbai",
+  title: "Fashion Look | Premium Bespoke Tailoring in Navi Mumbai",
+  description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods and Govandi. Book a master tailor home visit or visit our atelier.",
+  openGraph: {
+    title: "Fashion Look | Premium Bespoke Tailoring in Navi Mumbai",
+    description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods and Govandi. Book a master tailor home visit or visit our atelier.",
+    url: "https://www.fashion-look.in",
+    siteName: "Fashion Look",
+    images: [
+      {
+        url: "https://www.fashion-look.in/images/hero/atelier.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Fashion Look Bespoke Tailoring",
+      }
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fashion Look | Premium Bespoke Tailoring",
+    description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods and Govandi.",
+    images: ["https://www.fashion-look.in/images/hero/atelier.jpg"],
+  }
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "TailorShop"],
+  "name": "Fashion Look",
+  "image": "https://www.fashion-look.in/images/hero/atelier.jpg",
+  "description": "Premium bespoke tailoring in Navi Mumbai. Specialists in suits, sherwanis, and luxury fabric gifting.",
+  "url": "https://www.fashion-look.in",
+  "telephone": "+918108014945",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No. 3, Palm Beach Rd, Sector 46A, Seawoods",
+      "addressLocality": "Navi Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400706",
+      "addressCountry": "IN"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Govandi Station, Deonar",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400088",
+      "addressCountry": "IN"
+    }
+  ]
 };
 
 export default async function RootLayout({
@@ -58,6 +108,12 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} dir={dir}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${fontClass} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           {children}

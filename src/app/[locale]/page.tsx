@@ -5,6 +5,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import HeritageBand from '@/components/sections/HeritageBand';
 import ServicesGrid from '@/components/sections/ServicesGrid';
 import CraftsmanshipStory from '@/components/sections/CraftsmanshipStory';
+import ProcessSteps from '@/components/sections/ProcessSteps';
 import Calculator from '@/components/calculator/Calculator';
 import Testimonials from '@/components/sections/Testimonials';
 import GiftBoxBuilder from '@/components/gifts/GiftBoxBuilder';
@@ -31,6 +32,9 @@ export default async function HomePage() {
 
         {/* 4. CRAFTSMANSHIP STORY */}
         <CraftsmanshipStory />
+
+        {/* 5. OUR PROCESS */}
+        <ProcessSteps />
 
         {/* 5. ATELIER CALCULATOR */}
         <section id="calculator" className="py-24 md:py-32 bg-background">
