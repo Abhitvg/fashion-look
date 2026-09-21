@@ -47,7 +47,7 @@ export default function Header() {
               onClick={() => setModalOpen(true)}
               className="px-5 py-2.5 bg-gold text-black text-xs font-semibold tracking-widest uppercase hover:bg-gold-light transition-colors"
             >
-              Book Home Visit
+              {t('bookHomeVisit')}
             </button>
             <LanguageSwitcher />
           </nav>
@@ -70,7 +70,7 @@ export default function Header() {
               onClick={() => { setMobileMenuOpen(false); setModalOpen(true); }}
               className="w-full py-4 bg-gold text-black text-sm font-semibold tracking-widest uppercase hover:bg-gold-light transition-colors"
             >
-              Book Home Visit
+              {t('bookHomeVisit')}
             </button>
             <div className="pt-4 border-t border-atelier-soft">
               <LanguageSwitcher />

@@ -7,7 +7,8 @@
     "services": "Bespoke",
     "calculator": "Atelier Calculator",
     "gifts": "Luxury Gifting",
-    "locations": "Our Stores"
+    "locations": "Our Stores",
+    "bookHomeVisit": "Book Home Visit"
   },
   "Footer": {
     "subtitle": "Cloth & Stitching",
@@ -18,7 +19,44 @@
     "gifts": "Luxury Gifting",
     "contact": "Contact & Locations",
     "established": "Precisely Yours Since 1998"
+  },
+  "Process": {
+    "journey": "The Journey",
+    "title": "Our Bespoke Process",
+    "step1Title": "Consultation",
+    "step1Desc": "We begin with a conversation about your lifestyle, preferred silhouettes, and occasions. Explore our curated selection of premium fabrics from global mills.",
+    "step2Title": "Measurement",
+    "step2Desc": "A master tailor takes exacting measurements, ensuring every contour is accounted for to create a garment that drapes flawlessly.",
+    "step3Title": "Basted Fitting",
+    "step3Desc": "The first trial. Your garment is temporarily stitched together to perfect the fit, balance, and proportions before final construction.",
+    "step4Title": "Final Delivery",
+    "step4Desc": "Your finished garment is ready. We ensure all final details are pristine, delivering a piece of wearable art crafted specifically for you."
+  },
+  "Modal": {
+    "title": "Book a Consultation",
+    "subtitle": "Master Tailor Home Visit",
+    "name": "Name",
+    "namePlaceholder": "Your Full Name",
+    "phone": "Phone",
+    "phonePlaceholder": "+91",
+    "garment": "Garment Type",
+    "garments": {
+      "twoPiece": "Two-Piece Suit",
+      "threePiece": "Three-Piece Suit",
+      "sherwani": "Sherwani",
+      "tuxedo": "Tuxedo",
+      "safari": "Safari Suit",
+      "pathani": "Pathani",
+      "other": "Other / Multiple Items"
+    },
+    "location": "Location Preference",
+    "locations": {
+      "home": "Home/Office (Mumbai/Navi Mumbai)",
+      "seawoods": "Seawoods Atelier",
+      "govandi": "Govandi Studio"
+    },
+    "date": "Preferred Date",
+    "time": "Preferred Time",
+    "submit": "Request Booking via WhatsApp"
   }
 }
-
-

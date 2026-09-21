@@ -1,31 +1,34 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
-const STEPS = [
-  {
-    number: '01',
-    title: 'Consultation',
-    description: 'We begin with a conversation about your lifestyle, preferred silhouettes, and occasions. Explore our curated selection of premium fabrics from global mills.',
-  },
-  {
-    number: '02',
-    title: 'Measurement',
-    description: 'A master tailor takes exacting measurements, ensuring every contour is accounted for to create a garment that drapes flawlessly.',
-  },
-  {
-    number: '03',
-    title: 'Basted Fitting',
-    description: 'The first trial. Your garment is temporarily stitched together to perfect the fit, balance, and proportions before final construction.',
-  },
-  {
-    number: '04',
-    title: 'Final Delivery',
-    description: 'Your finished garment is ready. We ensure all final details are pristine, delivering a piece of wearable art crafted specifically for you.',
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function ProcessSteps() {
+  const t = useTranslations('Process');
+
+  const STEPS = [
+    {
+      number: '01',
+      title: t('step1Title'),
+      description: t('step1Desc'),
+    },
+    {
+      number: '02',
+      title: t('step2Title'),
+      description: t('step2Desc'),
+    },
+    {
+      number: '03',
+      title: t('step3Title'),
+      description: t('step3Desc'),
+    },
+    {
+      number: '04',
+      title: t('step4Title'),
+      description: t('step4Desc'),
+    },
+  ];
+
   return (
     <section className="py-24 md:py-32 bg-background border-t border-ivory/5">
       <div className="container mx-auto px-4 md:px-8">
@@ -36,9 +39,9 @@ export default function ProcessSteps() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16 md:mb-24"
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-gold/70 mb-4">The Journey</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-gold/70 mb-4">{t('journey')}</p>
           <h2 className="text-3xl md:text-4xl font-serif text-ivory tracking-wider uppercase">
-            Our Bespoke Process
+            {t('title')}
           </h2>
           <div className="h-px w-16 bg-gold/40 mx-auto mt-6" />
         </motion.div>

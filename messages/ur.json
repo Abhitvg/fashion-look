@@ -7,7 +7,8 @@
     "services": "Bespoke",
     "calculator": "Atelier Calculator",
     "gifts": "Luxury Gifting",
-    "locations": "Our Stores"
+    "locations": "Our Stores",
+    "bookHomeVisit": "ہوم وزٹ بک کریں"
   },
   "Footer": {
     "subtitle": "Cloth & Stitching",
@@ -18,7 +19,44 @@
     "gifts": "Luxury Gifting",
     "contact": "Contact & Locations",
     "established": "Precisely Yours Since 1998"
+  },
+  "Process": {
+    "journey": "سفر",
+    "title": "ہمارا بیسپوک عمل",
+    "step1Title": "مشاورت",
+    "step1Desc": "ہم آپ کے طرز زندگی، پسندیدہ سلہیٹس اور مواقع کے بارے میں بات چیت سے شروع کرتے ہیں۔ عالمی ملوں سے ہمارے پریمیم کپڑوں کے انتخاب کو دریافت کریں۔",
+    "step2Title": "پیمائش",
+    "step2Desc": "ایک ماسٹر درزی قطعی پیمائش لیتا ہے، اس بات کو یقینی بناتا ہے کہ ایک ایسا لباس بنانے کے لیے ہر شکل کا حساب رکھا جائے جو بے عیب ہو۔",
+    "step3Title": "فٹنگ",
+    "step3Desc": "پہلا ٹرائل۔ حتمی تعمیر سے پہلے فٹ، توازن اور تناسب کو درست کرنے کے لیے آپ کا لباس عارضی طور پر ایک ساتھ سلا ہوا ہے۔",
+    "step4Title": "حتمی ترسیل",
+    "step4Desc": "آپ کا تیار لباس تیار ہے۔ ہم یقینی بناتے ہیں کہ تمام حتمی تفصیلات قدیم ہیں، خاص طور پر آپ کے لیے تیار کردہ پہننے کے قابل فن کا ایک ٹکڑا فراہم کرتے ہیں۔"
+  },
+  "Modal": {
+    "title": "مشاورت بک کریں",
+    "subtitle": "ماسٹر ٹیلر ہوم وزٹ",
+    "name": "نام",
+    "namePlaceholder": "آپ کا پورا نام",
+    "phone": "فون",
+    "phonePlaceholder": "+91",
+    "garment": "لباس کی قسم",
+    "garments": {
+      "twoPiece": "ٹو پیس سوٹ",
+      "threePiece": "تھری پیس سوٹ",
+      "sherwani": "شیروانی",
+      "tuxedo": "ٹکسیڈو",
+      "safari": "سفاری سوٹ",
+      "pathani": "پٹھانی",
+      "other": "دیگر / متعدد اشیاء"
+    },
+    "location": "مقام کی ترجیح",
+    "locations": {
+      "home": "گھر/دفتر (ممبئی/نوی ممبئی)",
+      "seawoods": "سی ووڈس ایٹیلیئر",
+      "govandi": "گوونڈی اسٹوڈیو"
+    },
+    "date": "ترجیحی تاریخ",
+    "time": "ترجیحی وقت",
+    "submit": "واٹس ایپ کے ذریعے بکنگ کی درخواست کریں"
   }
 }
-
-
