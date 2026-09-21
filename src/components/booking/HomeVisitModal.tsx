@@ -122,7 +122,6 @@ export default function HomeVisitModal({ isOpen, onClose }: HomeVisitModalProps)
                   >
                     <option>{t('locations.home')}</option>
                     <option>{t('locations.seawoods')}</option>
-                    <option>{t('locations.govandi')}</option>
                   </select>
                 </div>
 

@@ -56,9 +56,8 @@ export default function CraftsmanshipStory() {
                 while embracing modern silhouettes and international fabrics.
               </p>
               <p>
-                With two ateliers in Navi Mumbai — at Seawoods and Govandi — we serve corporate 
-                professionals, grooms, and discerning gentlemen who believe that how you dress 
-                is an extension of who you are.
+                At our atelier in Seawoods, Navi Mumbai, we serve corporate 
+                leaders, grooms, and style connoisseurs who demand nothing less than perfection.
               </p>
             </div>
 

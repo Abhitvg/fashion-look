@@ -11,15 +11,7 @@ const STORES = [
     hours: 'Mon–Sat: 10:00 AM – 9:00 PM · Sun: 11:00 AM – 7:00 PM',
     whatsapp: '918108014945',
     mapUrl: 'https://maps.app.goo.gl/scL6gQtQSfXqwwfy5?g_st=ia',
-  },
-  {
-    name: 'Govandi Studio',
-    address: 'Near Govandi Station, Deonar, Mumbai, Maharashtra 400088',
-    phone: '+91 8108014945',
-    hours: 'Mon–Sat: 10:00 AM – 9:00 PM · Sun: Closed',
-    whatsapp: '918108014945',
-    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.5!2d72.9119!3d19.0576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDAzJzI3LjQiTiA3MsKwNTQnNDMuMCJF!5e0!3m2!1sen!2sin!4v1',
-  },
+  }
 ];
 
 export default function StoreLocations() {

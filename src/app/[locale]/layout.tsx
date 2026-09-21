@@ -29,56 +29,40 @@ const notoNastaliqUrdu = Noto_Nastaliq_Urdu({
 });
 
 export const metadata: Metadata = {
-  title: "Fashion Look | Premium Bespoke Tailoring in Navi Mumbai",
-  description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods and Govandi. Book a master tailor home visit or visit our atelier.",
+  title: "Fashion Look | Premium Tailors & Gifting Fabrics in Navi Mumbai",
+  description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods. Book a master tailor home visit or visit our atelier.",
+  keywords: "custom tailor, bespoke suits, sherwani, gifting fabrics, raymond fabrics, navi mumbai tailor, seawoods tailor, home visit tailor",
   openGraph: {
-    title: "Fashion Look | Premium Bespoke Tailoring in Navi Mumbai",
-    description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods and Govandi. Book a master tailor home visit or visit our atelier.",
+    title: "Fashion Look | Premium Tailors & Gifting Fabrics",
+    description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods. Book a master tailor home visit or visit our atelier.",
+    type: "website",
+    locale: "en_IN",
     url: "https://www.fashion-look.in",
     siteName: "Fashion Look",
-    images: [
-      {
-        url: "https://www.fashion-look.in/images/hero/atelier.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Fashion Look Bespoke Tailoring",
-      }
-    ],
-    locale: "en_IN",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fashion Look | Premium Bespoke Tailoring",
-    description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods and Govandi.",
-    images: ["https://www.fashion-look.in/images/hero/atelier.jpg"],
+    title: "Fashion Look | Premium Tailors & Gifting Fabrics",
+    description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods.",
   }
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "TailorShop"],
-  "name": "Fashion Look",
-  "image": "https://www.fashion-look.in/images/hero/atelier.jpg",
-  "description": "Premium bespoke tailoring in Navi Mumbai. Specialists in suits, sherwanis, and luxury fabric gifting.",
-  "url": "https://www.fashion-look.in",
-  "telephone": "+918108014945",
-  "address": [
+  "@graph": [
     {
-      "@type": "PostalAddress",
-      "streetAddress": "Shop No. 5, Fashion Look, Plot No. 144, Seawoods West, Sector 44, Seawoods",
-      "addressLocality": "Navi Mumbai",
-      "addressRegion": "Maharashtra",
-      "postalCode": "400706",
-      "addressCountry": "IN"
-    },
-    {
-      "@type": "PostalAddress",
-      "streetAddress": "Near Govandi Station, Deonar",
-      "addressLocality": "Mumbai",
-      "addressRegion": "Maharashtra",
-      "postalCode": "400088",
-      "addressCountry": "IN"
+      "@type": "LocalBusiness",
+      "name": "Fashion Look - Seawoods Atelier",
+      "image": "https://www.fashion-look.in/og-image.jpg",
+      "telephone": "+918108014945",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shop No. 5, Fashion Look, Plot No. 144, Seawoods West, Sector 44, Seawoods",
+        "addressLocality": "Navi Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400706",
+        "addressCountry": "IN"
+      }
     }
   ]
 };
