@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
         defaultValue={locale}
         onChange={onSelectChange}
         disabled={isPending}
-        className="appearance-none bg-transparent text-sm uppercase tracking-wider pl-3 pr-8 py-1 border border-atelier-soft rounded text-foreground focus:outline-none focus:border-gold transition-colors cursor-pointer disabled:opacity-50"
+        className="appearance-none bg-transparent text-xs uppercase tracking-[0.2em] pl-4 pr-10 py-2 border border-ivory/30 text-foreground focus:outline-none focus:border-gold transition-colors cursor-pointer disabled:opacity-50"
       >
         <option value="en">English</option>
         <option value="hi">हिंदी</option>
