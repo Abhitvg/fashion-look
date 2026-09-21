@@ -37,14 +37,14 @@ export default function Footer() {
             <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-ivory mb-2">Seawoods Atelier</h4>
             <div className="flex items-start gap-2 text-sm text-ivory/40 font-light">
               <MapPin size={14} className="text-gold/50 mt-0.5 shrink-0" />
-              <span>Shop No. 3, Palm Beach Rd, Seawoods, Navi Mumbai 400706</span>
+              <span>Shop No. 5, Fashion Look, Plot No. 144, Seawoods West, Sector 44, Seawoods, Navi Mumbai, Maharashtra 400706</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-ivory/40 font-light">
               <Phone size={14} className="text-gold/50 shrink-0" />
-              <a href="tel:+919930724040" className="hover:text-gold transition-colors">+91 99307 24040</a>
+              <a href="tel:+918108014945" className="hover:text-gold transition-colors">+91 81080 14945</a>
             </div>
             <a
-              href="https://wa.me/919930724040?text=Hello%20Fashion%20Look!"
+              href="https://wa.me/918108014945?text=Hello%20Fashion%20Look!"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-[#25D366] hover:text-[#25D366]/80 transition-colors"
@@ -63,10 +63,10 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2 text-sm text-ivory/40 font-light">
               <Phone size={14} className="text-gold/50 shrink-0" />
-              <a href="tel:+919773483120" className="hover:text-gold transition-colors">+91 97734 83120</a>
+              <a href="tel:+918108014945" className="hover:text-gold transition-colors">+91 81080 14945</a>
             </div>
             <a
-              href="https://wa.me/919773483120?text=Hello%20Fashion%20Look!"
+              href="https://wa.me/918108014945?text=Hello%20Fashion%20Look!"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-[#25D366] hover:text-[#25D366]/80 transition-colors"

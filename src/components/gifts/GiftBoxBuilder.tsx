@@ -47,7 +47,7 @@ export default function GiftBoxBuilder() {
       `📊 Quantity: ${qty}\n\n` +
       `Total Estimate: ₹${total.toLocaleString('en-IN')}`;
     
-    window.open(`https://wa.me/919930724040?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/918108014945?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   return (

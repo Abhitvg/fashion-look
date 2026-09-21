@@ -45,7 +45,7 @@ const SERVICES = [
 export default function ServicesGrid() {
   const handleWhatsApp = (service: string) => {
     const text = `Hello Fashion Look! I'm interested in your ${service} service. Could you tell me more?`;
-    window.open(`https://wa.me/919930724040?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/918108014945?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   return (

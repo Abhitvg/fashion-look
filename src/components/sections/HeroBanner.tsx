@@ -11,7 +11,7 @@ export default function HeroBanner() {
 
   const handleWhatsApp = () => {
     const text = 'Hello Fashion Look! I would like to book a consultation for bespoke tailoring.';
-    window.open(`https://wa.me/919930724040?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/918108014945?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   return (

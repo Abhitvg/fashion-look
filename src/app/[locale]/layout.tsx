@@ -66,7 +66,7 @@ const jsonLd = {
   "address": [
     {
       "@type": "PostalAddress",
-      "streetAddress": "Shop No. 3, Palm Beach Rd, Sector 46A, Seawoods",
+      "streetAddress": "Shop No. 5, Fashion Look, Plot No. 144, Seawoods West, Sector 44, Seawoods",
       "addressLocality": "Navi Mumbai",
       "addressRegion": "Maharashtra",
       "postalCode": "400706",
