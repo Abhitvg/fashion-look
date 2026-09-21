@@ -1,9 +1,15 @@
 import { getTranslations } from 'next-intl/server';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import HeroBanner from '@/components/sections/HeroBanner';
+import HeritageBand from '@/components/sections/HeritageBand';
+import ServicesGrid from '@/components/sections/ServicesGrid';
+import CraftsmanshipStory from '@/components/sections/CraftsmanshipStory';
 import Calculator from '@/components/calculator/Calculator';
+import Testimonials from '@/components/sections/Testimonials';
 import GiftBoxBuilder from '@/components/gifts/GiftBoxBuilder';
-import HeroScene from '@/components/3d/HeroScene';
+import StoreLocations from '@/components/sections/StoreLocations';
+import WhatsAppFAB from '@/components/ui/WhatsAppFAB';
 import ScrollReveal from '@/components/layout/ScrollReveal';
 
 export default async function HomePage() {
@@ -14,66 +20,67 @@ export default async function HomePage() {
       <Header />
       
       <main className="flex-grow">
-        {/* HERO SECTION */}
-        <section id="hero" className="relative h-screen flex items-center justify-center bg-atelier-dark overflow-hidden">
-          <HeroScene />
-          <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pointer-events-none">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-gold uppercase tracking-widest mb-6">
-              {t('title')}
-            </h1>
-            <div className="h-px w-24 bg-gold mx-auto mb-6"></div>
-            <p className="text-sm md:text-base text-foreground/80 uppercase tracking-[0.3em]">
-              Precisely Yours Since 1998
-            </p>
-          </div>
-        </section>
+        {/* 1. HERO */}
+        <HeroBanner />
 
-        {/* SERVICES SECTION */}
-        <section id="services" className="py-24 bg-background">
+        {/* 2. HERITAGE STATS BAND */}
+        <HeritageBand />
+
+        {/* 3. BESPOKE SERVICES */}
+        <ServicesGrid />
+
+        {/* 4. CRAFTSMANSHIP STORY */}
+        <CraftsmanshipStory />
+
+        {/* 5. ATELIER CALCULATOR */}
+        <section id="calculator" className="py-24 md:py-32 bg-background">
           <div className="container mx-auto px-4 md:px-8">
             <ScrollReveal>
-              <h2 className="text-3xl font-serif text-gold text-center tracking-widest uppercase mb-16">Bespoke Services</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {/* Service Cards placeholder */}
+              <div className="text-center mb-16 md:mb-20">
+                <p className="text-xs tracking-[0.3em] uppercase text-gold/70 mb-4">Transparent Pricing</p>
+                <h2 className="text-3xl md:text-4xl font-serif text-ivory tracking-wider uppercase">
+                  Atelier Calculator
+                </h2>
+                <div className="h-px w-16 bg-gold/40 mx-auto mt-6" />
+                <p className="text-sm text-ivory/40 mt-6 max-w-lg mx-auto font-light leading-relaxed">
+                  Build your garment from scratch. Select garment type, silhouette, and fabric tier — 
+                  see your investment instantly. Final pricing confirmed after physical measurement.
+                </p>
               </div>
-            </ScrollReveal>
-          </div>
-        </section>
-
-        {/* CALCULATOR SECTION */}
-        <section id="calculator" className="py-24 bg-atelier-soft border-y border-atelier-soft/50">
-          <div className="container mx-auto px-4 md:px-8">
-            <ScrollReveal>
-              <h2 className="text-3xl font-serif text-gold text-center tracking-widest uppercase mb-16">Atelier Calculator</h2>
               <Calculator />
             </ScrollReveal>
           </div>
         </section>
 
-        {/* GIFTS SECTION */}
-        <section id="gifts" className="py-24 bg-background">
+        {/* 6. TESTIMONIALS */}
+        <Testimonials />
+
+        {/* 7. LUXURY GIFTING */}
+        <section id="gifts" className="py-24 md:py-32 bg-background">
           <div className="container mx-auto px-4 md:px-8">
             <ScrollReveal>
-              <h2 className="text-3xl font-serif text-gold text-center tracking-widest uppercase mb-16">Luxury Gifting</h2>
+              <div className="text-center mb-16 md:mb-20">
+                <p className="text-xs tracking-[0.3em] uppercase text-gold/70 mb-4">Corporate & Festive</p>
+                <h2 className="text-3xl md:text-4xl font-serif text-ivory tracking-wider uppercase">
+                  Luxury Fabric Gifting
+                </h2>
+                <div className="h-px w-16 bg-gold/40 mx-auto mt-6" />
+                <p className="text-sm text-ivory/40 mt-6 max-w-lg mx-auto font-light leading-relaxed">
+                  Curate a bespoke gift box with premium fabrics, silk accessories, and a personal touch. 
+                  Perfect for Diwali, weddings, corporate milestones, and celebrations.
+                </p>
+              </div>
               <GiftBoxBuilder />
             </ScrollReveal>
           </div>
         </section>
 
-        {/* LOCATIONS SECTION */}
-        <section id="locations" className="py-24 bg-atelier-soft">
-          <div className="container mx-auto px-4 md:px-8">
-            <ScrollReveal>
-              <h2 className="text-3xl font-serif text-gold text-center tracking-widest uppercase mb-16">Our Stores</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                {/* Store Cards */}
-              </div>
-            </ScrollReveal>
-          </div>
-        </section>
+        {/* 8. STORE LOCATIONS */}
+        <StoreLocations />
       </main>
 
       <Footer />
+      <WhatsAppFAB />
     </div>
   );
 }
