@@ -1,31 +1,20 @@
 'use client';
 
-import { motion, useInView } from 'framer-motion';
-import { useRef, useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import CountUp from 'react-countup';
 
 function AnimatedCounter({ end, suffix = '', duration = 2 }: { end: number; suffix?: string; duration?: number }) {
-  const [count, setCount] = useState(0);
-  // ref must be on a block element (div) — span as a text node is invisible to IntersectionObserver
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: '0px 0px -50px 0px' });
-
-  useEffect(() => {
-    if (!isInView) return;
-    let start = 0;
-    const increment = end / (duration * 60);
-    const timer = setInterval(() => {
-      start += increment;
-      if (start >= end) {
-        setCount(end);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(start));
-      }
-    }, 1000 / 60);
-    return () => clearInterval(timer);
-  }, [isInView, end, duration]);
-
-  return <div ref={ref} className="inline">{count.toLocaleString('en-IN')}{suffix}</div>;
+  return (
+    <CountUp 
+      end={end} 
+      suffix={suffix} 
+      duration={duration} 
+      enableScrollSpy 
+      scrollSpyOnce 
+      scrollSpyDelay={100}
+      separator=","
+    />
+  );
 }
 
 const STATS = [

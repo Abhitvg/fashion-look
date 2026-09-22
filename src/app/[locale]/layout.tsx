@@ -29,36 +29,40 @@ const notoNastaliqUrdu = Noto_Nastaliq_Urdu({
   weight: ["400", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "Fashion Look | Bespoke Tailoring in Navi Mumbai",
-  description: "Precisely yours since 1998. Master tailors in Seawoods, Navi Mumbai crafting bespoke suits, sherwanis, and luxury fabric gifting.",
-  keywords: "custom tailor, bespoke suits, sherwani, gifting fabrics, raymond fabrics, navi mumbai tailor, seawoods tailor, home visit tailor, atelier price calculator, luxury gift box",
-  alternates: {
-    canonical: "https://www.fashion-look.in/en",
-    languages: {
-      'en': 'https://www.fashion-look.in/en',
-      'hi': 'https://www.fashion-look.in/hi',
-      'mr': 'https://www.fashion-look.in/mr',
-      'ur': 'https://www.fashion-look.in/ur',
-      'x-default': 'https://www.fashion-look.in/en',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: "Fashion Look | Bespoke Tailoring in Navi Mumbai",
+    description: "Precisely yours since 1998. Master tailors in Seawoods, Navi Mumbai crafting bespoke suits, sherwanis, and luxury fabric gifting.",
+    keywords: "custom tailor, bespoke suits, sherwani, gifting fabrics, raymond fabrics, navi mumbai tailor, seawoods tailor, home visit tailor, atelier price calculator, luxury gift box",
+    alternates: {
+      canonical: `https://www.fashion-look.in/${locale}`,
+      languages: {
+        'en': 'https://www.fashion-look.in/en',
+        'hi': 'https://www.fashion-look.in/hi',
+        'mr': 'https://www.fashion-look.in/mr',
+        'ur': 'https://www.fashion-look.in/ur',
+        'x-default': 'https://www.fashion-look.in/en',
+      },
     },
-  },
-  openGraph: {
-    title: "Fashion Look | Bespoke Tailors & Luxury Gifting – Navi Mumbai",
-    description: "Mumbai's premier bespoke tailoring atelier since 1998. Instant price calculator, custom suits & sherwanis, luxury fabric gifts. Home visits available.",
-    type: "website",
-    locale: "en_IN",
-    url: "https://www.fashion-look.in",
-    siteName: "Fashion Look",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Fashion Look | Bespoke Tailors & Luxury Gifting – Navi Mumbai",
-    description: "Bespoke suits, sherwanis & luxury fabric gifting since 1998. Instant price calculator. Home visits available across Navi Mumbai.",
-  }
-};
+    openGraph: {
+      title: "Fashion Look | Bespoke Tailors & Luxury Gifting – Navi Mumbai",
+      description: "Mumbai's premier bespoke tailoring atelier since 1998. Instant price calculator, custom suits & sherwanis, luxury fabric gifts. Home visits available.",
+      type: "website",
+      locale: locale,
+      url: `https://www.fashion-look.in/${locale}`,
+      siteName: "Fashion Look",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Fashion Look | Bespoke Tailors & Luxury Gifting – Navi Mumbai",
+      description: "Bespoke suits, sherwanis & luxury fabric gifting since 1998. Instant price calculator. Home visits available across Navi Mumbai.",
+    }
+  };
+}
 
-const jsonLd = {
+const getJsonLd = (locale: string) => ({
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -66,7 +70,7 @@ const jsonLd = {
       "@id": "https://www.fashion-look.in/#business",
       "name": "Fashion Look – Seawoods Atelier",
       "description": "Bespoke tailoring atelier in Seawoods, Navi Mumbai since 1998. Custom suits, sherwanis, Pathani suits, tuxedos, safari suits, and luxury fabric gifting.",
-      "url": "https://www.fashion-look.in",
+      "url": `https://www.fashion-look.in/${locale}`,
       "image": "https://www.fashion-look.in/images/storeimage.png",
       "telephone": "+918108014945",
       "priceRange": "₹₹₹",
@@ -168,7 +172,7 @@ const jsonLd = {
       ]
     }
   ]
-};
+});
 
 export default async function RootLayout({
   children,
@@ -216,7 +220,7 @@ export default async function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(getJsonLd(locale)) }}
         />
       </head>
       <body className={`${fontClass} antialiased`}>

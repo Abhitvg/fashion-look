@@ -1,6 +1,22 @@
 import { useTranslations } from 'next-intl';
 
-export default function RefundPolicyPage() {
+export function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'hi' }, { locale: 'mr' }, { locale: 'ur' }];
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return {
+    title: "Refund Policy | Fashion Look Tailors",
+    description: "Refund and cancellation policy for bespoke garments and luxury gift boxes at Fashion Look.",
+    alternates: {
+      canonical: `https://www.fashion-look.in/${locale}/refund-policy`,
+    }
+  };
+}
+
+export default async function RefundPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   
   return (
     <div className="pt-32 pb-24 container mx-auto px-4 md:px-8 max-w-4xl min-h-screen text-ivory/80">

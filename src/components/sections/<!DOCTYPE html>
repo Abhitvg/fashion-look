@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bespoke Tailor in Seawoods, Navi Mumbai | Sherwani, Suits & Safari Stitching – Fashion Look</title>
+  <meta name="description" content="Custom sherwani, suit & safari stitching in Seawoods & Govandi from ₹550. Home delivery available in Navi Mumbai. Instant price calculator, free trial fitting. WhatsApp us.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="Fashion Look — Bespoke Tailor in Seawoods, Navi Mumbai">
+  <meta property="og:description" content="Custom sherwani, suit & safari stitching with home delivery in Navi Mumbai. Instant price calculator, free trial fitting.">
+  <meta property="og:image" content="https://www.fashion-look.in/images/shop.jpg">
+  <meta property="og:url" content="https://www.fashion-look.in/">
+  <meta property="business:contact_data:locality" content="Navi Mumbai">
+  <meta property="business:contact_data:phone_number" content="+91-8108014945">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fashion Look — Bespoke Tailor in Seawoods, Navi Mumbai">
+  <meta name="twitter:description" content="Custom sherwani, suit & safari stitching with home delivery in Navi Mumbai.">
+  <meta name="twitter:image" content="https://www.fashion-look.in/images/shop.jpg">
+
+  <link rel="canonical" href="https://www.fashion-look.in/">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" type="image/png" href="images/brand-favicon.png">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- LocalBusiness Structured Data -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "ClothingStore",
+      "@id": "https://www.fashion-look.in/#seawoods",
+      "name": "Fashion Look Tailors & Gifting Fabrics",
+      "alternateName": "Fashion Look Cloth & Stitching",
+      "image": "https://www.fashion-look.in/images/shop.jpg",
+      "url": "https://www.fashion-look.in/",
+      "telephone": "+91-8108014945",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shop No. 5, Plot No. 144, Seawoods West, Sector 44",
+        "addressLocality": "Navi Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400706",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.03,
+        "longitude": 73.03
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "10:30",
+        "closes": "21:30"
+      },
+      "sameAs": ["https://wa.me/918108014945"],
+      "description": "Premium bespoke men's tailoring and luxury unstitched fabric gift boxes. 15+ years of master craftsmanship. Formal suits, sherwanis, pathanis, safari suits, custom shirts. Open all 7 days.",
+      "department": {
+        "@type": "ClothingStore",
+        "name": "Fashion Look Tailors & Gifting Fabrics — Govandi Branch",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Govandi, Mumbai",
+          "addressRegion": "Maharashtra",
+          "postalCode": "400088",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-8108014945",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "10:30",
+          "closes": "21:30"
+        }
+      }
+    }
+  ]
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does sherwani stitching cost in Navi Mumbai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sherwani stitching at Fashion Look starts from ₹4,200 for a standard fit, going up to ₹6,500 for a fully hand-embroidered wedding sherwani with brocade detailing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you deliver stitched clothes to home in Navi Mumbai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, home delivery is available in Navi Mumbai for a flat ₹250."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to stitch a suit or sherwani?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Formal suits and safari suits typically take 7-10 days. Wedding sherwanis with embroidery take 14-21 days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide the fabric, or do I need to bring my own?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both options are available. We stock certified mill fabrics from Raymond, Siyaram's and Reid & Taylor, and customers can also bring their own fabric for stitching only."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a trial fitting included?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, every garment includes one complimentary trial fitting before final stitching."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where are Fashion Look's stores located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fashion Look has two locations: the flagship studio in Seawoods, Sector 44, Navi Mumbai, and a branch in Govandi, Mumbai. Both are open all 7 days from 10:30 AM to 9:30 PM."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between Fashion Look and a big-brand store like Manyavar for a sherwani?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Manyavar sells ready-made and semi-custom sherwanis off a size chart. Fashion Look stitches every sherwani to your individual measurements with a free trial fitting, at a comparable or lower price point, from a shop 5 minutes from Seawoods Grand Central."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I get a suit stitched in Navi Mumbai without visiting the shop multiple times?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — book a home visit for measurements via WhatsApp, and we deliver the finished garment to your door in Navi Mumbai for ₹250. One optional trial-fitting visit is recommended for suits and sherwanis."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Sherwani Stitching",
+    "provider": { "@id": "https://www.fashion-look.in/#seawoods" },
+    "areaServed": ["Seawoods", "Navi Mumbai", "Govandi", "Mumbai"],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "price": "4200",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.fashion-look.in/#services"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Suit Stitching",
+    "provider": { "@id": "https://www.fashion-look.in/#seawoods" },
+    "areaServed": ["Seawoods", "Navi Mumbai", "Govandi", "Mumbai"],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "price": "4000",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.fashion-look.in/#services"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Safari Suit Stitching",
+    "provider": { "@id": "https://www.fashion-look.in/#seawoods" },
+    "areaServed": ["Seawoods", "Navi Mumbai", "Govandi", "Mumbai"],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "price": "1400",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.fashion-look.in/#services"
+    }
+  }
+  </script>
+
+  <!-- Product Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Suiting + Shirting Combo Gift Box",
+    "image": "https://www.fashion-look.in/images/gift-suiting-shirting.jpg",
+    "description": "Premium pant fabric (1.25m) paired with shirt fabric (1.6m), classic buttons, personalized message card, gold foil presentation box.",
+    "brand": { "@type": "Brand", "name": "Fashion Look" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "price": "1350",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.fashion-look.in/#gifts",
+      "seller": { "@id": "https://www.fashion-look.in/#seawoods" }
+    }
+  }
+  </script>
+
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-logo">FASHION LOOK</div>
+    <div class="loading-bar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-brand" aria-label="Fashion Look — Home">
+        <img src="images/brand-logo.png" alt="Fashion Look Tailors & Gifting Fabrics" class="nav-logo" width="144" height="48">
+        <h1 class="visually-hidden">Fashion Look — Premium Bespoke Tailoring & Gifting Fabrics, Seawoods & Govandi, Navi Mumbai</h1>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#services" class="active">Tailoring</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#gifts">Gift Boxes</a></li>
+        <li><a href="#builder">Custom Box</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#locations">Stores</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="https://wa.me/918108014945" class="nav-whatsapp" target="_blank">
+          💬 WhatsApp
+        </a>
+        <a href="https://wa.me/918108014945?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20tailoring." class="btn-appointment" target="_blank">
+          Book Appointment
+        </a>
+      </div>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" onclick="closeMobile()">Tailoring</a>
+    <a href="#calculator" onclick="closeMobile()">Calculator</a>
+    <a href="#gifts" onclick="closeMobile()">Gift Boxes</a>
+    <a href="#builder" onclick="closeMobile()">Custom Box</a>
+    <a href="#locations" onclick="closeMobile()">Stores</a>
+    <a href="https://wa.me/918108014945?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" onclick="closeMobile()">Book Appointment</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero.jpg" alt="Fashion Look — Luxury Tailoring Atelier" loading="eager">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">✦ Seawoods & Govandi — Open All 7 Days</div>
+      <h2 class="hero-title">
+        Master Bespoke<br><em>Men's Tailoring</em>
+      </h2>
+      <p class="hero-subtitle">
+        Crafting distinguished gentlemen's attire with precision. From formal suits to royal sherwanis — every stitch tells a story of legacy. <strong>Home delivery available across Navi Mumbai for ₹250.</strong>
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary">Explore Tailoring ↓</a>
+        <a href="https://wa.me/918108014945?text=Hi%2C%20I%20would%20like%20to%20book%20a%20tailoring%20appointment." class="btn-secondary" target="_blank">Book Appointment</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <span>↓</span>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item"><span class="icon">✂</span> Master Tailoring</div>
+        <div class="trust-item"><span class="icon">🎁</span> Luxury Gift Boxes</div>
+        <div class="trust-item"><span class="icon">🕐</span> 10:30 AM – 9:30 PM</div>
+        <div class="trust-item"><span class="icon">📍</span> 2 Locations</div>
+        <div class="trust-item"><span class="icon">👔</span> Men's Specialist</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us & The Owner -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-stack reveal">
+          <img src="images/shop.jpg" alt="Fashion Look Shop Interior" class="about-img-main" loading="lazy">
+          <img src="images/tafshir-shaikh.jpg" alt="Master Tailor Tafshir Shaikh" class="about-img-overlay" loading="lazy">
+        </div>
+        <div class="about-content reveal" style="--i:1">
+          <div class="section-label">Our Legacy</div>
+          <h2 class="section-title">Master Tailor<br><em>Tafshir Shaikh</em></h2>
+          <p class="section-desc">With 15+ years of bespoke craftsmanship, Master Tailor Tafshir Shaikh leads the atelier at Fashion Look. Every garment that leaves our shop is a testament to meticulous precision and an unyielding dedication to the perfect fit.</p>
+          <p class="section-desc" style="margin-top: 1rem;">Our flagship studio in Seawoods offers a sanctuary for the modern gentleman — featuring an extensive curation of world-class fabrics from Raymond, Siyaram's, and Reid & Taylor, in a premium setting designed to make your bespoke journey unforgettable.</p>
+          <a href="https://wa.me/918108014945" class="btn-primary" style="margin-top: 2rem" target="_blank">Consult with the Master</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tailoring Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Our Expertise</div>
+        <h2 class="section-title">Bespoke Men's Tailoring</h2>
+        <p class="section-desc">Each garment is hand-crafted by master tailors with decades of experience. We work exclusively with premium fabrics from India's finest mills.</p>
+      </div>
+
+      <div class="services-grid stagger">
+        <!-- Service 1 -->
+        <div class="service-card reveal" style="--i:0">
+          <div class="service-card-image">
+            <img src="images/suit-formal.jpg" alt="Two-Piece Formal Suit" loading="lazy">
+            <div class="service-card-overlay">
+              <span class="badge">Popular</span>
+              <span class="delivery">🕐 7-10 Days</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <h3>Two-Piece Formal Suit</h3>
+            <p>Classic coat & pant ensemble. Includes canvas chest piece, shoulder pads, inner lining & one trial fitting session.</p>
+            <div class="service-price">₹3,900 <small>stitching • 3.1m fabric</small></div>
+            <div class="service-card-actions">
+              <a href="https://wa.me/918108014945?text=Hi%2C%20I%27m%20interested%20in%20a%20Two-Piece%20Formal%20Suit.%20Please%20share%20details." class="btn-card btn-card-primary" target="_blank">Enquire Now</a>
+              <a href="#calculator" class="btn-card btn-card-secondary" data-preselect="Two-Piece Formal Suit">Calculate Cost</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal" style="--i:1">
+          <div class="service-card-image">
+            <img src="images/sherwani.jpg" alt="Royal Sherwani & Achkan" loading="lazy">
+            <div class="service-card-overlay">
+              <span class="badge">Wedding</span>
+              <span class="delivery">🕐 14-21 Days</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <h3>Royal Groom Sherwani</h3>
+            <p>Exquisite wedding sherwani, hand-finished by master craftsmen. Stitching price shown; premium brocade & zardozi fabric sourced separately to your preference.</p>
+            <div class="service-price">₹4,200 <small>stitching • fabric sourced separately</small></div>
+            <div class="service-card-actions">
+              <a href="https://wa.me/918108014945?text=Hi%2C%20I%27m%20interested%20in%20a%20Royal%20Groom%20Sherwani.%20Please%20share%20details." class="btn-card btn-card-primary" target="_blank">Enquire Now</a>
+              <a href="#calculator" class="btn-card btn-card-secondary" data-preselect="Royal Sherwani & Achkan">Calculate Cost</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal" style="--i:2">
+          <div class="service-card-image">
+            <img src="images/pathani.jpg" alt="Traditional Pathani with Salwar" loading="lazy">
+            <div class="service-card-overlay">
+              <span class="badge">Traditional</span>
+              <span class="delivery">🕐 5-7 Days</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <h3>Pathani Suit with Salwar</h3>
+            <p>Elegant traditional pathani kurta paired with comfortable salwar. Perfect for Eid, festive occasions, and daily wear.</p>
+            <div class="service-price">₹1,350 <small>stitching • 4.6m fabric</small></div>
+            <div class="service-card-actions">
+              <a href="https://wa.me/918108014945?text=Hi%2C%20I%27m%20interested%20in%20a%20Pathani%20Suit.%20Please%20share%20details." class="btn-card btn-card-primary" target="_blank">Enquire Now</a>
+              <a href="#calculator" class="btn-card btn-card-secondary" data-preselect="Pathani with Salwar">Calculate Cost</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal" style="--i:3">
+          <div class="service-card-image">
+            <img src="images/safari.jpg" alt="Executive Safari Suit" loading="lazy">
+            <div class="service-card-overlay">
+              <span class="badge">Executive</span>
+              <span class="delivery">🕐 7-10 Days</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <h3>Executive Safari Suit</h3>
+            <p>Modern shirt-jacket with trouser combo. Structured shoulders and premium linen or poly-viscose fabric for a sharp, confident look.</p>
+            <div class="service-price">₹1,600 <small>stitching • 3.0m fabric</small></div>
+            <div class="service-card-actions">
+              <a href="https://wa.me/918108014945?text=Hi%2C%20I%27m%20interested%20in%20an%20Executive%20Safari%20Suit.%20Please%20share%20details." class="btn-card btn-card-primary" target="_blank">Enquire Now</a>
+              <a href="#calculator" class="btn-card btn-card-secondary" data-preselect="Safari Suit">Calculate Cost</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fabric & Cost Calculator -->
+  <section class="section calculator" id="calculator">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Interactive Tool</div>
+        <h2 class="section-title">Fabric & Cost Calculator</h2>
+        <p class="section-desc">Get an instant estimate for your bespoke garment. Select your preferences and see the live quote.</p>
+      </div>
+
+      <div class="calc-layout">
+        <div class="calc-form reveal-left">
+          <!-- Step 1: Garment Type -->
+          <div class="calc-step">
+            <div class="calc-step-header">
+              <div class="calc-step-num">1</div>
+              <div class="calc-step-title">Select Garment Type</div>
+            </div>
+            <div class="calc-options" id="garmentOptions">
+              <div class="calc-option selected" data-garment="Two-Piece Formal Suit" data-stitch="3900" data-fabric="3.1">
+                <div class="calc-option-name">Two-Piece Formal Suit</div>
+                <div class="calc-option-meta">
+                  <span class="calc-option-price">Stitch: ₹3,900</span>
+                  <span class="calc-option-fabric">3.1m</span>
+                </div>
+              </div>
+              <div class="calc-option" data-garment="Three-Piece Tuxedo" data-stitch="5500" data-fabric="3.85">
+                <div class="calc-option-name">Three-Piece Tuxedo / Bandhgala Set</div>
+                <div class="calc-option-meta">
+                  <span class="calc-option-price">Stitch: ₹5,500</span>
+                  <span class="calc-option-fabric">3.85m</span>
+                </div>
+              </div>
+              <div class="calc-option" data-garment="Single Blazer / Bandhgala" data-stitch="2800" data-fabric="2.1">
+                <div class="calc-option-name">Single Blazer / Bandhgala</div>
+                <div class="calc-option-meta">
+                  <span class="calc-option-price">Stitch: ₹2,800</span>
+                  <span class="calc-option-fabric">2.1m</span>
+                </div>
+              </div>
+              <div class="calc-option" data-garment="Pathani with Salwar" data-stitch="1350" data-fabric="4.6">
+                <div class="calc-option-name">Pathani Suit with Salwar</div>
+                <div class="calc-option-meta">
+                  <span class="calc-option-price">Stitch: ₹1,350</span>
+                  <span class="calc-option-fabric">4.6m</span>
+                </div>
+              </div>
+              <div class="calc-option" data-garment="Royal Sherwani & Achkan" data-stitch="4200" data-fabric="3.9">
+                <div class="calc-option-name">Royal Sherwani & Achkan</div>
+                <div class="calc-option-meta">
+                  <span class="calc-option-price">Stitch: ₹4,200</span>
+                  <span class="calc-option-fabric">3.9m</span>
+                </div>
+              </div>
+              <div class="calc-option" data-garment="Safari Suit" data-stitch="1600" data-fabric="3.0">
+                <div class="calc-option-name">Executive Safari Suit</div>
+                <div class="calc-option-meta">
+                  <span class="calc-option-price">Stitch: ₹1,600</span>
+                  <span class="calc-option-fabric">3.0m</span>
+                </div>
+              </div>
+              <div class="calc-option" data-garment="Custom Tailored Shirt" data-stitch="550" data-fabric="1.65">
+                <div class="calc-option-name">Custom Tailored Shirt</div>
+                <div class="calc-option-meta">
+                  <span class="calc-option-price">Stitch: ₹550</span>
+                  <span class="calc-option-fabric">1.65m</span>
+                </div>
+              </div>
+              <div class="calc-option" data-garment="Formal Trouser / Chino" data-stitch="650" data-fabric="1.25">
+                <div class="calc-option-name">Formal Trouser / Chino</div>
+                <div class="calc-option-meta">
+                  <span class="calc-option-price">Stitch: ₹650</span>
+                  <span class="calc-option-fabric">1.25m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Silhouette -->
+          <div class="calc-step">
+            <div class="calc-step-header">
+              <div class="calc-step-num">2</div>
+              <div class="calc-step-title">Silhouette & Height Profile</div>
+            </div>
+            <div class="calc-options" id="silhouetteOptions">
+              <div class="calc-option" data-silhouette="Slim / Athletic" data-extra-fabric="0">
+                <div class="calc-option-name">Slim / Athletic</div>
+                <div class="calc-option-price">Under 5'8" height</div>
+              </div>
+              <div class="calc-option selected" data-silhouette="Regular Fit" data-extra-fabric="0">
+                <div class="calc-option-name">Regular Fit</div>
+                <div class="calc-option-price">5'8" – 6'0" height</div>
+              </div>
+              <div class="calc-option" data-silhouette="Broad / Tall" data-extra-fabric="0.35">
+                <div class="calc-option-name">Broad / Tall</div>
+                <div class="calc-option-price">6'0"+ or broad chest (+0.35m)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Fabric Tier -->
+          <div class="calc-step">
+            <div class="calc-step-header">
+              <div class="calc-step-num">3</div>
+              <div class="calc-step-title">Fabric Tier</div>
+            </div>
+            <div class="calc-options" id="fabricOptions">
+              <div class="calc-option" data-tier="Essential" data-price-per-m="350">
+                <div class="calc-option-name">Essential Blend</div>
+                <div class="calc-option-price">₹350/m — Poly-Viscose</div>
+              </div>
+              <div class="calc-option selected" data-tier="Premium" data-price-per-m="600">
+                <div class="calc-option-name">Premium Wool Blend</div>
+                <div class="calc-option-price">₹600/m — Raymond / Siyaram's</div>
+              </div>
+              <div class="calc-option" data-tier="Luxury" data-price-per-m="1200">
+                <div class="calc-option-name">Luxury Pure Wool</div>
+                <div class="calc-option-price">₹1,200/m — Reid & Taylor / Dormeuil</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Quote Panel -->
+        <div class="calc-quote reveal-right">
+          <div class="calc-quote-label">✂ Live Sartorial Quote</div>
+          <h3 id="quoteGarment">Two-Piece Formal Suit</h3>
+
+          <div class="quote-details">
+            <div class="quote-detail-row">
+              <span>Fabric Required</span>
+              <span id="quoteFabric">3.1 meters</span>
+            </div>
+            <div class="quote-detail-row">
+              <span>Standard Cloth Width</span>
+              <span>58" (Double Width)</span>
+            </div>
+            <div class="quote-detail-row">
+              <span>Silhouette</span>
+              <span id="quoteSilhouette">Regular Fit</span>
+            </div>
+            <div class="quote-detail-row">
+              <span>Fabric Tier</span>
+              <span id="quoteTier">Premium Wool Blend</span>
+            </div>
+          </div>
+
+          <div class="quote-row">
+            <span class="label">Master Cutting & Stitching</span>
+            <span class="value" id="quoteStitch">₹3,800</span>
+          </div>
+          <div class="quote-row">
+            <span class="label">Fabric Cost</span>
+            <span class="value" id="quoteFabricCost">₹1,860</span>
+          </div>
+
+          <div class="quote-total">
+            <span class="label">Total Estimated Cost</span>
+            <div class="price" id="quoteTotal">
+              ₹5,660
+              <small>Including 1 Free Trial Fitting Session</small>
+            </div>
+          </div>
+
+          <div class="quote-details" style="margin-top:16px">
+            <div class="quote-detail-row">
+              <span>Estimated Ready</span>
+              <span id="quoteDate">—</span>
+            </div>
+            <div class="quote-detail-row">
+              <span>Fitting Studio</span>
+              <span>Seawoods, Sector 44</span>
+            </div>
+          </div>
+
+          <a href="#" id="quoteWhatsApp" class="btn-whatsapp" target="_blank">
+            💬 Send Quote via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gift Boxes -->
+  <section class="section" id="gifts">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Premium Gifting</div>
+        <h2 class="section-title">Luxury Fabric Gift Boxes</h2>
+        <p class="section-desc">Curated presentation boxes with certified unstitched fabric, premium buttons, and personalized message cards. The perfect gentleman's gift.</p>
+      </div>
+
+      <div class="gift-grid stagger">
+        <!-- Gift 1 -->
+        <div class="gift-card reveal" style="--i:0">
+          <div class="gift-card-image">
+            <img src="images/gift-box-suiting.jpg" alt="Fashion Look suiting and shirting fabric combo in gold presentation box" loading="lazy">
+            <div class="gift-card-tags">
+              <span class="gift-tag gift-tag-bestseller">Bestseller</span>
+            </div>
+            <div class="gift-card-pricing">
+              <span class="current">₹1,350</span>
+            </div>
+          </div>
+          <div class="gift-card-body">
+            <h3>Suiting + Shirting Combo Gift</h3>
+            <p>The timeless gentleman's gift — premium pant fabric (1.25m) paired with crisp shirt fabric (1.6m).</p>
+            <div class="gift-contents">
+              <div class="gift-contents-title">📦 Box Contents</div>
+              <ul>
+                <li>Premium Suiting Fabric — 1.25m (Pant Length)</li>
+                <li>Premium Shirting Fabric — 1.6m</li>
+                <li>Classic Horn/Resin Buttons & Collar Stays</li>
+                <li>Personalized Message Card</li>
+                <li>Royal Gold Foil Presentation Box</li>
+              </ul>
+            </div>
+            <div class="service-card-actions">
+              <a href="https://wa.me/918108014945?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Suiting%20%2B%20Shirting%20Combo%20Gift%20Box.%20Please%20share%20details." class="btn-card btn-card-primary" target="_blank">Order via WhatsApp</a>
+              <a href="#builder" class="btn-card btn-card-secondary">Customize</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gift 2 -->
+        <div class="gift-card reveal" style="--i:1">
+          <div class="gift-card-image">
+            <img src="images/gift-box-safari.jpg" alt="Fashion Look safari suit fabric set in navy velvet box" loading="lazy">
+            <div class="gift-card-tags">
+              <span class="gift-tag gift-tag-festive">Festive Pick</span>
+            </div>
+            <div class="gift-card-pricing">
+              <span class="current">₹1,450</span>
+            </div>
+          </div>
+          <div class="gift-card-body">
+            <h3>Full Safari Suit Fabric Set</h3>
+            <p>Complete matching fabric set for a tailored safari suit. A gift of distinction for the modern executive.</p>
+            <div class="gift-contents">
+              <div class="gift-contents-title">📦 Box Contents</div>
+              <ul>
+                <li>Premium Matching Fabric — 3.0m (Full Safari Set)</li>
+                <li>Executive Buttons Set</li>
+                <li>Personalized Tag</li>
+                <li>Velvet Midnight Navy Presentation Box</li>
+              </ul>
+            </div>
+            <div class="service-card-actions">
+              <a href="https://wa.me/918108014945?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Full%20Safari%20Suit%20Fabric%20Gift%20Box.%20Please%20share%20details." class="btn-card btn-card-primary" target="_blank">Order via WhatsApp</a>
+              <a href="#builder" class="btn-card btn-card-secondary">Customize</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gift 3 -->
+        <div class="gift-card reveal" style="--i:2">
+          <div class="gift-card-image">
+            <img src="images/gift-box-sherwani.jpg" alt="Fashion Look royal sherwani brocade fabric in pine wood keepsake chest" loading="lazy">
+            <div class="gift-card-tags">
+              <span class="gift-tag gift-tag-festive">Wedding Special</span>
+            </div>
+            <div class="gift-card-pricing">
+              <span class="current">₹2,100</span>
+            </div>
+          </div>
+          <div class="gift-card-body">
+            <h3>Royal Sherwani Fabric Gift</h3>
+            <p>A magnificent brocade or embroidered fabric set for a groom's sherwani. Includes premium accessories.</p>
+            <div class="gift-contents">
+              <div class="gift-contents-title">📦 Box Contents</div>
+              <ul>
+                <li>Premium Sherwani Brocade — 3.9m</li>
+                <li>Embroidered Pocket Square</li>
+                <li>Royal Brooch Set</li>
+                <li>Handcrafted Pine Wood Keepsake Chest</li>
+              </ul>
+            </div>
+            <div class="service-card-actions">
+              <a href="https://wa.me/918108014945?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Royal%20Sherwani%20Fabric%20Gift.%20Please%20share%20details." class="btn-card btn-card-primary" target="_blank">Order via WhatsApp</a>
+              <a href="#builder" class="btn-card btn-card-secondary">Customize</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Box Builder -->
+  <section class="section calculator" id="builder">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Build Your Own</div>
+        <h2 class="section-title">Custom Gift Box Builder</h2>
+        <p class="section-desc">Assemble the perfect gift: pair your choice of luxury presentation box with certified unstitched fabric and personalized accessories.</p>
+      </div>
+
+      <div class="builder-layout">
+        <div class="builder-steps reveal-left">
+          <div class="builder-progress">
+            <div class="builder-progress-step active" data-step="1"></div>
+            <div class="builder-progress-step" data-step="2"></div>
+            <div class="builder-progress-step" data-step="3"></div>
+            <div class="builder-progress-step" data-step="4"></div>
+          </div>
+
+          <!-- Step 1: Box Type -->
+          <div class="builder-step active" id="builderStep1">
+            <div class="calc-step-header">
+              <div class="calc-step-num">1</div>
+              <div class="calc-step-title">Choose Presentation Box — Step 1 of 4</div>
+            </div>
+            <div class="calc-options" id="boxOptions">
+              <div class="calc-option selected" data-box="Royal Gold Foil Rigid Box" data-box-price="250">
+                <div class="calc-option-name">Royal Gold Foil Rigid Box</div>
+                <div class="calc-option-price">Opulent metallic foil with satin ribbon</div>
+                <div class="calc-option-fabric">+₹250</div>
+              </div>
+              <div class="calc-option" data-box="Velvet Midnight Navy Box" data-box-price="350">
+                <div class="calc-option-name">Velvet Midnight Navy Box</div>
+                <div class="calc-option-price">Plush velvet with embossed crest</div>
+                <div class="calc-option-fabric">+₹350</div>
+              </div>
+              <div class="calc-option" data-box="Festive Imperial Maroon Box" data-box-price="280">
+                <div class="calc-option-name">Festive Imperial Maroon Box</div>
+                <div class="calc-option-price">Traditional Indian motif with golden tassel</div>
+                <div class="calc-option-fabric">+₹280</div>
+              </div>
+              <div class="calc-option" data-box="Handcrafted Pine Wood Chest" data-box-price="750">
+                <div class="calc-option-name">Handcrafted Pine Wood Chest</div>
+                <div class="calc-option-price">Solid reusable pine wood with brass latch</div>
+                <div class="calc-option-fabric">+₹750</div>
+              </div>
+            </div>
+            <div style="margin-top:20px; text-align:right;">
+              <button class="btn-primary" onclick="nextBuilderStep(2)">Next: Select Fabric →</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Fabric Combo -->
+          <div class="builder-step" id="builderStep2">
+            <div class="calc-step-header">
+              <div class="calc-step-num">2</div>
+              <div class="calc-step-title">Select Fabric Combination — Step 2 of 4</div>
+            </div>
+            <div class="calc-options" id="fabricComboOptions">
+              <div class="calc-option selected" data-combo="Suiting + Shirting Combo" data-combo-price="1350" data-combo-detail="Pant 1.25m + Shirt 1.6m">
+                <div class="calc-option-name">Suiting + Shirting Combo</div>
+                <div class="calc-option-price">Pant 1.25m + Shirt 1.6m</div>
+                <div class="calc-option-fabric">₹1,350</div>
+              </div>
+              <div class="calc-option" data-combo="Full Safari Suit Fabric" data-combo-price="1450" data-combo-detail="3.0m matching set">
+                <div class="calc-option-name">Full Safari Suit Fabric</div>
+                <div class="calc-option-price">Complete 3.0m matching set</div>
+                <div class="calc-option-fabric">₹1,450</div>
+              </div>
+              <div class="calc-option" data-combo="Premium Sherwani Brocade" data-combo-price="2100" data-combo-detail="3.9m embroidered brocade">
+                <div class="calc-option-name">Premium Sherwani Brocade</div>
+                <div class="calc-option-price">3.9m rich embroidered brocade</div>
+                <div class="calc-option-fabric">₹2,100</div>
+              </div>
+              <div class="calc-option" data-combo="Blazer Fabric Only" data-combo-price="950" data-combo-detail="2.1m premium wool blend">
+                <div class="calc-option-name">Blazer Fabric Only</div>
+                <div class="calc-option-price">2.1m premium wool blend</div>
+                <div class="calc-option-fabric">₹950</div>
+              </div>
+            </div>
+            <div style="margin-top:20px; display:flex; gap:12px; justify-content:flex-end;">
+              <button class="btn-secondary" onclick="nextBuilderStep(1)">← Back</button>
+              <button class="btn-primary" onclick="nextBuilderStep(3)">Next: Accessory →</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Accessory -->
+          <div class="builder-step" id="builderStep3">
+            <div class="calc-step-header">
+              <div class="calc-step-num">3</div>
+              <div class="calc-step-title">Choose Accessory Pack — Step 3 of 4</div>
+            </div>
+            <div class="calc-options" id="accessoryOptions">
+              <div class="calc-option selected" data-accessory="Classic Horn/Resin Buttons" data-acc-price="0">
+                <div class="calc-option-name">Classic Horn/Resin Buttons</div>
+                <div class="calc-option-price">Included with collar stays set</div>
+                <div class="calc-option-fabric">Included</div>
+              </div>
+              <div class="calc-option" data-accessory="Premium Metal Buttons" data-acc-price="150">
+                <div class="calc-option-name">Premium Metal Buttons</div>
+                <div class="calc-option-price">Antique brass or silver finish</div>
+                <div class="calc-option-fabric">+₹150</div>
+              </div>
+              <div class="calc-option" data-accessory="Designer Cufflinks Set" data-acc-price="350">
+                <div class="calc-option-name">Designer Cufflinks + Buttons</div>
+                <div class="calc-option-price">Luxury cufflinks with matching buttons</div>
+                <div class="calc-option-fabric">+₹350</div>
+              </div>
+            </div>
+            <div style="margin-top:20px; display:flex; gap:12px; justify-content:flex-end;">
+              <button class="btn-secondary" onclick="nextBuilderStep(2)">← Back</button>
+              <button class="btn-primary" onclick="nextBuilderStep(4)">Next: Message Card →</button>
+            </div>
+          </div>
+
+          <!-- Step 4: Message -->
+          <div class="builder-step" id="builderStep4">
+            <div class="calc-step-header">
+              <div class="calc-step-num">4</div>
+              <div class="calc-step-title">Personalized Message — Step 4 of 4</div>
+            </div>
+            <div class="calc-options" id="messageOptions" style="grid-template-columns:1fr">
+              <div class="calc-option selected" data-message="Standard 'A Gift of Distinction'">
+                <div class="calc-option-name">Standard: "A Gift of Distinction"</div>
+                <div class="calc-option-price">Elegant pre-printed card with gold foil</div>
+                <div class="calc-option-fabric">Included</div>
+              </div>
+              <div class="calc-option" data-message="Custom handwritten message">
+                <div class="calc-option-name">Custom Handwritten Message</div>
+                <div class="calc-option-price">Calligraphy on premium card stock</div>
+                <div class="calc-option-fabric">+₹50</div>
+              </div>
+            </div>
+            <div style="margin-top:20px; display:flex; gap:12px; justify-content:flex-end;">
+              <button class="btn-secondary" onclick="nextBuilderStep(3)">← Back</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preview Panel -->
+        <div class="builder-preview reveal-right">
+          <div class="calc-quote-label">🎁 Interactive Box Preview</div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+            <span style="font-family:var(--font-heading); font-size:1rem; font-weight:600; color:var(--gold);">FASHION LOOK</span>
+            <button style="font-size:0.75rem; background:none; border:1px solid var(--text-dim); color:var(--text-secondary); padding:4px 12px; border-radius:var(--radius-xl); cursor:pointer;" onclick="resetBuilder()">↺ Reset</button>
+          </div>
+
+          <div class="preview-box">
+            <div class="preview-item">
+              <div class="preview-item-name" id="previewCombo">Suiting + Shirting Combo</div>
+              <div class="preview-item-detail" id="previewComboDetail">Pant 1.25m + Shirt 1.6m</div>
+            </div>
+            <div class="preview-item" style="margin-top:8px">
+              <div class="preview-item-name" id="previewAccessory">Classic Horn/Resin Buttons</div>
+              <div class="preview-item-detail" id="previewBox">Royal Gold Foil Rigid Box</div>
+            </div>
+            <div style="margin-top:12px; font-size:0.8rem; color:var(--gold); font-style:italic;" id="previewMessage">Personalized Tag Included</div>
+          </div>
+
+          <div class="builder-quantity">
+            <span style="font-size:0.88rem;">Quantity of Boxes</span>
+            <div class="qty-controls">
+              <button class="qty-btn" onclick="changeQty(-1)">−</button>
+              <span class="qty-value" id="builderQty">1</span>
+              <button class="qty-btn" onclick="changeQty(1)">+</button>
+            </div>
+          </div>
+
+          <div class="quote-row">
+            <span class="label">Unit Price per Box</span>
+            <span class="value" id="builderUnitPrice">₹1,600</span>
+          </div>
+
+          <div class="quote-total">
+            <span class="label">Total</span>
+            <div class="price" id="builderTotal">₹1,600</div>
+          </div>
+
+          <a href="#" id="builderWhatsApp" class="btn-whatsapp" target="_blank">
+            💬 Order via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="section" id="guarantee">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">The Fashion Look Standard</div>
+        <h2 class="section-title">Our Commitment to Excellence</h2>
+      </div>
+
+      <div class="guarantee-grid stagger">
+        <div class="guarantee-card reveal" style="--i:0">
+          <div class="guarantee-icon">✂️</div>
+          <h4>Master Craftsmanship</h4>
+          <p>Every garment hand-crafted by tailors with 15+ years of bespoke experience.</p>
+        </div>
+        <div class="guarantee-card reveal" style="--i:1">
+          <div class="guarantee-icon">🏆</div>
+          <h4>Certified Fabrics</h4>
+          <p>100% authentic mill-certified fabrics from Raymond, Siyaram's, Reid & Taylor.</p>
+        </div>
+        <div class="guarantee-card reveal" style="--i:2">
+          <div class="guarantee-icon">🔄</div>
+          <h4>Free Trial Fitting</h4>
+          <p>Complimentary fitting session included with every garment to ensure perfect fit.</p>
+        </div>
+        <div class="guarantee-card reveal" style="--i:3">
+          <div class="guarantee-icon">📞</div>
+          <h4>WhatsApp Support</h4>
+          <p>Instant support on WhatsApp for queries, orders, and appointment booking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" style="overflow:hidden">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Client Voices</div>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </div>
+    </div>
+
+    <div style="overflow:hidden">
+      <div class="testimonials-track">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Got my wedding sherwani stitched here. The fabric and fitting were spot on, and they got it ready well before my deadline."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RK</div>
+            <div>
+              <div class="testimonial-name">Rajesh Kumar</div>
+              <div class="testimonial-role">Groom • Seawoods</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Ordered gift boxes for our team this Diwali. The presentation was genuinely premium — everyone assumed we'd bought them somewhere far more expensive."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SM</div>
+            <div>
+              <div class="testimonial-name">Sanjay Mehta</div>
+              <div class="testimonial-role">Business Owner • Govandi</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"My blazer fits like it was made for me — because it was. Tafshir bhai actually studies your posture before he cuts, not just your measurements."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AP</div>
+            <div>
+              <div class="testimonial-name">Amit Patel</div>
+              <div class="testimonial-role">IT Professional • Seawoods</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Needed a safari suit for office wear in a hurry. Fabric selection was solid and the online calculator meant no back-and-forth on price."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">VD</div>
+            <div>
+              <div class="testimonial-name">Vivek Desai</div>
+              <div class="testimonial-role">Manager • Govandi</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Got my father's Eid kurta gift-boxed from here. The packaging alone made it feel like a proper occasion gift, not just fabric in a bag."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">FK</div>
+            <div>
+              <div class="testimonial-name">Farid Khan</div>
+              <div class="testimonial-role">Regular Customer • Seawoods</div>
+            </div>
+          </div>
+        </div>
+        <!-- Duplicate set for seamless CSS scroll loop -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Got my wedding sherwani stitched here. The fabric and fitting were spot on, and they got it ready well before my deadline."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RK</div>
+            <div>
+              <div class="testimonial-name">Rajesh Kumar</div>
+              <div class="testimonial-role">Groom • Seawoods</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Ordered gift boxes for our team this Diwali. The presentation was genuinely premium — everyone assumed we'd bought them somewhere far more expensive."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SM</div>
+            <div>
+              <div class="testimonial-name">Sanjay Mehta</div>
+              <div class="testimonial-role">Business Owner • Govandi</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"My blazer fits like it was made for me — because it was. Tafshir bhai actually studies your posture before he cuts, not just your measurements."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AP</div>
+            <div>
+              <div class="testimonial-name">Amit Patel</div>
+              <div class="testimonial-role">IT Professional • Seawoods</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Locations -->
+  <!-- Gallery Section -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Our Work</div>
+        <h2 class="section-title">The Atelier Gallery</h2>
+        <p class="section-desc">Real photos from our shop — fabrics, stitching in progress, and finished garments for our clients.</p>
+      </div>
+      
+      <div class="gallery-masonry reveal">
+        <img src="images/gallery/gallery-storefront.jpg" alt="Fashion Look Seawoods shop exterior and signage" class="gallery-img" loading="lazy">
+        <img src="images/gallery/gallery-fabric-wall.jpg" alt="Premium fabric wall display at Fashion Look Seawoods showroom" class="gallery-img" loading="lazy">
+        <img src="images/gallery/20260915_154405.jpg" alt="Master tailor measuring fabric at Fashion Look atelier" class="gallery-img" loading="lazy">
+        <img src="images/gallery/gallery-tailor-at-work.jpg" alt="Master Tafshir Shaikh tailoring a garment at Fashion Look" class="gallery-img" loading="lazy">
+        <img src="images/gallery/gallery-master-cutting.jpg" alt="Master cutter at work on premium suiting fabric at Fashion Look" class="gallery-img" loading="lazy">
+        <img src="images/gallery/20260915_154451.jpg" alt="Raymond and Siyarams fabric collection at Fashion Look" class="gallery-img" loading="lazy">
+        <img src="images/gallery/20260915_154533.jpg" alt="Premium shirting fabric swatches at Fashion Look" class="gallery-img" loading="lazy">
+        <img src="images/gallery/20260915_154608.jpg" alt="Fashion Look gift box packaging display" class="gallery-img" loading="lazy">
+        <img src="images/gallery/20260915_154647.jpg" alt="Interior view of Fashion Look Seawoods tailoring studio" class="gallery-img" loading="lazy">
+        <img src="images/gallery/20260915_154708.jpg" alt="Pathani suit fabric on display at Fashion Look" class="gallery-img" loading="lazy">
+        <img src="images/gallery/20260915_154733.jpg" alt="Luxury sherwani brocade fabric at Fashion Look" class="gallery-img" loading="lazy">
+        <img src="images/gallery/20260915_154800.jpg" alt="Tailoring tools and measurement at Fashion Look workshop" class="gallery-img" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Quick Answers</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know before visiting Fashion Look.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How much does sherwani stitching cost in Navi Mumbai?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sherwani stitching at Fashion Look starts from ₹4,200 for a standard fit, going up to ₹6,500 for a fully hand-embroidered wedding sherwani with brocade detailing. Use our fabric &amp; cost calculator above for an instant quote based on your fabric tier and size.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you deliver stitched clothes to home in Navi Mumbai?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes — home delivery is available in Navi Mumbai for a flat ₹250. Message us on WhatsApp with your measurements or book a home visit for fitting.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How long does it take to stitch a suit or sherwani?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Formal suits typically take 7–10 days, safari suits 7–10 days, and wedding sherwanis with embroidery take 14–21 days. We recommend booking wedding orders at least 3 weeks in advance during peak season (October–February).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you provide the fabric, or do I need to bring my own?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Both — we stock certified mill fabrics from Raymond, Siyaram's and Reid &amp; Taylor in-store, and you're also welcome to bring your own fabric for stitching only.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is a trial fitting included?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, every garment includes one complimentary trial fitting before final stitching to ensure the fit is right.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Where are your stores located?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We have two locations: our flagship studio in Seawoods, Sector 44, Navi Mumbai (near Seawoods Grand Central), and a branch in Govandi, Mumbai. Both are open all 7 days, 10:30 AM – 9:30 PM.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you stitch women's clothing?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No — Fashion Look is an exclusive <strong>men's tailoring atelier</strong>. We specialize entirely in men's bespoke garments: formal suits, sherwanis, pathanis, safari suits, shirts, and trousers. This focus allows us to deliver a higher standard in every garment we make.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What's the difference between Fashion Look and a big-brand store like Manyavar for a sherwani?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Manyavar sells ready-made and semi-custom sherwanis off a size chart. Fashion Look stitches every sherwani to your individual measurements with a free trial fitting, at a comparable or lower price point, from a shop 5 minutes from Seawoods Grand Central.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I get a suit stitched in Navi Mumbai without visiting the shop multiple times?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes — book a home visit for measurements via WhatsApp, and we deliver the finished garment to your door in Navi Mumbai for ₹250. One optional trial-fitting visit is recommended for suits and sherwanis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section calculator" id="locations">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Visit Us</div>
+        <h2 class="section-title">Our Stores</h2>
+        <p class="section-desc">Walk in for a personalized consultation. We're open all 7 days, 10:30 AM to 9:30 PM.</p>
+      </div>
+
+      <div class="locations-grid stagger">
+        <div class="location-card reveal" style="--i:0">
+          <div class="location-card-header">
+            <div class="location-name">Seawoods (Navi Mumbai)</div>
+            <span class="location-badge location-badge-flagship">Flagship</span>
+          </div>
+          <div class="location-address">
+            Shop No. 5, Plot No. 144,<br>
+            Seawoods West, Sector 44,<br>
+            Seawoods, Navi Mumbai — 400706<br>
+            <small style="color:var(--text-muted)">Near Seawoods Grand Central</small>
+          </div>
+          <div class="location-hours">
+            <span class="status"></span>
+            <span>Open Now • 10:30 AM – 9:30 PM (All 7 Days)</span>
+          </div>
+          <ul class="location-features">
+            <li>Full Bespoke Tailoring Studio</li>
+            <li>Premium Fabric Showroom</li>
+            <li>Gift Box Display & Custom Builder</li>
+            <li>Free Parking Available</li>
+          </ul>
+          <div class="location-actions">
+            <a href="tel:+918108014945" class="btn-location btn-location-call">📞 Call</a>
+            <a href="https://wa.me/918108014945?text=Hi%2C%20I%20want%20to%20visit%20the%20Seawoods%20store." class="btn-location btn-location-wa" target="_blank">💬 WhatsApp</a>
+            <a href="https://maps.app.goo.gl/SzXvkicxnntHSg2Z7?g_st=iw" class="btn-location btn-location-dir" target="_blank">🗺️ Directions</a>
+            <a href="https://wa.me/918108014945?text=Hi%2C%20I%20want%20to%20book%20an%20appointment%20at%20the%20Seawoods%20store." class="btn-location btn-location-book" target="_blank">📅 Book Visit</a>
+          </div>
+        </div>
+
+        <div class="location-card reveal" style="--i:1">
+          <div class="location-card-header">
+            <div class="location-name">Govandi (Mumbai)</div>
+            <span class="location-badge location-badge-branch">Branch</span>
+          </div>
+          <div class="location-address">
+            Govandi, Mumbai,<br>
+            Maharashtra — 400088<br>
+            <small style="color:var(--text-muted)">Near Govandi Station, Mumbai</small>
+          </div>
+          <div class="location-hours">
+            <span class="status"></span>
+            <span>Open Now • 10:30 AM – 9:30 PM (All 7 Days)</span>
+          </div>
+          <ul class="location-features">
+            <li>Full Tailoring Services</li>
+            <li>Fabric Collection Available</li>
+            <li>Gift Box Orders Accepted</li>
+            <li>Walk-in Welcome</li>
+          </ul>
+          <div class="location-actions">
+            <a href="tel:+918108014945" class="btn-location btn-location-call">📞 Call</a>
+            <a href="https://wa.me/918108014945?text=Hi%2C%20I%20want%20to%20visit%20the%20Govandi%20store." class="btn-location btn-location-wa" target="_blank">💬 WhatsApp</a>
+            <a href="https://maps.app.goo.gl/SzXvkicxnntHSg2Z7?g_st=iw" class="btn-location btn-location-dir" target="_blank">🗺️ Directions</a>
+            <a href="https://wa.me/918108014945?text=Hi%2C%20I%20want%20to%20book%20an%20appointment%20at%20the%20Govandi%20store." class="btn-location btn-location-book" target="_blank">📅 Book Visit</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-container reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5!2d73.03!3d19.03!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3cc2dda63dd%3A0x574c41bd16f7a224!2sShop+Number+5%2C+Fashion+Look!5e0!3m2!1sen!2sin!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Fashion Look</h3>
+          <div class="tagline">Tailors & Gifting Fabrics</div>
+          <p>Master bespoke men's tailoring and luxury unstitched fabric gift boxes. Crafting distinction since generations at Seawoods & Govandi.</p>
+          <div class="footer-info">
+            <p>📞 <a href="tel:+918108014945">+91 81080 14945</a></p>
+            <p>💬 <a href="https://wa.me/918108014945" target="_blank">WhatsApp Us</a></p>
+            <p>🕐 10:30 AM – 9:30 PM (All 7 Days)</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Formal Suits</a></li>
+            <li><a href="#services">Blazers & Bandhgalas</a></li>
+            <li><a href="#services">Sherwanis & Achkans</a></li>
+            <li><a href="#services">Pathani Suits</a></li>
+            <li><a href="#services">Safari Suits</a></li>
+            <li><a href="#services">Shirts & Trousers</a></li>
+            <li><a href="#calculator">Cost Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Gifting</h4>
+          <ul>
+            <li><a href="#gifts">Suiting + Shirting Combos</a></li>
+            <li><a href="#gifts">Safari Suit Sets</a></li>
+            <li><a href="#gifts">Sherwani Fabric Gifts</a></li>
+            <li><a href="#builder">Custom Box Builder</a></li>
+            <li><a href="#gifts">Corporate Gifting</a></li>
+            <li><a href="#locations">Store Locations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="footerYear"></span> Fashion Look Tailors & Gifting Fabrics. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/918108014945?text=Hi%2C%20I%20have%20a%20question%20about%20your%20tailoring%20services." class="fab-whatsapp" target="_blank" id="fabWhatsApp">
+    <span class="pulse"></span>
+    💬 Chat with Us
+  </a>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Full Screen Image">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

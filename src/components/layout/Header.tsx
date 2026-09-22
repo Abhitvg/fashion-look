@@ -42,6 +42,7 @@ export default function Header() {
             <Link href="#calculator" className="text-sm tracking-widest uppercase hover:text-gold transition-colors">{t('calculator')}</Link>
             <Link href="#gifts" className="text-sm tracking-widest uppercase hover:text-gold transition-colors">{t('gifts')}</Link>
             <Link href="#locations" className="text-sm tracking-widest uppercase hover:text-gold transition-colors">{t('locations')}</Link>
+            <Link href="/style-guide" className="text-sm tracking-widest uppercase hover:text-gold transition-colors">{t('styleGuide')}</Link>
             
             <button 
               onClick={() => setModalOpen(true)}
@@ -71,6 +72,7 @@ export default function Header() {
             <Link onClick={() => setMobileMenuOpen(false)} href="#calculator" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('calculator')}</Link>
             <Link onClick={() => setMobileMenuOpen(false)} href="#gifts" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('gifts')}</Link>
             <Link onClick={() => setMobileMenuOpen(false)} href="#locations" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('locations')}</Link>
+            <Link onClick={() => setMobileMenuOpen(false)} href="/style-guide" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('styleGuide')}</Link>
             
             <button 
               onClick={() => { setMobileMenuOpen(false); setModalOpen(true); }}

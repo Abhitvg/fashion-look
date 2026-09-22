@@ -65,7 +65,7 @@ export default function HeroBanner() {
       {/* Top gradient for header readability */}
       <div className="absolute top-0 left-0 w-full h-48 bg-gradient-to-b from-black/90 to-transparent z-[1]" />
       {/* Overall subtle darkening */}
-      <div className="absolute inset-0 bg-black/40 z-[1]" />
+      <div className="absolute inset-0 bg-black/60 z-[1]" />
       
       {/* Content Container */}
       <div className="relative z-10 container mx-auto px-4 md:px-8 h-full flex flex-col justify-center pt-32 pb-12">

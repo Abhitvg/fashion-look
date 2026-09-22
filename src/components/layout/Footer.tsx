@@ -27,10 +27,11 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="flex flex-col space-y-4">
             <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-ivory mb-2">{t('explore')}</h4>
-            <a href="#services" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('services')}</a>
-            <a href="#calculator" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('calculator')}</a>
-            <a href="#gifts" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('gifts')}</a>
-            <a href="#locations" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('locations')}</a>
+            <Link href="/#services" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('services')}</Link>
+            <Link href="/#calculator" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('calculator')}</Link>
+            <Link href="/#gifts" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('gifts')}</Link>
+            <Link href="/#locations" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('locations')}</Link>
+            <Link href="/style-guide" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('styleGuide')}</Link>
           </div>
 
           {/* Seawoods Store */}

@@ -8,7 +8,8 @@
     "calculator": "Atelier Calculator",
     "gifts": "Luxury Gifting",
     "locations": "Our Atelier",
-    "bookHomeVisit": "Book Home Visit"
+    "bookHomeVisit": "Book Home Visit",
+    "styleGuide": "Style Guide"
   },
   "Hero": {
     "established": "Precisely Yours Since 1998 · Seawoods, Navi Mumbai",
@@ -89,7 +90,7 @@
     "callButton": "Call",
     "items": {
       "seawoods": {
-        "name": "Seawoods Atelier",
+        "name": "Navi Mumbai Atelier",
         "address": "Shop No. 5, Fashion Look, Plot No. 144, Seawoods West, Sector 44, Seawoods, Navi Mumbai, Maharashtra 400706",
         "hours": "Mon–Sat: 10:00 AM – 9:00 PM · Sun: 11:00 AM – 7:00 PM"
       }
@@ -103,6 +104,7 @@
     "calculator": "Atelier Calculator",
     "gifts": "Luxury Gifting",
     "contact": "Contact & Locations",
+    "styleGuide": "Style Guide",
     "established": "Precisely Yours Since 1998"
   },
   "Process": {
@@ -143,5 +145,9 @@
     "date": "Preferred Date",
     "time": "Preferred Time",
     "submit": "Request Booking via WhatsApp"
+  },
+  "StyleGuide": {
+    "title": "Bespoke Outerwear Guide",
+    "subtitle": "Discover the art of outerwear. From timeless overcoats to elegant tuxedos, explore the essential silhouettes that define the modern gentleman's wardrobe."
   }
 }

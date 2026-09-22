@@ -1,6 +1,22 @@
 import { useTranslations } from 'next-intl';
 
-export default function PrivacyPolicyPage() {
+export function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'hi' }, { locale: 'mr' }, { locale: 'ur' }];
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return {
+    title: "Privacy Policy | Fashion Look Tailors",
+    description: "Privacy policy and data handling practices for Fashion Look Tailors in Seawoods, Navi Mumbai.",
+    alternates: {
+      canonical: `https://www.fashion-look.in/${locale}/privacy`,
+    }
+  };
+}
+
+export default async function PrivacyPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   
   return (
     <div className="pt-32 pb-24 container mx-auto px-4 md:px-8 max-w-4xl min-h-screen text-ivory/80">
