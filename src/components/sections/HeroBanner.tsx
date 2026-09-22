@@ -18,7 +18,7 @@ export default function HeroBanner() {
     <section id="hero" className="relative h-screen min-h-[800px] flex items-center overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/images/hero/atelier.jpg"
+        src="/images/hero/atelier.png"
         alt="Fashion Look Bespoke Tailoring Atelier"
         fill
         priority
