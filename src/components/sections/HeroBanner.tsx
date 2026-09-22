@@ -6,10 +6,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 const HERO_IMAGES = [
-  '/images/hero/atelier.png',
   '/images/hero/hero2.png',
   '/images/hero/hero3.png',
-  '/sample.png'
+  '/images/hero/2868b5f6-1e83-429d-88e4-672483668930.png'
 ];
 
 export default function HeroBanner() {
