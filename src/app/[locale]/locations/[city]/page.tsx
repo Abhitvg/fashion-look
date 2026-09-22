@@ -24,20 +24,35 @@ export async function generateStaticParams() {
   return params;
 }
 
-// Generate dynamic metadata for SEO
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { city } = await params;
+  const { city, locale } = await params;
   const location = getLocationBySlug(city);
 
   if (!location) {
     return {};
   }
 
+  const title = `Bespoke Tailor in ${location.name} | Custom Suits & Sherwanis`;
+  const url = `https://www.fashion-look.in/${locale}/locations/${location.slug}`;
+
   return {
-    title: `Bespoke Tailor in ${location.name} | Custom Suits & Sherwanis`,
+    title,
     description: location.description,
     alternates: {
-      canonical: `https://www.fashion-look.in/en/locations/${location.slug}`,
+      canonical: url,
+    },
+    openGraph: {
+      title,
+      description: location.description,
+      type: "website",
+      locale: locale,
+      url: url,
+      siteName: "Fashion Look",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: location.description,
     }
   };
 }
@@ -53,33 +68,59 @@ export default async function LocationPage({ params }: Props) {
   }
 
   // Generate LocalBusiness JSON-LD for this specific geography (GEO optimization)
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": `Fashion Look - Custom Tailors serving ${location.name}`,
-    "image": "https://www.fashion-look.in/images/store-front.jpg",
-    "description": location.description,
-    "telephone": "+91-81080-14945",
-    "priceRange": "₹4500 - ₹25000",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Shop No. 5, Plot No. 144, Seawoods West, Sector 44",
-      "addressLocality": "Navi Mumbai",
-      "addressRegion": "MH",
-      "postalCode": "400706",
-      "addressCountry": "IN"
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": `Fashion Look - Custom Tailors serving ${location.name}`,
+      "image": "https://www.fashion-look.in/images/store-front.jpg",
+      "description": location.description,
+      "telephone": "+91-81080-14945",
+      "priceRange": "₹4500 - ₹25000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shop No. 5, Plot No. 144, Seawoods West, Sector 44",
+        "addressLocality": "Navi Mumbai",
+        "addressRegion": "MH",
+        "postalCode": "400706",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": location.lat.toString(),
+        "longitude": location.lng.toString()
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": location.name
+      },
+      "url": `https://www.fashion-look.in/${locale}/locations/${location.slug}`
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": location.lat.toString(),
-      "longitude": location.lng.toString()
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": location.name
-    },
-    "url": `https://www.fashion-look.in/${locale}/locations/${location.slug}`
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `https://www.fashion-look.in/${locale}`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Locations",
+          "item": `https://www.fashion-look.in/${locale}/#locations`
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": location.name,
+          "item": `https://www.fashion-look.in/${locale}/locations/${location.slug}`
+        }
+      ]
+    }
+  ];
 
   return (
     <main className="min-h-screen bg-atelier pt-24 pb-16">
