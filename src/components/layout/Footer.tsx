@@ -59,14 +59,17 @@ export default function Footer() {
               <span>Shop No. 5, Fashion Look, Plot No. 144, Seawoods West, Sector 44, Seawoods, Navi Mumbai, Maharashtra 400706</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-ivory/60 font-light">
-              <Phone size={14} className="text-gold/70 shrink-0" />
-              <a href="tel:+918108014945" className="hover:text-gold transition-colors">+91 81080 14945</a>
+              <Phone size={14} className="text-gold/70 shrink-0" aria-hidden="true" />
+              <a href="tel:+918108014945" className="hover:text-gold transition-colors" aria-label="Call Fashion Look at +91 81080 14945">
+                +91 81080 14945
+              </a>
             </div>
             <button
               onClick={() => openWhatsApp("https://wa.me/918108014945?text=Hello%20Fashion%20Look!", 'whatsapp_cta_faq')}
               className="flex items-center gap-2 text-sm text-[#25D366] hover:text-[#25D366]/80 transition-colors cursor-pointer w-fit"
+              aria-label="Contact us on WhatsApp"
             >
-              <MessageCircle size={14} />
+              <MessageCircle size={14} aria-hidden="true" />
               <span>WhatsApp</span>
             </button>
           </div>

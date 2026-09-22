@@ -52,6 +52,7 @@ export default function HeroBanner() {
             alt="Fashion Look Bespoke Tailoring Atelier"
             fill
             priority
+            fetchPriority="high"
             className="object-cover object-center md:object-[60%_50%]"
             sizes="100vw"
           />
