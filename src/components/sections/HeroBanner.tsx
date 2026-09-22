@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { openWhatsApp } from '@/lib/analytics';
 
 const HERO_IMAGES = [
   '/images/hero/hero2.png',
@@ -31,7 +32,7 @@ export default function HeroBanner() {
 
   const handleWhatsApp = () => {
     const text = 'Hello Fashion Look! I would like to book a consultation for bespoke tailoring.';
-    window.open(`https://wa.me/918108014945?text=${encodeURIComponent(text)}`, '_blank');
+    openWhatsApp(`https://wa.me/918108014945?text=${encodeURIComponent(text)}`, 'whatsapp_cta_hero');
   };
 
   return (

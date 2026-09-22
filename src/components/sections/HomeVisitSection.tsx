@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { MessageCircle, MapPin, Gift, Clock, CheckCircle } from 'lucide-react';
+import { openWhatsApp } from '@/lib/analytics';
 
 const STEPS = [
   {
@@ -129,14 +130,12 @@ export default function HomeVisitSection() {
                   <p className="text-sm text-gold font-medium mt-0.5">Complimentary</p>
                 </div>
               </div>
-              <a
-                href="https://wa.me/918108014945?text=Hi%20Fashion%20Look!%20I%20would%20like%20to%20book%20a%20home%20visit%20for%20bespoke%20tailoring."
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => openWhatsApp("https://wa.me/918108014945?text=Hi%20Fashion%20Look!%20I%20would%20like%20to%20book%20a%20home%20visit%20for%20bespoke%20tailoring.", 'whatsapp_cta_homevisit')}
                 className="mt-2 px-6 py-4 bg-gold text-black text-xs tracking-widest font-semibold uppercase text-center hover:bg-gold-light transition-colors duration-300 flex items-center justify-center gap-2"
               >
                 Book a Home Visit <span>→</span>
-              </a>
+              </button>
             </div>
           </div>
         </motion.div>

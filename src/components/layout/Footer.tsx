@@ -2,6 +2,8 @@
 
 import { useTranslations } from 'next-intl';
 import { MapPin, Phone, MessageCircle } from 'lucide-react';
+import { openWhatsApp } from '@/lib/analytics';
+import { Link } from '@/i18n/routing';
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -28,7 +30,7 @@ export default function Footer() {
             <a href="#services" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('services')}</a>
             <a href="#calculator" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('calculator')}</a>
             <a href="#gifts" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('gifts')}</a>
-            <a href="#locations" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">Our Stores</a>
+            <a href="#locations" className="text-sm text-ivory/40 hover:text-gold transition-colors font-light">{t('locations')}</a>
           </div>
 
           {/* Seawoods Store */}
@@ -42,15 +44,13 @@ export default function Footer() {
               <Phone size={14} className="text-gold/50 shrink-0" />
               <a href="tel:+918108014945" className="hover:text-gold transition-colors">+91 81080 14945</a>
             </div>
-            <a
-              href="https://wa.me/918108014945?text=Hello%20Fashion%20Look!"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-[#25D366] hover:text-[#25D366]/80 transition-colors"
+            <button
+              onClick={() => openWhatsApp("https://wa.me/918108014945?text=Hello%20Fashion%20Look!", 'whatsapp_cta_faq')}
+              className="flex items-center gap-2 text-sm text-[#25D366] hover:text-[#25D366]/80 transition-colors cursor-pointer w-fit"
             >
               <MessageCircle size={14} />
               <span>WhatsApp</span>
-            </a>
+            </button>
           </div>
 
         </div>
@@ -62,9 +62,14 @@ export default function Footer() {
           <p className="text-[10px] tracking-[0.2em] uppercase text-ivory/25">
             &copy; {new Date().getFullYear()} Fashion Look Tailors & Gifting Fabrics. All Rights Reserved.
           </p>
-          <p className="text-[10px] tracking-[0.15em] text-ivory/20">
-            Crafted with precision in Navi Mumbai
-          </p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy" className="text-[10px] tracking-[0.15em] text-ivory/20 hover:text-gold transition-colors uppercase">
+              Privacy Policy
+            </Link>
+            <Link href="/refund-policy" className="text-[10px] tracking-[0.15em] text-ivory/20 hover:text-gold transition-colors uppercase">
+              Refund Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

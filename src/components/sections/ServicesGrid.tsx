@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { openWhatsApp } from '@/lib/analytics';
 
 const services = [
   {
@@ -92,14 +93,12 @@ export default function ServicesGrid() {
                     <p className="text-[9px] text-ivory/25 mt-1 font-light tracking-wide">*Final price after measurement</p>
                   </div>
                   
-                  <a 
-                    href={`https://wa.me/918108014945?text=Hi, I would like to enquire about your ${t(`items.${service.key}.title`)} service.`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs uppercase tracking-widest text-ivory hover:text-gold transition-colors flex items-center gap-2"
+                  <button 
+                    onClick={() => openWhatsApp(`https://wa.me/918108014945?text=Hello%20Fashion%20Look!%20I%20would%20like%20to%20enquire%20about%20${encodeURIComponent(t(`items.${service.key}.title`))}`, 'whatsapp_cta_service')}
+                    className="text-xs uppercase tracking-widest text-ivory hover:text-gold transition-colors flex items-center gap-2 cursor-pointer"
                   >
                     {t('enquireNow')} <span className="text-gold">→</span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </motion.div>

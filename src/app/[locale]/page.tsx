@@ -13,6 +13,7 @@ import GiftBoxBuilder from '@/components/gifts/GiftBoxBuilder';
 import StoreLocations from '@/components/sections/StoreLocations';
 import HomeVisitSection from '@/components/sections/HomeVisitSection';
 import FAQSection from '@/components/sections/FAQSection';
+import ReferralSection from '@/components/sections/ReferralSection';
 import WhatsAppFAB from '@/components/ui/WhatsAppFAB';
 import ScrollReveal from '@/components/layout/ScrollReveal';
 
@@ -46,8 +47,13 @@ export default async function HomePage() {
         <HomeVisitSection />
 
         {/* 7. ATELIER CALCULATOR */}
-        <section id="calculator" className="py-24 md:py-32 bg-background">
-          <div className="container mx-auto px-4 md:px-8">
+        <section id="calculator" className="py-24 md:py-32 bg-background relative">
+          <div className="absolute top-0 left-0 w-full bg-gold/10 border-b border-gold/20 py-3 text-center">
+            <p className="text-xs md:text-sm text-gold tracking-widest uppercase font-medium">
+              ★ See exact pricing upfront — no "contact us for quote" — no surprises.
+            </p>
+          </div>
+          <div className="container mx-auto px-4 md:px-8 mt-12">
             <ScrollReveal>
               <div className="text-center mb-16 md:mb-20">
                 <p className="text-xs tracking-[0.3em] uppercase text-gold/70 mb-4">Transparent Pricing</p>
@@ -91,7 +97,10 @@ export default async function HomePage() {
         {/* 10. FAQ */}
         <FAQSection />
 
-        {/* 11. STORE LOCATIONS */}
+        {/* 11. REFERRAL */}
+        <ReferralSection />
+
+        {/* 12. STORE LOCATIONS */}
         <StoreLocations />
       </main>
 

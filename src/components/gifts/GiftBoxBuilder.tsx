@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import GiftBoxScene from '@/components/3d/GiftBoxScene';
+import { openWhatsApp } from '@/lib/analytics';
 
 const BOXES = [
   { id: 'matte', name: 'Premium Matte Black Box', price: 500, desc: 'Sleek, minimalist matte finish with subtle branding' },
@@ -47,7 +48,15 @@ export default function GiftBoxBuilder() {
       `📊 Quantity: ${qty}\n\n` +
       `Total Estimate: ₹${total.toLocaleString('en-IN')}`;
     
-    window.open(`https://wa.me/918108014945?text=${encodeURIComponent(text)}`, '_blank');
+    openWhatsApp(
+      `https://wa.me/918108014945?text=${encodeURIComponent(text)}`,
+      'whatsapp_cta_giftbox',
+      {
+        value: total,
+        currency: 'INR',
+        box_type: box.name
+      }
+    );
   };
 
   return (

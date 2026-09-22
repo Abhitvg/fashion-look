@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
+import { openWhatsApp } from '@/lib/analytics';
 
 const FAQS = [
   {
@@ -132,14 +133,12 @@ export default function FAQSection() {
             <p className="text-sm text-ivory/40 font-light flex-grow">
               Still have a question? We typically reply within 30 minutes on WhatsApp.
             </p>
-            <a
-              href="https://wa.me/918108014945?text=Hi%20Fashion%20Look!%20I%20have%20a%20question."
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => openWhatsApp("https://wa.me/918108014945?text=Hi%20Fashion%20Look!%20I%20have%20a%20question.", 'whatsapp_cta_faq')}
               className="flex-shrink-0 px-6 py-3 border border-ivory/20 text-xs tracking-widest uppercase hover:border-gold hover:text-gold transition-colors duration-300"
             >
               Ask on WhatsApp →
-            </a>
+            </button>
           </motion.div>
 
         </div>

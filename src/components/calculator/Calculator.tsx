@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { openWhatsApp } from '@/lib/analytics';
 
 const GARMENTS = [
   { id: '2piece', name: 'Two-Piece Formal Suit', stitch: 7500, fabric: 3.0, extraFabric: 0 },
@@ -39,7 +40,17 @@ export default function Calculator() {
       `🔹 Fabric Tier: ${tier.name}\n` +
       `\nEstimated Total: ₹${totalCost.toLocaleString('en-IN')}`;
     
-    window.open(`https://wa.me/918108014945?text=${encodeURIComponent(text)}`, '_blank');
+    openWhatsApp(
+      `https://wa.me/918108014945?text=${encodeURIComponent(text)}`,
+      'whatsapp_cta_calculator',
+      {
+        value: totalCost,
+        currency: 'INR',
+        garment: garment.name,
+        silhouette: silhouette.name,
+        fabric_tier: tier.name
+      }
+    );
   };
 
   return (
@@ -48,13 +59,15 @@ export default function Calculator() {
       {/* SELECTIONS */}
       <div className="lg:col-span-2 space-y-12">
         {/* Garment */}
-        <div className="space-y-4">
-          <h3 className="text-sm font-semibold tracking-widest text-gold uppercase">1. Select Garment</h3>
+        <div className="space-y-4" role="group" aria-labelledby="calc-garment-heading">
+          <h3 id="calc-garment-heading" className="text-sm font-semibold tracking-widest text-gold uppercase">1. Select Garment</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {GARMENTS.map(g => (
               <button 
                 key={g.id}
                 onClick={() => setGarment(g)}
+                aria-pressed={garment.id === g.id}
+                aria-label={`Select ${g.name}`}
                 className={`p-4 border text-left transition-all duration-300 ${garment.id === g.id ? 'border-gold bg-gold/5' : 'border-atelier-soft hover:border-gold/50'}`}
               >
                 <div className="font-serif text-lg text-foreground">{g.name}</div>
@@ -66,13 +79,15 @@ export default function Calculator() {
         </div>
 
         {/* Silhouette */}
-        <div className="space-y-4">
-          <h3 className="text-sm font-semibold tracking-widest text-gold uppercase">2. Select Silhouette</h3>
+        <div className="space-y-4" role="group" aria-labelledby="calc-silhouette-heading">
+          <h3 id="calc-silhouette-heading" className="text-sm font-semibold tracking-widest text-gold uppercase">2. Select Silhouette</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {SILHOUETTES.map(s => (
               <button 
                 key={s.id}
                 onClick={() => setSilhouette(s)}
+                aria-pressed={silhouette.id === s.id}
+                aria-label={`Select ${s.name}`}
                 className={`p-4 border text-left transition-all duration-300 ${silhouette.id === s.id ? 'border-gold bg-gold/5' : 'border-atelier-soft hover:border-gold/50'}`}
               >
                 <div className="font-serif text-lg text-foreground">{s.name.split(' - ')[0]}</div>
@@ -83,13 +98,15 @@ export default function Calculator() {
         </div>
 
         {/* Fabric Tier */}
-        <div className="space-y-4">
-          <h3 className="text-sm font-semibold tracking-widest text-gold uppercase">3. Select Fabric Tier</h3>
+        <div className="space-y-4" role="group" aria-labelledby="calc-tier-heading">
+          <h3 id="calc-tier-heading" className="text-sm font-semibold tracking-widest text-gold uppercase">3. Select Fabric Tier</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {FABRIC_TIERS.map(t => (
               <button 
                 key={t.id}
                 onClick={() => setTier(t)}
+                aria-pressed={tier.id === t.id}
+                aria-label={`Select ${t.name}`}
                 className={`p-4 border text-left transition-all duration-300 ${tier.id === t.id ? 'border-gold bg-gold/5' : 'border-atelier-soft hover:border-gold/50'}`}
               >
                 <div className="font-serif text-lg text-foreground">{t.name}</div>

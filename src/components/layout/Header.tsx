@@ -53,14 +53,20 @@ export default function Header() {
           </nav>
 
           {/* Mobile Toggle */}
-          <button className="xl:hidden text-foreground hover:text-gold transition-colors" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          <button 
+            className="xl:hidden text-foreground hover:text-gold transition-colors" 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-nav"
+          >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-atelier border-b border-atelier-soft flex flex-col p-6 space-y-6 xl:hidden">
+          <div id="mobile-nav" className="absolute top-full left-0 w-full bg-atelier border-b border-atelier-soft flex flex-col p-6 space-y-6 xl:hidden">
             <Link onClick={() => setMobileMenuOpen(false)} href="#services" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('services')}</Link>
             <Link onClick={() => setMobileMenuOpen(false)} href="#calculator" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('calculator')}</Link>
             <Link onClick={() => setMobileMenuOpen(false)} href="#gifts" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('gifts')}</Link>

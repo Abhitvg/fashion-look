@@ -2,11 +2,12 @@
 
 import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
+import { openWhatsApp } from '@/lib/analytics';
 
 export default function WhatsAppFAB() {
   const handleClick = () => {
     const text = 'Hello Fashion Look! I would like to know more about your bespoke tailoring services.';
-    window.open(`https://wa.me/918108014945?text=${encodeURIComponent(text)}`, '_blank');
+    openWhatsApp(`https://wa.me/918108014945?text=${encodeURIComponent(text)}`, 'whatsapp_cta_fab');
   };
 
   return (

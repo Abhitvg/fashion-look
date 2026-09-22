@@ -1,5 +1,6 @@
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
+import Script from 'next/script';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import type { Metadata } from "next";
@@ -29,8 +30,8 @@ const notoNastaliqUrdu = Noto_Nastaliq_Urdu({
 });
 
 export const metadata: Metadata = {
-  title: "Fashion Look | Bespoke Tailors, Atelier Calculator & Luxury Gifting – Navi Mumbai",
-  description: "Mumbai's premier bespoke tailoring atelier since 1998. Get an instant price estimate with our Atelier Calculator, commission hand-crafted suits & sherwanis, or curate a luxury fabric gift box. Home visits available across Navi Mumbai.",
+  title: "Fashion Look | Bespoke Tailoring in Navi Mumbai",
+  description: "Precisely yours since 1998. Master tailors in Seawoods, Navi Mumbai crafting bespoke suits, sherwanis, and luxury fabric gifting.",
   keywords: "custom tailor, bespoke suits, sherwani, gifting fabrics, raymond fabrics, navi mumbai tailor, seawoods tailor, home visit tailor, atelier price calculator, luxury gift box",
   alternates: {
     canonical: "https://www.fashion-look.in/en",
@@ -193,8 +194,26 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale} dir={dir}>
+    <html lang={locale} dir={dir} className="scroll-smooth">
       <head>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-WPGKRLGNN7`}
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-WPGKRLGNN7', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

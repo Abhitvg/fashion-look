@@ -116,7 +116,7 @@ export default function Testimonials() {
 
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center">
-                  <span className="text-sm font-serif text-gold">{t.name.charAt(0)}</span>
+                  <span className="text-sm font-serif text-gold" aria-hidden="true">{t.name.charAt(0)}</span>
                 </div>
                 <div itemProp="author" itemScope itemType="https://schema.org/Person">
                   <div className="text-sm font-medium text-ivory" itemProp="name">{t.name}</div>
