@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 
 const LOOKBOOK_IMAGES = [
   {
-    src: '/images/17a547c0-4bb9-4c6b-918e-2ed4a7242a5a.png',
+    src: '/images/hero/hero2.png',
     altKey: 'item1',
     className: 'md:col-span-2 md:row-span-2 h-[400px] md:h-[600px]',
   },
@@ -22,7 +22,7 @@ const LOOKBOOK_IMAGES = [
     className: 'md:col-span-1 md:row-span-1 h-[300px]',
   },
   {
-    src: '/images/5c887857-7b5a-47c5-8248-4169c28f7da9.png',
+    src: '/images/hero/hero3.png',
     altKey: 'item4',
     className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
   },

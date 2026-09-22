@@ -21,10 +21,10 @@ export default function CraftsmanshipStory() {
             className="relative h-[400px] md:h-[550px] overflow-hidden"
           >
             <Image
-              src="/images/media_1789384487146.png"
+              src="/images/hero/hero3.png"
               alt="Master tailor hand-stitching a buttonhole"
               fill
-              className="object-cover object-top"
+              className="object-cover object-center"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
             <div className="absolute inset-0 border border-gold/10" />

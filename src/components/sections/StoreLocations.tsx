@@ -14,7 +14,7 @@ export default function StoreLocations() {
   const stores = [
     {
       key: 'seawoods',
-      image: "/images/media_1789384474296.png",
+      image: "/images/storeimage.png",
       phone: "+91 7738876404",
       mapsLink: "https://maps.app.goo.gl/wY4L4UaD1Zf9Fh3N6"
     }
