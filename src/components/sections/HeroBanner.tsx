@@ -60,24 +60,26 @@ export default function HeroBanner() {
 
       {/* Gradient Overlays */}
       {/* Dark gradient from left for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent z-[1] w-full md:w-3/4" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent z-[1] w-full md:w-3/4" />
+      {/* Top gradient for header readability */}
+      <div className="absolute top-0 left-0 w-full h-48 bg-gradient-to-b from-black/90 to-transparent z-[1]" />
       {/* Overall subtle darkening */}
-      <div className="absolute inset-0 bg-black/20 z-[1]" />
+      <div className="absolute inset-0 bg-black/40 z-[1]" />
       
       {/* Content Container */}
-      <div className="relative z-10 container mx-auto px-4 md:px-8 h-full flex flex-col justify-center">
+      <div className="relative z-10 container mx-auto px-4 md:px-8 h-full flex flex-col justify-center pt-32 pb-12">
         
         {/* Main Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, ease: [0.21, 0.47, 0.32, 0.98] }}
-          className="max-w-xl pt-20"
+          className="max-w-xl"
         >
           <p className="text-xs md:text-sm tracking-[0.4em] uppercase text-gold mb-6 font-sans">
             {t('established')}
           </p>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-ivory uppercase tracking-widest leading-[1.1] mb-2 flex flex-col">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-ivory uppercase tracking-widest leading-[1.1] mb-2 flex flex-col">
             <span>{t('title1')}</span>
             <span className="text-gold">{t('title2')}</span>
           </h1>
