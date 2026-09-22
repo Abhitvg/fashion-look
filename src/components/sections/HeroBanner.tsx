@@ -80,7 +80,7 @@ export default function HeroBanner() {
           <div className="h-px w-24 bg-gold/60 my-8" />
           
           <p className="text-base md:text-xl text-ivory tracking-[0.3em] uppercase font-light mb-6">
-            Cloth & Stitching
+            Bespoke Menswear
           </p>
           
           <p className="text-sm md:text-base text-ivory/70 tracking-wider max-w-md mb-12 font-light leading-relaxed normal-case">
@@ -113,22 +113,7 @@ export default function HeroBanner() {
 
       {/* Floating Elements (Visible on lg screens) */}
       <div className="hidden lg:block absolute inset-0 z-10 pointer-events-none container mx-auto">
-        {/* Top Middle Floating Box */}
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="absolute top-1/4 left-[40%]"
-        >
-          <div className="text-center">
-            <h3 className="text-lg tracking-[0.2em] text-gold font-serif mb-6 uppercase leading-relaxed">
-              A Well<br />Tailored Life
-            </h3>
-            <div className="text-[10px] tracking-[0.2em] text-gold/60 uppercase">
-              Fashion Look<br />Since 1998
-            </div>
-          </div>
-        </motion.div>
+
 
         {/* Right Side Floating Text */}
         <motion.div 
