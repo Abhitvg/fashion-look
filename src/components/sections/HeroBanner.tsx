@@ -8,6 +8,7 @@ import { useTranslations } from 'next-intl';
 import { openWhatsApp } from '@/lib/analytics';
 
 const HERO_IMAGES = [
+  '/images/hero/atelier.png',
   '/images/hero/hero2.png',
   '/images/315459c7-065c-49a3-80df-0720b4bc4dca.png',
   '/images/eb41bc96-7c2a-4141-a7b9-d3d00fcc5996.png',
