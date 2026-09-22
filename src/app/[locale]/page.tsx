@@ -3,6 +3,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HeroBanner from '@/components/sections/HeroBanner';
 import HeritageBand from '@/components/sections/HeritageBand';
+import LookbookGallery from '@/components/sections/LookbookGallery';
 import ServicesGrid from '@/components/sections/ServicesGrid';
 import CraftsmanshipStory from '@/components/sections/CraftsmanshipStory';
 import ProcessSteps from '@/components/sections/ProcessSteps';
@@ -27,7 +28,10 @@ export default async function HomePage() {
         {/* 2. HERITAGE STATS BAND */}
         <HeritageBand />
 
-        {/* 3. BESPOKE SERVICES */}
+        {/* 3. LOOKBOOK GALLERY */}
+        <LookbookGallery />
+
+        {/* 4. BESPOKE SERVICES */}
         <ServicesGrid />
 
         {/* 4. CRAFTSMANSHIP STORY */}
