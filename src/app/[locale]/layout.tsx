@@ -66,14 +66,30 @@ const getJsonLd = (locale: string) => ({
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["LocalBusiness", "ClothingStore"],
+      "@type": ["LocalBusiness", "ClothingStore", "Organization"],
       "@id": "https://www.fashion-look.in/#business",
       "name": "Fashion Look – Seawoods Atelier",
-      "description": "Bespoke tailoring atelier in Seawoods, Navi Mumbai since 1998. Custom suits, sherwanis, Pathani suits, tuxedos, safari suits, and luxury fabric gifting.",
+      "legalName": "Fashion Look Tailors",
+      "description": "Navi Mumbai's premier bespoke tailoring atelier since 1998. Custom suits, sherwanis, Pathani suits, tuxedos, safari suits, and luxury fabric gifting.",
       "url": `https://www.fashion-look.in/${locale}`,
       "image": "https://www.fashion-look.in/images/storeimage.png",
+      "logo": "https://www.fashion-look.in/images/logo.png",
       "telephone": "+918108014945",
+      "foundingDate": "1998",
       "priceRange": "₹₹₹",
+      "knowsAbout": [
+        "Bespoke Tailoring",
+        "Menswear",
+        "Custom Suits",
+        "Sherwanis",
+        "Corporate Gifting",
+        "Luxury Fabrics",
+        "Raymond Fabrics"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "Fashion Look"
+      },
       "hasMap": "https://maps.app.goo.gl/wY4L4UaD1Zf9Fh3N6",
       "address": {
         "@type": "PostalAddress",

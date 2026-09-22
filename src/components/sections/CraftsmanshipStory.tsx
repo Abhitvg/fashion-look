@@ -34,8 +34,8 @@ export default function CraftsmanshipStory() {
             <div className="absolute bottom-4 right-4 w-12 h-12 border-b border-r border-gold/30" />
           </motion.div>
 
-          {/* Copy */}
-          <motion.div
+          {/* Copy (Semantic Article for AEO) */}
+          <motion.article
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -57,11 +57,11 @@ export default function CraftsmanshipStory() {
                 <div className="text-xs tracking-[0.2em] uppercase text-ivory/40 mt-1">Master Tailor & Founder</div>
               </div>
               <div className="h-12 w-px bg-gold/20" />
-              <div className="text-xs tracking-[0.15em] text-ivory/40 leading-relaxed">
+              <blockquote className="text-xs tracking-[0.15em] text-ivory/40 leading-relaxed border-l-2 border-gold/50 pl-4 italic">
                 &ldquo;Every garment tells<br />a story. Ours tell yours.&rdquo;
-              </div>
+              </blockquote>
             </div>
-          </motion.div>
+          </motion.article>
         </div>
       </div>
     </section>
