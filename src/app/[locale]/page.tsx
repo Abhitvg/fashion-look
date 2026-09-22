@@ -11,6 +11,8 @@ import Calculator from '@/components/calculator/Calculator';
 import Testimonials from '@/components/sections/Testimonials';
 import GiftBoxBuilder from '@/components/gifts/GiftBoxBuilder';
 import StoreLocations from '@/components/sections/StoreLocations';
+import HomeVisitSection from '@/components/sections/HomeVisitSection';
+import FAQSection from '@/components/sections/FAQSection';
 import WhatsAppFAB from '@/components/ui/WhatsAppFAB';
 import ScrollReveal from '@/components/layout/ScrollReveal';
 
@@ -40,7 +42,10 @@ export default async function HomePage() {
         {/* 5. OUR PROCESS */}
         <ProcessSteps />
 
-        {/* 5. ATELIER CALCULATOR */}
+        {/* 6. HOME VISIT EXPLAINER */}
+        <HomeVisitSection />
+
+        {/* 7. ATELIER CALCULATOR */}
         <section id="calculator" className="py-24 md:py-32 bg-background">
           <div className="container mx-auto px-4 md:px-8">
             <ScrollReveal>
@@ -63,12 +68,12 @@ export default async function HomePage() {
         {/* 6. TESTIMONIALS */}
         <Testimonials />
 
-        {/* 7. LUXURY GIFTING */}
+        {/* 9. LUXURY GIFTING */}
         <section id="gifts" className="py-24 md:py-32 bg-background">
           <div className="container mx-auto px-4 md:px-8">
             <ScrollReveal>
               <div className="text-center mb-16 md:mb-20">
-                <p className="text-xs tracking-[0.3em] uppercase text-gold/70 mb-4">Corporate & Festive</p>
+                <p className="text-xs tracking-[0.3em] uppercase text-gold/70 mb-4">Corporate &amp; Festive</p>
                 <h2 className="text-3xl md:text-4xl font-serif text-ivory tracking-wider uppercase">
                   Luxury Fabric Gifting
                 </h2>
@@ -83,7 +88,10 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* 8. STORE LOCATIONS */}
+        {/* 10. FAQ */}
+        <FAQSection />
+
+        {/* 11. STORE LOCATIONS */}
         <StoreLocations />
       </main>
 
