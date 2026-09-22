@@ -5,27 +5,27 @@ import { motion } from 'framer-motion';
 
 const LOOKBOOK_IMAGES = [
   {
-    src: '/images/hero/06d2a98f-1dad-4adb-ab0e-c992be1b8665.png',
+    src: '/images/17a547c0-4bb9-4c6b-918e-2ed4a7242a5a.png',
     alt: 'Master Tailor Consultation',
     className: 'md:col-span-2 md:row-span-2 h-[400px] md:h-[600px]',
   },
   {
-    src: '/images/hero/hero2.png',
+    src: '/images/2e71e062-f95f-4830-b665-0a6b9c735ec2.png',
     alt: 'Premium Fabric Selection',
     className: 'md:col-span-1 md:row-span-1 h-[300px]',
   },
   {
-    src: '/images/hero/0be6241a-e62c-4118-9cba-7c76ac3c8641.png',
+    src: '/images/4261d996-9ea9-49c7-971d-1339879347e8.png',
     alt: 'Precision Stitching',
     className: 'md:col-span-1 md:row-span-1 h-[300px]',
   },
   {
-    src: '/images/hero/e83ec53e-9796-42a0-a299-35c4819573e4.png',
+    src: '/images/5c887857-7b5a-47c5-8248-4169c28f7da9.png',
     alt: 'Tailoring Details',
     className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
   },
   {
-    src: '/images/hero/2868b5f6-1e83-429d-88e4-672483668930.png',
+    src: '/images/a0459aa7-67cc-4e7e-9a3c-5cca4c8813d3.png',
     alt: 'Bespoke Suit Fitting',
     className: 'md:col-span-2 md:row-span-1 h-[300px]',
   },

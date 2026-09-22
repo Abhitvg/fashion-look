@@ -26,19 +26,19 @@ const SERVICES = [
     title: 'Classic Pathani',
     desc: 'Timeless Pathani suits in cotton and linen blends. Effortless elegance for festivals, prayers, and everyday refinement.',
     price: '₹3,500',
-    image: '/images/services/pathani.jpg',
+    image: '/images/a5fbb613-a22d-4846-a218-8ccdc2a9b414.jpeg',
   },
   {
     title: 'Executive Safari Suit',
     desc: 'The power suit of Indian professionals. Structured shoulders, smart pockets, and a commanding presence in the boardroom.',
     price: '₹4,500',
-    image: '/images/services/safari.jpg',
+    image: '/images/aed867a5-6b8f-471b-9941-5fa012644011.png',
   },
   {
     title: 'Luxury Fabric Gifting',
     desc: 'Curated gift boxes of premium fabrics, silk ties, and accessories. The perfect corporate or festive gift.',
     price: '₹2,500',
-    image: '/images/services/gift-box.jpg',
+    image: '/images/de4f8d60-f107-4981-814c-182d29dca53f.png',
   },
 ];
 
