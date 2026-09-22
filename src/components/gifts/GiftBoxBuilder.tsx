@@ -1,8 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import GiftBoxScene from '@/components/3d/GiftBoxScene';
+import dynamic from 'next/dynamic';
 import { openWhatsApp } from '@/lib/analytics';
+
+const GiftBoxScene = dynamic(() => import('@/components/3d/GiftBoxScene'), { 
+  ssr: false,
+  loading: () => <div className="w-full h-full flex items-center justify-center text-ivory/40">Loading 3D Preview...</div>
+});
 
 const BOXES = [
   { id: 'matte', name: 'Premium Matte Black Box', price: 500, desc: 'Sleek, minimalist matte finish with subtle branding' },

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Gift, Copy, CheckCircle, ArrowRight, Share2 } from 'lucide-react';
-import { trackEvent, openWhatsApp } from '@/lib/analytics';
+import { trackEvent } from '@/lib/analytics';
 
 export default function ReferralSection() {
   const [name, setName] = useState('');
@@ -31,8 +31,12 @@ export default function ReferralSection() {
       
       setCode(data.code);
       trackEvent('referral_code_generated');
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError(String(err));
+      }
     } finally {
       setLoading(false);
     }
@@ -53,7 +57,7 @@ export default function ReferralSection() {
   };
 
   return (
-    <section className="py-24 bg-[#0A0A0A] border-y border-gold/10 relative overflow-hidden">
+    <section id="referrals" className="py-24 bg-[#0A0A0A] border-y border-gold/10 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-full max-h-96 bg-gold/5 blur-[120px] rounded-full pointer-events-none" />
       

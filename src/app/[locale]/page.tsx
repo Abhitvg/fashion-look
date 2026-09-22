@@ -2,6 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HeroBanner from '@/components/sections/HeroBanner';
+import AEOBlock from '@/components/sections/AEOBlock';
 import HeritageBand from '@/components/sections/HeritageBand';
 import LookbookGallery from '@/components/sections/LookbookGallery';
 import ServicesGrid from '@/components/sections/ServicesGrid';
@@ -18,7 +19,6 @@ import WhatsAppFAB from '@/components/ui/WhatsAppFAB';
 import ScrollReveal from '@/components/layout/ScrollReveal';
 
 export default async function HomePage() {
-  const t = await getTranslations('Index');
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -27,6 +27,9 @@ export default async function HomePage() {
       <main className="flex-grow">
         {/* 1. HERO */}
         <HeroBanner />
+
+        {/* 1.5. AEO SUMMARY */}
+        <AEOBlock />
 
         {/* 2. HERITAGE STATS BAND */}
         <HeritageBand />
@@ -50,7 +53,7 @@ export default async function HomePage() {
         <section id="calculator" className="py-24 md:py-32 bg-background relative">
           <div className="absolute top-0 left-0 w-full bg-gold/10 border-b border-gold/20 py-3 text-center">
             <p className="text-xs md:text-sm text-gold tracking-widest uppercase font-medium">
-              ★ See exact pricing upfront — no "contact us for quote" — no surprises.
+              ★ See exact pricing upfront — no &quot;contact us for quote&quot; — no surprises.
             </p>
           </div>
           <div className="container mx-auto px-4 md:px-8 mt-12">

@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'hi' }, { locale: 'mr' }, { locale: 'ur' }];
@@ -15,9 +14,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default async function PrivacyPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  
+export default async function PrivacyPolicyPage() {
+
   return (
     <div className="pt-32 pb-24 container mx-auto px-4 md:px-8 max-w-4xl min-h-screen text-ivory/80">
       <h1 className="text-4xl md:text-5xl font-serif text-ivory mb-8 uppercase tracking-widest">Privacy Policy</h1>
@@ -26,7 +24,7 @@ export default async function PrivacyPolicyPage({ params }: { params: Promise<{ 
         <section>
           <p className="text-sm">Last updated: {new Date().toLocaleDateString('en-IN', { month: 'long', year: 'numeric' })}</p>
           <p className="mt-4">
-            Fashion Look ("we", "our", or "us") respects your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our website (fashion-look.in) or interact with us via WhatsApp.
+            Fashion Look (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) respects your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our website (fashion-look.in) or interact with us via WhatsApp.
           </p>
         </section>
 

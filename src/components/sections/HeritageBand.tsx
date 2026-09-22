@@ -26,7 +26,7 @@ const STATS = [
 
 export default function HeritageBand() {
   return (
-    <section className="relative py-16 bg-atelier-dark border-y border-gold/10 overflow-hidden">
+    <section id="stats" className="relative py-16 bg-atelier-dark border-y border-gold/10 overflow-hidden">
       {/* Subtle gold shimmer */}
       <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent,rgba(212,175,55,0.03),transparent)] animate-pulse" />
       

@@ -1,10 +1,6 @@
 import { NextResponse } from 'next/server';
-import { Redis } from '@upstash/redis';
-
-const redis = new Redis({
-  url: process.env.KV_REST_API_URL!,
-  token: process.env.KV_REST_API_TOKEN!,
-});
+import { db } from '@/lib/firebase';
+import { doc, getDoc, updateDoc, addDoc, collection, serverTimestamp } from 'firebase/firestore';
 
 export async function POST(request: Request) {
   try {
@@ -18,11 +14,14 @@ export async function POST(request: Request) {
     const upperCode = code.toUpperCase();
     
     // Fetch referrer details
-    const referrer = await redis.get<{ name: string; phone: string; redemptions: number }>(`ref:${upperCode}`);
+    const docRef = doc(db, 'referrals', upperCode);
+    const docSnap = await getDoc(docRef);
     
-    if (!referrer) {
+    if (!docSnap.exists()) {
       return NextResponse.json({ error: 'Invalid referral code' }, { status: 404 });
     }
+
+    const referrer = docSnap.data();
 
     // Prevent self-referral (basic check by phone number)
     if (referrer.phone === newCustomerPhone) {
@@ -30,22 +29,18 @@ export async function POST(request: Request) {
     }
 
     // Increment redemption count
-    await redis.set(`ref:${upperCode}`, {
-      ...referrer,
-      redemptions: referrer.redemptions + 1
+    await updateDoc(docRef, {
+      redemptions: (referrer.redemptions || 0) + 1
     });
 
-    // We can also store the redemption event if needed for auditing
-    const eventId = Date.now().toString();
-    await redis.set(`redemption:${upperCode}:${eventId}`, {
+    // Store the redemption event for auditing
+    await addDoc(collection(db, 'redemptions'), {
+      referralCode: upperCode,
       referrerPhone: referrer.phone,
       newCustomerName,
       newCustomerPhone,
-      timestamp: new Date().toISOString()
+      createdAt: serverTimestamp()
     });
-
-    // In a real app, you might trigger a WhatsApp API message to the referrer here
-    // saying "Congratulations! Your code was used. You have ₹500 off your next visit."
 
     return NextResponse.json({
       success: true,

@@ -1,10 +1,6 @@
 import { NextResponse } from 'next/server';
-import { Redis } from '@upstash/redis';
-
-const redis = new Redis({
-  url: process.env.KV_REST_API_URL!,
-  token: process.env.KV_REST_API_TOKEN!,
-});
+import { db } from '@/lib/firebase';
+import { collection, query, where, getDocs, setDoc, doc, serverTimestamp } from 'firebase/firestore';
 
 export async function POST(request: Request) {
   try {
@@ -16,9 +12,13 @@ export async function POST(request: Request) {
     }
 
     // Check if phone already has a code
-    const existingCode = await redis.get<string>(`ref:phone:${phone}`);
-    if (existingCode) {
-      return NextResponse.json({ code: existingCode });
+    const q = query(collection(db, 'referrals'), where('phone', '==', phone));
+    const querySnapshot = await getDocs(q);
+    
+    if (!querySnapshot.empty) {
+      // Return existing code
+      const existingDoc = querySnapshot.docs[0];
+      return NextResponse.json({ code: existingDoc.id });
     }
 
     // Generate new code: Initials + 4 random digits
@@ -32,19 +32,13 @@ export async function POST(request: Request) {
     const randomDigits = Math.floor(1000 + Math.random() * 9000);
     const newCode = `${initials}${randomDigits}`;
 
-    // Store in KV
-    const payload = {
+    // Store in Firestore with the code as the document ID
+    await setDoc(doc(db, 'referrals', newCode), {
       name,
       phone,
-      createdAt: new Date().toISOString(),
+      createdAt: serverTimestamp(),
       redemptions: 0
-    };
-
-    // Use transaction/pipeline to ensure both keys are set
-    const pipeline = redis.pipeline();
-    pipeline.set(`ref:${newCode}`, payload);
-    pipeline.set(`ref:phone:${phone}`, newCode);
-    await pipeline.exec();
+    });
 
     return NextResponse.json({ code: newCode });
 

@@ -72,8 +72,9 @@ export default function ServicesGrid() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
                 <Image
                   src={service.image}
-                  alt={t(`items.${service.key}.title`)}
+                  alt={t(`items.${service.key}.alt`)}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>
@@ -88,9 +89,9 @@ export default function ServicesGrid() {
                 
                 <div className="flex items-center justify-between mt-auto pt-6 border-t border-white/10">
                   <div>
-                    <p className="text-[10px] text-ivory/40 uppercase tracking-widest mb-1">{t('fromPrice')}</p>
-                    <p className="text-lg text-gold">{t(`items.${service.key}.price`)} <span className="text-[10px] text-ivory/30 align-top">*</span></p>
-                    <p className="text-[9px] text-ivory/25 mt-1 font-light tracking-wide">*Final price after measurement</p>
+                    <p className="text-[10px] text-ivory/70 uppercase tracking-widest mb-1">{t('fromPrice')}</p>
+                    <p className="text-lg text-gold">{t(`items.${service.key}.price`)} <span className="text-[10px] text-ivory/70 align-top">*</span></p>
+                    <p className="text-[9px] text-ivory/60 mt-1 font-light tracking-wide">*Final price after measurement</p>
                   </div>
                   
                   <button 

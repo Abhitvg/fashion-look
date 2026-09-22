@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'hi' }, { locale: 'mr' }, { locale: 'ur' }];
@@ -15,9 +14,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default async function RefundPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  
+export default async function RefundPolicyPage() {
+
   return (
     <div className="pt-32 pb-24 container mx-auto px-4 md:px-8 max-w-4xl min-h-screen text-ivory/80">
       <h1 className="text-4xl md:text-5xl font-serif text-ivory mb-8 uppercase tracking-widest">Refund & Cancellation Policy</h1>

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { motion, useScroll, useTransform, useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
 
@@ -39,7 +39,7 @@ export default function LookbookGallery() {
   const isInView = useInView(headerRef, { once: true });
 
   return (
-    <section className="py-24 md:py-32 bg-black border-t border-ivory/5">
+    <section id="gallery" className="py-24 md:py-32 bg-black border-t border-ivory/5">
       <div className="container mx-auto px-4 md:px-8">
         <motion.div
           ref={headerRef}

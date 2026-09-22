@@ -153,7 +153,7 @@ export default function Calculator() {
               <span className="text-sm tracking-widest uppercase text-foreground/70">Total Estimate</span>
               <span className="text-3xl font-serif text-gold">₹{totalCost.toLocaleString('en-IN')}</span>
             </div>
-            <p className="text-xs text-foreground/40 mt-2 text-right">*Final price determined after physical measurement</p>
+            <p className="text-xs text-foreground/60 mt-2 text-right">*Final price determined after physical measurement</p>
           </div>
 
           <button 

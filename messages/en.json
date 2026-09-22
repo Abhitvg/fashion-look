@@ -35,31 +35,37 @@
     "items": {
       "formalSuit": {
         "title": "Two-Piece Formal Suit",
+        "alt": "Man wearing a tailored bespoke two-piece formal suit in navy blue",
         "desc": "Impeccably tailored from premium wool and linen. Slim, regular, or relaxed fit — measured to your exact silhouette.",
         "price": "₹7,500"
       },
       "sherwani": {
         "title": "Royal Groom Sherwani",
+        "alt": "Groom wearing a hand-embroidered royal wedding sherwani in silk",
         "desc": "Exquisite hand-embroidered wedding sherwanis in silk, velvet, and brocade. The centrepiece of your celebration.",
         "price": "₹15,000"
       },
       "tuxedo": {
         "title": "Premium Tuxedo",
+        "alt": "Man wearing a premium black-tie tuxedo with satin peak lapels",
         "desc": "Black-tie perfection with satin peak lapels and hand-finished details. For galas, receptions, and landmark evenings.",
         "price": "₹12,000"
       },
       "pathani": {
         "title": "Classic Pathani",
+        "alt": "Man wearing a classic Pathani suit in premium cotton blend",
         "desc": "Timeless Pathani suits in cotton and linen blends. Effortless elegance for festivals, prayers, and everyday refinement.",
         "price": "₹3,500"
       },
       "safari": {
         "title": "Executive Safari Suit",
+        "alt": "Professional wearing an executive structured safari suit",
         "desc": "The power suit of Indian professionals. Structured shoulders, smart pockets, and a commanding presence in the boardroom.",
         "price": "₹4,500"
       },
       "gifting": {
         "title": "Luxury Fabric Gifting",
+        "alt": "Curated luxury gift box containing premium suit fabrics and accessories",
         "desc": "Curated gift boxes of premium fabrics, silk ties, and accessories. The perfect corporate or festive gift.",
         "price": "₹2,500"
       }
@@ -69,11 +75,11 @@
     "sectionTop": "The Atelier Vibe",
     "sectionTitle": "Inspiration Gallery",
     "items": {
-      "item1": "Master Tailor Consultation",
-      "item2": "Premium Fabric Selection",
-      "item3": "Precision Stitching",
-      "item4": "Tailoring Details",
-      "item5": "Bespoke Suit Fitting"
+      "item1": "Master Tailor consultation for a bespoke suit fitting",
+      "item2": "Close-up of premium Italian wool fabric selection",
+      "item3": "Precision hand-stitching on a bespoke garment",
+      "item4": "Macro shot of fine tailoring details and buttonholes",
+      "item5": "Client trying on a half-finished basted suit fitting"
     }
   },
   "Craftsmanship": {
@@ -149,5 +155,35 @@
   "StyleGuide": {
     "title": "Bespoke Outerwear Guide",
     "subtitle": "Discover the art of outerwear. From timeless overcoats to elegant tuxedos, explore the essential silhouettes that define the modern gentleman's wardrobe."
+  },
+  "AEO": {
+    "title": "At a Glance",
+    "summary": "Fashion Look is Navi Mumbai's top-rated bespoke tailor. Established in 1998 in Seawoods, we specialize in custom men's suits, royal wedding sherwanis, and luxury fabric gifting. We offer 100% custom measurements, basted fittings, and a strict 6-month craftsmanship warranty, available at our atelier or via complimentary home visits."
+  },
+  "Admin": {
+    "title": "Master Tailor Dashboard",
+    "subtitle": "Real-time Operations Console",
+    "passcode": "Enter Passcode",
+    "submit": "Unlock",
+    "incorrect": "Incorrect passcode.",
+    "tabs": {
+      "bookings": "Home Visits & Bookings",
+      "referrals": "Active Referral Codes"
+    },
+    "columns": {
+      "date": "Received On",
+      "name": "Client Name",
+      "phone": "Phone",
+      "garment": "Garment",
+      "preference": "Location",
+      "schedule": "Preferred Schedule",
+      "refCode": "Code",
+      "refName": "Creator Name",
+      "refPhone": "Creator Phone",
+      "refRedemptions": "Redemptions",
+      "refCreated": "Created On"
+    },
+    "empty": "No bookings found yet. They will appear here in real-time.",
+    "emptyReferrals": "No referral codes generated yet."
   }
 }

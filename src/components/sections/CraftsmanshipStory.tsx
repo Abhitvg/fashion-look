@@ -8,7 +8,7 @@ export default function CraftsmanshipStory() {
   const t = useTranslations('Craftsmanship');
 
   return (
-    <section className="py-24 md:py-32 bg-atelier-soft border-y border-ivory/5">
+    <section id="heritage" className="py-24 md:py-32 bg-atelier-soft border-y border-ivory/5">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
           
@@ -54,10 +54,10 @@ export default function CraftsmanshipStory() {
             <div className="mt-10 flex items-center gap-8">
               <div>
                 <div className="text-2xl font-serif text-gold">Tafshir Shaikh</div>
-                <div className="text-xs tracking-[0.2em] uppercase text-ivory/40 mt-1">Master Tailor & Founder</div>
+                <div className="text-xs tracking-[0.2em] uppercase text-ivory/60 mt-1">Master Tailor & Founder</div>
               </div>
               <div className="h-12 w-px bg-gold/20" />
-              <blockquote className="text-xs tracking-[0.15em] text-ivory/40 leading-relaxed border-l-2 border-gold/50 pl-4 italic">
+              <blockquote className="text-xs tracking-[0.15em] text-ivory/60 leading-relaxed border-l-2 border-gold/50 pl-4 italic">
                 &ldquo;Every garment tells<br />a story. Ours tell yours.&rdquo;
               </blockquote>
             </div>

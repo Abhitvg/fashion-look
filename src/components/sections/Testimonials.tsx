@@ -33,6 +33,7 @@ const TESTIMONIALS = [
 export default function Testimonials() {
   return (
     <section
+      id="testimonials"
       className="py-24 md:py-32 bg-atelier-soft border-y border-ivory/5"
       itemScope
       itemType="https://schema.org/LocalBusiness"

@@ -35,7 +35,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: "Fashion Look | Bespoke Tailoring in Navi Mumbai",
     description: "Precisely yours since 1998. Master tailors in Seawoods, Navi Mumbai crafting bespoke suits, sherwanis, and luxury fabric gifting.",
-    keywords: "custom tailor, bespoke suits, sherwani, gifting fabrics, raymond fabrics, navi mumbai tailor, seawoods tailor, home visit tailor, atelier price calculator, luxury gift box",
     alternates: {
       canonical: `https://www.fashion-look.in/${locale}`,
       languages: {
@@ -157,13 +156,33 @@ const getJsonLd = (locale: string) => ({
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How long does a bespoke suit take at Fashion Look?",
-          "acceptedAnswer": {"@type": "Answer", "text": "A bespoke suit typically takes 3–4 weeks from consultation to final delivery. This includes fabric selection, measurement, basted fitting, and final finishing. Rush orders may be accommodated for select garments — WhatsApp us to discuss."}
+          "name": "Where can I get a sherwani custom-stitched in Navi Mumbai?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Fashion Look Tailors in Seawoods (Sector 44) specializes in custom-stitched groom sherwanis, silk and velvet sherwanis, and royal wedding outfits. Our master tailors ensure a perfect fit with personalized measurements and high-quality fabrics."}
         },
         {
           "@type": "Question",
-          "name": "Which areas do you cover for home visits in Navi Mumbai?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Our master tailors visit homes and offices across Navi Mumbai — including Seawoods, Kharghar, Vashi, Nerul, Panvel, CBD Belapur, Airoli, and Kopar Khairane. Home visits are complimentary with no additional fee."}
+          "name": "Best bespoke tailor for a home visit in Seawoods?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Fashion Look Tailors offers complimentary home visit bespoke tailoring services in Seawoods, Kharghar, Vashi, and across Navi Mumbai. Our master tailors visit your home or office for precise measurements and fabric selection."}
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a custom suit cost in Navi Mumbai?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Our transparent pricing for bespoke formal suits starts at ₹7,500. Premium options like Tuxedos start at ₹15,000, and Sherwanis at ₹12,000. You can use our online Atelier Calculator for exact upfront pricing."}
+        },
+        {
+          "@type": "Question",
+          "name": "Which tailor does corporate fabric gifting in Mumbai?",
+          "acceptedAnswer": {"@type": "Answer", "text": "We regularly handle corporate fabric gifting and Diwali gift boxes for clients in Mumbai and Navi Mumbai. We offer luxury tie and fabric hampers, executive suiting combos, and branded bulk orders."}
+        },
+        {
+          "@type": "Question",
+          "name": "Who are the top wedding outfit tailors near Seawoods?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Established in 1998, Fashion Look Tailors in Seawoods West is a top-rated bespoke tailor for wedding outfits. We craft groom sherwanis, three-piece suits, and sangeet outfits, backed by hundreds of 5-star Google reviews."}
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a bespoke suit take at Fashion Look?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A bespoke suit typically takes 3–4 weeks from consultation to final delivery. This includes fabric selection, measurement, basted fitting, and final finishing. Rush orders may be accommodated for select garments — WhatsApp us to discuss."}
         },
         {
           "@type": "Question",
@@ -172,18 +191,8 @@ const getJsonLd = (locale: string) => ({
         },
         {
           "@type": "Question",
-          "name": "Do you do alterations on garments from other tailors?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. We accept alteration work on suits, sherwanis, and formal garments from any tailor. Bring the garment to our Seawoods atelier for a quick assessment and quotation."}
-        },
-        {
-          "@type": "Question",
           "name": "What is your re-stitching and warranty policy?",
           "acceptedAnswer": {"@type": "Answer", "text": "Every garment we stitch carries a 6-month craftsmanship warranty. If any seam, button, or finishing detail fails under normal wear, we re-stitch it free of charge. Minor alterations for fit within the first 30 days are also complimentary."}
-        },
-        {
-          "@type": "Question",
-          "name": "Can Fashion Look handle bulk orders for corporate gifting?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. We regularly fulfill bulk orders of 10–100+ garments for corporate events, Diwali gifting, and wedding parties. Bulk pricing and custom packaging (branded gift boxes) are available. WhatsApp us with your requirements."}
         }
       ]
     }
@@ -199,7 +208,7 @@ export default async function RootLayout({
 }>) {
   const { locale } = await params;
   
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as typeof routing.locales[number])) {
     notFound();
   }
 
