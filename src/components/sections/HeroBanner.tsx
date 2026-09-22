@@ -1,10 +1,27 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
+const HERO_IMAGES = [
+  '/images/hero/atelier.png',
+  '/images/hero/hero2.png',
+  '/images/hero/hero3.png',
+  '/sample.png'
+];
+
 export default function HeroBanner() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % HERO_IMAGES.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   const scrollToServices = () => {
     document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -15,16 +32,27 @@ export default function HeroBanner() {
   };
 
   return (
-    <section id="hero" className="relative h-screen min-h-[800px] flex items-center overflow-hidden">
-      {/* Background Image */}
-      <Image
-        src="/images/hero/atelier.png"
-        alt="Fashion Look Bespoke Tailoring Atelier"
-        fill
-        priority
-        className="object-cover object-center md:object-[60%_50%]"
-        sizes="100vw"
-      />
+    <section id="hero" className="relative h-screen min-h-[800px] flex items-center overflow-hidden bg-black">
+      {/* Background Image Carousel */}
+      <AnimatePresence mode="popLayout">
+        <motion.div
+          key={currentImage}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+          className="absolute inset-0 z-0"
+        >
+          <Image
+            src={HERO_IMAGES[currentImage]}
+            alt="Fashion Look Bespoke Tailoring Atelier"
+            fill
+            priority
+            className="object-cover object-center md:object-[60%_50%]"
+            sizes="100vw"
+          />
+        </motion.div>
+      </AnimatePresence>
 
       {/* Gradient Overlays */}
       {/* Dark gradient from left for text readability */}

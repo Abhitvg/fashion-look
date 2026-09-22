@@ -18,7 +18,7 @@ export default function CraftsmanshipStory() {
             className="relative h-[400px] md:h-[550px] overflow-hidden"
           >
             <Image
-              src="/images/craftsmanship/detail.jpg"
+              src="/sample.png"
               alt="Master tailor hand-stitching a buttonhole"
               fill
               className="object-cover"
