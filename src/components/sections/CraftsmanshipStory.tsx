@@ -2,8 +2,11 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export default function CraftsmanshipStory() {
+  const t = useTranslations('Craftsmanship');
+
   return (
     <section className="py-24 md:py-32 bg-atelier-soft border-y border-ivory/5">
       <div className="container mx-auto px-4 md:px-8">
@@ -18,10 +21,10 @@ export default function CraftsmanshipStory() {
             className="relative h-[400px] md:h-[550px] overflow-hidden"
           >
             <Image
-              src="/images/hero/0be6241a-e62c-4118-9cba-7c76ac3c8641.png"
+              src="/images/media_1789384487146.png"
               alt="Master tailor hand-stitching a buttonhole"
               fill
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
             <div className="absolute inset-0 border border-gold/10" />
@@ -38,27 +41,14 @@ export default function CraftsmanshipStory() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-xs tracking-[0.3em] uppercase text-gold/70 mb-4">Our Heritage</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-gold/70 mb-4">{t('sectionTop')}</p>
             <h2 className="text-3xl md:text-4xl font-serif text-ivory tracking-wider leading-tight mb-8">
-              The Art of<br />
-              <span className="text-gold">Precision Tailoring</span>
+              {t('sectionTitle')}
             </h2>
 
             <div className="space-y-5 text-ivory/60 text-sm md:text-base leading-relaxed font-light">
-              <p>
-                Since 1998, Fashion Look has been crafting garments that speak to the individual. 
-                Every suit begins with a conversation — understanding not just your measurements, 
-                but your lifestyle, your occasions, and the impression you wish to make.
-              </p>
-              <p>
-                Our master tailors bring decades of experience to every stitch. From hand-finished 
-                buttonholes to perfectly balanced lapels, we honour the traditions of Indian tailoring 
-                while embracing modern silhouettes and international fabrics.
-              </p>
-              <p>
-                At our atelier in Seawoods, Navi Mumbai, we serve corporate 
-                leaders, grooms, and style connoisseurs who demand nothing less than perfection.
-              </p>
+              <p>{t('paragraph1')}</p>
+              <p>{t('paragraph2')}</p>
             </div>
 
             <div className="mt-10 flex items-center gap-8">

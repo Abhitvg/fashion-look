@@ -1,108 +1,105 @@
 'use client';
 
+import { useRef } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
-const SERVICES = [
+const services = [
   {
-    title: 'Two-Piece Formal Suit',
-    desc: 'Impeccably tailored from premium wool and linen. Slim, regular, or relaxed fit — measured to your exact silhouette.',
-    price: '₹7,500',
-    image: '/images/services/formal-suit.jpg',
+    id: "formalSuit",
+    image: "/images/services/formal_suit_premium_1790074047608.jpg",
+    key: "formalSuit"
   },
   {
-    title: 'Royal Groom Sherwani',
-    desc: 'Exquisite hand-embroidered wedding sherwanis in silk, velvet, and brocade. The centrepiece of your celebration.',
-    price: '₹15,000',
-    image: '/images/services/sherwani.jpg',
+    id: "sherwani",
+    image: "/images/services/sherwani_premium_1790074071073.jpg",
+    key: "sherwani"
   },
   {
-    title: 'Premium Tuxedo',
-    desc: 'Black-tie perfection with satin peak lapels and hand-finished details. For galas, receptions, and landmark evenings.',
-    price: '₹12,000',
-    image: '/images/services/tuxedo.jpg',
+    id: "tuxedo",
+    image: "/images/services/tuxedo_premium_1790074100036.jpg",
+    key: "tuxedo"
   },
   {
-    title: 'Classic Pathani',
-    desc: 'Timeless Pathani suits in cotton and linen blends. Effortless elegance for festivals, prayers, and everyday refinement.',
-    price: '₹3,500',
-    image: '/images/a5fbb613-a22d-4846-a218-8ccdc2a9b414.jpeg',
+    id: "pathani",
+    image: "/images/services/pathani_premium_1790074118250.jpg",
+    key: "pathani"
   },
   {
-    title: 'Executive Safari Suit',
-    desc: 'The power suit of Indian professionals. Structured shoulders, smart pockets, and a commanding presence in the boardroom.',
-    price: '₹4,500',
-    image: '/images/aed867a5-6b8f-471b-9941-5fa012644011.png',
+    id: "safari",
+    image: "/images/services/safari_premium_1790074235825.jpg",
+    key: "safari"
   },
   {
-    title: 'Luxury Fabric Gifting',
-    desc: 'Curated gift boxes of premium fabrics, silk ties, and accessories. The perfect corporate or festive gift.',
-    price: '₹2,500',
-    image: '/images/de4f8d60-f107-4981-814c-182d29dca53f.png',
-  },
+    id: "gifting",
+    image: "/images/services/gifting_premium_1790074250010.jpg",
+    key: "gifting"
+  }
 ];
 
 export default function ServicesGrid() {
-  const handleWhatsApp = (service: string) => {
-    const text = `Hello Fashion Look! I'm interested in your ${service} service. Could you tell me more?`;
-    window.open(`https://wa.me/918108014945?text=${encodeURIComponent(text)}`, '_blank');
-  };
+  const t = useTranslations('Services');
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   return (
-    <section id="services" className="py-24 md:py-32 bg-background">
+    <section id="services" className="py-24 md:py-32 bg-[#0A0A0A] text-ivory relative" ref={sectionRef}>
       <div className="container mx-auto px-4 md:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16 md:mb-20"
+          className="text-center mb-20"
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-gold/70 mb-4">What We Craft</p>
-          <h2 className="text-3xl md:text-4xl font-serif text-ivory tracking-wider uppercase">
-            Bespoke Services
-          </h2>
-          <div className="h-px w-16 bg-gold/40 mx-auto mt-6" />
+          <p className="text-xs tracking-[0.3em] text-gold uppercase mb-4">{t('sectionTop')}</p>
+          <h2 className="text-4xl md:text-5xl font-serif tracking-wider uppercase">{t('sectionTitle')}</h2>
+          <div className="w-16 h-px bg-gold/50 mx-auto mt-8" />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {SERVICES.map((service, i) => (
+          {services.map((service, i) => (
             <motion.div
-              key={service.title}
+              key={service.key}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.6 }}
-              className="group relative bg-atelier-soft border border-ivory/5 overflow-hidden hover:border-gold/30 transition-all duration-500"
+              className="flex flex-col h-full bg-[#111] border border-white/5 group hover:border-gold/30 transition-colors duration-500"
             >
-              {/* Image */}
-              <div className="relative h-72 md:h-80 overflow-hidden">
+              <div className="relative h-[400px] w-full overflow-hidden">
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
                 <Image
                   src={service.image}
-                  alt={service.title}
+                  alt={t(`items.${service.key}.title`)}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                
-                {/* Price Badge */}
-                <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-sm border border-gold/30 px-3 py-1">
-                  <span className="text-xs tracking-widest text-gold font-medium">From {service.price}</span>
-                </div>
               </div>
-
-              {/* Content */}
-              <div className="p-6 md:p-8">
-                <h3 className="text-xl font-serif text-ivory mb-3 tracking-wide">{service.title}</h3>
-                <p className="text-sm text-ivory/50 leading-relaxed mb-6 font-light">{service.desc}</p>
-                <button
-                  onClick={() => handleWhatsApp(service.title)}
-                  className="text-xs tracking-[0.2em] uppercase text-gold hover:text-gold-light transition-colors group/btn flex items-center gap-2"
-                >
-                  <span>Enquire Now</span>
-                  <span className="inline-block transition-transform group-hover/btn:translate-x-1">→</span>
-                </button>
+              
+              <div className="p-8 flex flex-col flex-grow">
+                <h3 className="text-2xl font-serif mb-4 uppercase tracking-wide group-hover:text-gold transition-colors duration-300">
+                  {t(`items.${service.key}.title`)}
+                </h3>
+                <p className="text-sm text-ivory/60 leading-relaxed mb-8 flex-grow font-light">
+                  {t(`items.${service.key}.desc`)}
+                </p>
+                
+                <div className="flex items-center justify-between mt-auto pt-6 border-t border-white/10">
+                  <div>
+                    <p className="text-[10px] text-ivory/40 uppercase tracking-widest mb-1">{t('fromPrice')}</p>
+                    <p className="text-lg text-gold">{t(`items.${service.key}.price`)}</p>
+                  </div>
+                  
+                  <a 
+                    href={`https://wa.me/917738876404?text=Hi, I would like to enquire about your ${t(`items.${service.key}.title`)} service.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs uppercase tracking-widest text-ivory hover:text-gold transition-colors flex items-center gap-2"
+                  >
+                    {t('enquireNow')} <span className="text-gold">→</span>
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}

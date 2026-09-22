@@ -4,14 +4,18 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 const HERO_IMAGES = [
+  '/images/sample.png',
   '/images/315459c7-065c-49a3-80df-0720b4bc4dca.png',
   '/images/eb41bc96-7c2a-4141-a7b9-d3d00fcc5996.png',
+  '/images/hero/atelier.png',
   '/images/f0080e14-c5f1-48e2-9b2f-05da4d5694df.png'
 ];
 
 export default function HeroBanner() {
+  const t = useTranslations('Hero');
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -70,24 +74,23 @@ export default function HeroBanner() {
           className="max-w-xl pt-20"
         >
           <p className="text-xs md:text-sm tracking-[0.4em] uppercase text-gold mb-6 font-sans">
-            Established 1998 · Navi Mumbai
+            {t('established')}
           </p>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-ivory uppercase tracking-widest leading-[1.1] mb-2 flex flex-col">
-            <span>Fashion</span>
-            <span className="text-gold">Look</span>
+            <span>{t('title1')}</span>
+            <span className="text-gold">{t('title2')}</span>
           </h1>
           
           <div className="h-px w-24 bg-gold/60 my-8" />
           
           <p className="text-base md:text-xl text-ivory tracking-[0.3em] uppercase font-light mb-6">
-            Bespoke Menswear
+            {t('subtitle')}
           </p>
           
-          <p className="text-sm md:text-base text-ivory/70 tracking-wider max-w-md mb-12 font-light leading-relaxed normal-case">
-            Premium bespoke tailoring for the modern Indian gentleman.<br />
-            Suits, sherwanis, and luxury fabric gifting —<br />
-            crafted with precision, fitted to perfection.
-          </p>
+          <p 
+            className="text-sm md:text-base text-ivory/70 tracking-wider max-w-md mb-12 font-light leading-relaxed normal-case"
+            dangerouslySetInnerHTML={{ __html: t('description') }}
+          />
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -99,13 +102,13 @@ export default function HeroBanner() {
               onClick={handleWhatsApp}
               className="px-8 py-4 bg-gold text-black font-semibold text-xs tracking-widest uppercase hover:bg-gold-light transition-all duration-300 flex items-center gap-2"
             >
-              Book Appointment <span>→</span>
+              {t('bookAppointment')} <span>→</span>
             </button>
             <button
               onClick={scrollToServices}
               className="px-8 py-4 border border-ivory/30 text-ivory font-light text-xs tracking-widest uppercase hover:border-gold hover:text-gold transition-all duration-300"
             >
-              Explore Services
+              {t('exploreServices')}
             </button>
           </motion.div>
         </motion.div>
@@ -124,7 +127,7 @@ export default function HeroBanner() {
         >
           <div className="text-ivory">
             <h3 className="text-sm tracking-[0.3em] font-serif uppercase leading-[2]">
-              Tradition<br />Meets<br />Modern<br />Style
+              {t('rightFloatingTitle1')}<br />{t('rightFloatingTitle2')}<br />{t('rightFloatingTitle3')}<br />{t('rightFloatingTitle4')}
             </h3>
           </div>
           
@@ -132,7 +135,7 @@ export default function HeroBanner() {
           
           <div className="text-ivory/60">
             <p className="text-[10px] tracking-[0.2em] uppercase leading-[2]">
-              Custom Fit<br />Timeless<br />Elegance
+              {t('rightFloatingDesc1')}<br />{t('rightFloatingDesc2')}<br />{t('rightFloatingDesc3')}
             </p>
           </div>
         </motion.div>

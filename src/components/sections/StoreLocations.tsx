@@ -1,102 +1,111 @@
 'use client';
 
+import { useRef } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { MapPin, Phone, Clock, MessageCircle } from 'lucide-react';
-
-const STORES = [
-  {
-    name: 'Seawoods Atelier',
-    address: 'Shop No. 5, Fashion Look, Plot No. 144, Seawoods West, Sector 44, Seawoods, Navi Mumbai, Maharashtra 400706',
-    phone: '+91 8108014945',
-    hours: 'Mon–Sat: 10:00 AM – 9:00 PM · Sun: 11:00 AM – 7:00 PM',
-    whatsapp: '918108014945',
-    mapUrl: 'https://maps.app.goo.gl/scL6gQtQSfXqwwfy5?g_st=ia',
-  }
-];
+import { motion, useInView } from 'framer-motion';
+import { MapPin, Phone, Clock, Navigation } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function StoreLocations() {
+  const t = useTranslations('Stores');
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+
+  const stores = [
+    {
+      key: 'seawoods',
+      image: "/images/media_1789384474296.png",
+      phone: "+91 7738876404",
+      mapsLink: "https://maps.app.goo.gl/wY4L4UaD1Zf9Fh3N6"
+    }
+  ];
+
   return (
-    <section id="locations" className="py-24 md:py-32 bg-background">
+    <section id="locations" className="py-24 md:py-32 bg-[#0A0A0A] text-ivory relative" ref={sectionRef}>
       <div className="container mx-auto px-4 md:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16 md:mb-20"
+          className="text-center mb-16 md:mb-24"
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-gold/70 mb-4">Visit Us</p>
-          <h2 className="text-3xl md:text-4xl font-serif text-ivory tracking-wider uppercase">
-            Our Stores
-          </h2>
-          <div className="h-px w-16 bg-gold/40 mx-auto mt-6" />
+          <p className="text-xs tracking-[0.3em] text-gold uppercase mb-4">{t('sectionTop')}</p>
+          <h2 className="text-4xl md:text-5xl font-serif tracking-wider uppercase">{t('sectionTitle')}</h2>
+          <div className="w-16 h-px bg-gold/50 mx-auto mt-8" />
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-          {STORES.map((store, i) => (
+        <div className="max-w-6xl mx-auto">
+          {stores.map((store, i) => (
             <motion.div
-              key={store.name}
+              key={store.key}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.2, duration: 0.6 }}
-              className="border border-ivory/5 bg-atelier-soft overflow-hidden hover:border-gold/20 transition-all duration-500"
+              className="border border-ivory/5 bg-atelier-soft overflow-hidden hover:border-gold/20 transition-all duration-500 grid grid-cols-1 md:grid-cols-2"
             >
-              {/* Map */}
-              <div className="h-52 md:h-64 w-full bg-atelier-dark relative">
-                <iframe
-                  src={store.mapUrl}
-                  className="absolute inset-0 w-full h-full border-0 opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title={`Map for ${store.name}`}
+              {/* Store Image */}
+              <div className="h-64 md:h-full w-full bg-atelier-dark relative overflow-hidden group min-h-[300px]">
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
+                <Image
+                  src={store.image}
+                  alt={t(`items.${store.key}.name`)}
+                  fill
+                  className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>
 
-              {/* Details */}
-              <div className="p-8 md:p-10 space-y-5">
-                <h3 className="text-xl md:text-2xl font-serif text-gold tracking-wide">{store.name}</h3>
+              {/* Content Side */}
+              <div className="w-full p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+                <h3 className="text-3xl font-serif mb-8 text-gold uppercase tracking-wide">
+                  {t(`items.${store.key}.name`)}
+                </h3>
 
-                <div className="space-y-3 text-sm text-ivory/60">
-                  <div className="flex items-start gap-3">
-                    <MapPin size={16} className="text-gold/60 mt-0.5 shrink-0" />
-                    <span>{store.address}</span>
+                <div className="space-y-6 flex-grow">
+                  <div className="flex items-start gap-4 text-ivory/70">
+                    <MapPin className="w-5 h-5 text-gold mt-1 flex-shrink-0" />
+                    <p className="text-sm font-light leading-relaxed">
+                      {t(`items.${store.key}.address`)}
+                    </p>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Phone size={16} className="text-gold/60 shrink-0" />
-                    <a href={`tel:${store.phone.replace(/\s/g, '')}`} className="hover:text-gold transition-colors">{store.phone}</a>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Clock size={16} className="text-gold/60 mt-0.5 shrink-0" />
-                    <span>{store.hours}</span>
+
+                  <div className="flex items-start gap-4 text-ivory/70">
+                    <Clock className="w-5 h-5 text-gold mt-1 flex-shrink-0" />
+                    <p className="text-sm font-light">
+                      {t(`items.${store.key}.hours`)}
+                    </p>
                   </div>
                 </div>
 
-                <div className="flex gap-3 pt-4">
+                <div className="mt-12 flex flex-col sm:flex-row gap-4">
                   <a
-                    href={`https://wa.me/${store.whatsapp}?text=${encodeURIComponent('Hello Fashion Look! I would like to book an appointment.')}`}
+                    href={store.mapsLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 py-3 bg-gold text-black text-sm font-semibold tracking-widest uppercase hover:bg-gold-light transition-colors"
+                    className="px-6 py-3 border border-white/20 text-xs tracking-[0.2em] uppercase hover:border-gold hover:text-gold transition-colors flex items-center justify-center gap-2"
                   >
-                    <MessageCircle size={16} />
-                    WhatsApp
+                    <Navigation className="w-4 h-4" />
+                    Direction
                   </a>
                   <a
-                    href={`tel:${store.phone.replace(/\s/g, '')}`}
-                    className="flex-1 flex items-center justify-center gap-2 py-3 border border-ivory/20 text-ivory text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+                    href={`tel:${store.phone.replace(/[^0-9+]/g, '')}`}
+                    className="px-6 py-3 bg-gold text-black text-xs tracking-[0.2em] font-medium uppercase hover:bg-gold-light transition-colors flex items-center justify-center gap-2"
                   >
-                    <Phone size={16} />
-                    Call
+                    <Phone className="w-4 h-4" />
+                    {t('callButton')}
+                  </a>
+                  <a
+                    href={`https://wa.me/${store.phone.replace(/[^0-9]/g, '')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 border border-white/20 text-xs tracking-[0.2em] uppercase hover:border-gold hover:text-gold transition-colors flex items-center justify-center gap-2"
+                  >
+                    {t('whatsappButton')}
                   </a>
                 </div>
               </div>
             </motion.div>
           ))}
-          
-          {/* Storefront Image */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

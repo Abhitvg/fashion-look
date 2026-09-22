@@ -10,6 +10,91 @@
     "locations": "Our Stores",
     "bookHomeVisit": "Book Home Visit"
   },
+  "Hero": {
+    "established": "Established 1998 · Navi Mumbai",
+    "title1": "Fashion",
+    "title2": "Look",
+    "subtitle": "Bespoke Menswear",
+    "description": "Premium bespoke tailoring for the modern Indian gentleman.<br />Suits, sherwanis, and luxury fabric gifting —<br />crafted with precision, fitted to perfection.",
+    "bookAppointment": "Book Appointment",
+    "exploreServices": "Explore Services",
+    "rightFloatingTitle1": "Tradition",
+    "rightFloatingTitle2": "Meets",
+    "rightFloatingTitle3": "Modern",
+    "rightFloatingTitle4": "Style",
+    "rightFloatingDesc1": "Custom Fit",
+    "rightFloatingDesc2": "Timeless",
+    "rightFloatingDesc3": "Elegance"
+  },
+  "Services": {
+    "sectionTop": "What We Craft",
+    "sectionTitle": "Bespoke Services",
+    "fromPrice": "From",
+    "enquireNow": "Enquire Now",
+    "items": {
+      "formalSuit": {
+        "title": "Two-Piece Formal Suit",
+        "desc": "Impeccably tailored from premium wool and linen. Slim, regular, or relaxed fit — measured to your exact silhouette.",
+        "price": "₹7,500"
+      },
+      "sherwani": {
+        "title": "Royal Groom Sherwani",
+        "desc": "Exquisite hand-embroidered wedding sherwanis in silk, velvet, and brocade. The centrepiece of your celebration.",
+        "price": "₹15,000"
+      },
+      "tuxedo": {
+        "title": "Premium Tuxedo",
+        "desc": "Black-tie perfection with satin peak lapels and hand-finished details. For galas, receptions, and landmark evenings.",
+        "price": "₹12,000"
+      },
+      "pathani": {
+        "title": "Classic Pathani",
+        "desc": "Timeless Pathani suits in cotton and linen blends. Effortless elegance for festivals, prayers, and everyday refinement.",
+        "price": "₹3,500"
+      },
+      "safari": {
+        "title": "Executive Safari Suit",
+        "desc": "The power suit of Indian professionals. Structured shoulders, smart pockets, and a commanding presence in the boardroom.",
+        "price": "₹4,500"
+      },
+      "gifting": {
+        "title": "Luxury Fabric Gifting",
+        "desc": "Curated gift boxes of premium fabrics, silk ties, and accessories. The perfect corporate or festive gift.",
+        "price": "₹2,500"
+      }
+    }
+  },
+  "Gallery": {
+    "sectionTop": "The Atelier Vibe",
+    "sectionTitle": "Inspiration Gallery",
+    "items": {
+      "item1": "Master Tailor Consultation",
+      "item2": "Premium Fabric Selection",
+      "item3": "Precision Stitching",
+      "item4": "Tailoring Details",
+      "item5": "Bespoke Suit Fitting"
+    }
+  },
+  "Craftsmanship": {
+    "sectionTop": "Our Heritage",
+    "sectionTitle": "The Art of Tailoring",
+    "paragraph1": "Since 1998, Fashion Look has been the destination for gentlemen who understand that a suit is more than just clothing — it is a statement of intent.",
+    "paragraph2": "Every garment that leaves our atelier is the result of hours of meticulous hand-stitching, canvassing, and finishing. We source our fabrics from the finest mills across the globe, ensuring that your bespoke piece not only looks extraordinary but stands the test of time.",
+    "cta": "Discover Our Fabrics"
+  },
+  "Stores": {
+    "sectionTop": "Visit Us",
+    "sectionTitle": "Our Stores",
+    "whatsappButton": "WhatsApp",
+    "callButton": "Call",
+    "items": {
+      "seawoods": {
+        "name": "Seawoods Atelier",
+        "address": "Shop No. 5, Fashion Look, Plot No. 144, Seawoods West, Sector 44, Seawoods, Navi Mumbai, Maharashtra 400706",
+        "hours": "Mon–Sat: 10:00 AM – 9:00 PM · Sun: 11:00 AM – 7:00 PM"
+      }
+    }
+  },
   "Footer": {
     "subtitle": "Cloth & Stitching",
     "description": "Premium bespoke tailoring and luxury fabric gifting, crafted with precision in Navi Mumbai.",
