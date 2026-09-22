@@ -7,7 +7,7 @@
     "services": "Bespoke",
     "calculator": "Atelier Calculator",
     "gifts": "Luxury Gifting",
-    "locations": "Our Stores",
+    "locations": "Our Atelier",
     "bookHomeVisit": "Book Home Visit"
   },
   "Hero": {
@@ -84,7 +84,7 @@
   },
   "Stores": {
     "sectionTop": "Visit Us",
-    "sectionTitle": "Our Stores",
+    "sectionTitle": "Our Atelier",
     "whatsappButton": "WhatsApp",
     "callButton": "Call",
     "items": {

@@ -29,12 +29,12 @@ const notoNastaliqUrdu = Noto_Nastaliq_Urdu({
 });
 
 export const metadata: Metadata = {
-  title: "Fashion Look | Premium Tailors & Gifting Fabrics in Navi Mumbai",
-  description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods. Book a master tailor home visit or visit our atelier.",
-  keywords: "custom tailor, bespoke suits, sherwani, gifting fabrics, raymond fabrics, navi mumbai tailor, seawoods tailor, home visit tailor",
+  title: "Fashion Look | Bespoke Tailors, Atelier Calculator & Luxury Gifting – Navi Mumbai",
+  description: "Mumbai's premier bespoke tailoring atelier since 1998. Get an instant price estimate with our Atelier Calculator, commission hand-crafted suits & sherwanis, or curate a luxury fabric gift box. Home visits available across Navi Mumbai.",
+  keywords: "custom tailor, bespoke suits, sherwani, gifting fabrics, raymond fabrics, navi mumbai tailor, seawoods tailor, home visit tailor, atelier price calculator, luxury gift box",
   openGraph: {
-    title: "Fashion Look | Premium Tailors & Gifting Fabrics",
-    description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods. Book a master tailor home visit or visit our atelier.",
+    title: "Fashion Look | Bespoke Tailors & Luxury Gifting – Navi Mumbai",
+    description: "Mumbai's premier bespoke tailoring atelier since 1998. Instant price calculator, custom suits & sherwanis, luxury fabric gifts. Home visits available.",
     type: "website",
     locale: "en_IN",
     url: "https://www.fashion-look.in",
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fashion Look | Premium Tailors & Gifting Fabrics",
-    description: "Bespoke suits, sherwanis, and luxury fabric gifting in Seawoods.",
+    title: "Fashion Look | Bespoke Tailors & Luxury Gifting – Navi Mumbai",
+    description: "Bespoke suits, sherwanis & luxury fabric gifting since 1998. Instant price calculator. Home visits available across Navi Mumbai.",
   }
 };
 

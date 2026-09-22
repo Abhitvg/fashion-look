@@ -15,7 +15,7 @@ export default function StoreLocations() {
     {
       key: 'seawoods',
       image: "/images/storeimage.png",
-      phone: "+91 7738876404",
+      phone: "+91 8108014945",
       mapsLink: "https://maps.app.goo.gl/wY4L4UaD1Zf9Fh3N6"
     }
   ];
@@ -106,21 +106,6 @@ export default function StoreLocations() {
               </div>
             </motion.div>
           ))}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="border border-ivory/5 bg-atelier-soft overflow-hidden hidden lg:block relative h-full min-h-[400px]"
-          >
-            <Image
-              src="/images/storeimage.png"
-              alt="Fashion Look Storefront"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </motion.div>
         </div>
       </div>
     </section>

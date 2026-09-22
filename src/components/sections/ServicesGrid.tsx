@@ -88,11 +88,12 @@ export default function ServicesGrid() {
                 <div className="flex items-center justify-between mt-auto pt-6 border-t border-white/10">
                   <div>
                     <p className="text-[10px] text-ivory/40 uppercase tracking-widest mb-1">{t('fromPrice')}</p>
-                    <p className="text-lg text-gold">{t(`items.${service.key}.price`)}</p>
+                    <p className="text-lg text-gold">{t(`items.${service.key}.price`)} <span className="text-[10px] text-ivory/30 align-top">*</span></p>
+                    <p className="text-[9px] text-ivory/25 mt-1 font-light tracking-wide">*Final price after measurement</p>
                   </div>
                   
                   <a 
-                    href={`https://wa.me/917738876404?text=Hi, I would like to enquire about your ${t(`items.${service.key}.title`)} service.`}
+                    href={`https://wa.me/918108014945?text=Hi, I would like to enquire about your ${t(`items.${service.key}.title`)} service.`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-xs uppercase tracking-widest text-ivory hover:text-gold transition-colors flex items-center gap-2"

@@ -7,7 +7,7 @@
     "services": "बिस्पोक",
     "calculator": "अटेलियर कॅल्क्युलेटर",
     "gifts": "लक्झरी गिफ्टिंग",
-    "locations": "आमची दुकाने",
+    "locations": "आमचा अटेलियर",
     "bookHomeVisit": "होम व्हिजिट बुक करा"
   },
   "Hero": {
@@ -84,7 +84,7 @@
   },
   "Stores": {
     "sectionTop": "आम्हाला भेट द्या",
-    "sectionTitle": "आमची दुकाने",
+    "sectionTitle": "आमचा अटेलियर",
     "whatsappButton": "व्हॉट्सअॅप",
     "callButton": "कॉल करा",
     "items": {

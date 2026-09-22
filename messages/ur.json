@@ -7,7 +7,7 @@
     "services": "بیسپوک",
     "calculator": "اٹلیئر کیلکولیٹر",
     "gifts": "لگژری گفٹنگ",
-    "locations": "ہمارے اسٹورز",
+    "locations": "ہمارا اٹیلیئر",
     "bookHomeVisit": "ہوم وزٹ بک کریں"
   },
   "Hero": {
@@ -84,7 +84,7 @@
   },
   "Stores": {
     "sectionTop": "ہم سے ملیں",
-    "sectionTitle": "ہمارے اسٹورز",
+    "sectionTitle": "ہمارا اٹیلیئر",
     "whatsappButton": "واٹس ایپ",
     "callButton": "کال کریں",
     "items": {

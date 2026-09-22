@@ -5,8 +5,9 @@ import { useRef, useEffect, useState } from 'react';
 
 function AnimatedCounter({ end, suffix = '', duration = 2 }: { end: number; suffix?: string; duration?: number }) {
   const [count, setCount] = useState(0);
-  const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true });
+  // ref must be on a block element (div) — span as a text node is invisible to IntersectionObserver
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: '0px 0px -50px 0px' });
 
   useEffect(() => {
     if (!isInView) return;
@@ -24,13 +25,13 @@ function AnimatedCounter({ end, suffix = '', duration = 2 }: { end: number; suff
     return () => clearInterval(timer);
   }, [isInView, end, duration]);
 
-  return <span ref={ref}>{count.toLocaleString('en-IN')}{suffix}</span>;
+  return <div ref={ref} className="inline">{count.toLocaleString('en-IN')}{suffix}</div>;
 }
 
 const STATS = [
   { value: 25, suffix: '+', label: 'Years of Heritage' },
   { value: 50000, suffix: '+', label: 'Garments Crafted' },
-  { value: 2, suffix: '', label: 'Stores in Navi Mumbai' },
+  { value: 1, suffix: '', label: 'Atelier in Navi Mumbai' },
   { value: 100, suffix: '%', label: 'Bespoke & Custom' },
 ];
 
