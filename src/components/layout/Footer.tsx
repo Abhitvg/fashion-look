@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { MapPin, Phone, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, Instagram } from 'lucide-react';
 import { openWhatsApp } from '@/lib/analytics';
 import { Link } from '@/i18n/routing';
 import { serviceLocations } from '@/lib/locations';
@@ -72,6 +72,16 @@ export default function Footer() {
               <MessageCircle size={14} aria-hidden="true" />
               <span>WhatsApp</span>
             </button>
+            <a
+              href="https://www.instagram.com/fashionlook_79?stkn=N3Jpc3E3a2pvdDdx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm text-[#E1306C] hover:text-[#E1306C]/80 transition-colors w-fit mt-2"
+              aria-label="Follow us on Instagram"
+            >
+              <Instagram size={14} aria-hidden="true" />
+              <span>Instagram</span>
+            </a>
           </div>
 
         </div>
