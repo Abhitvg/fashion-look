@@ -1,9 +1,7 @@
 import { notFound } from 'next/navigation';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
-import ScrollReveal from '@/components/layout/ScrollReveal';
 import { getPostBySlug, getJournalPosts } from '@/lib/journal';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import Image from 'next/image';
 
 export const revalidate = 3600; // Revalidate every hour
 
@@ -84,93 +82,68 @@ export default async function JournalArticlePage({
       }
     }
   };
-  
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": `https://www.fashion-look.in/${locale}`
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Journal",
-        "item": `https://www.fashion-look.in/${locale}/journal`
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": post.title,
-        "item": `https://www.fashion-look.in/${locale}/journal/${slug}`
-      }
-    ]
-  };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <main className="min-h-screen bg-atelier pt-32 pb-24">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <Header />
       
-      <main className="flex-grow pt-24 pb-16 bg-white dark:bg-zinc-950">
-        <article className="container mx-auto px-4 md:px-8 max-w-3xl">
-          <ScrollReveal>
-            <Link 
-              href={`/${locale}/journal`}
-              className="text-amber-600 dark:text-amber-500 hover:underline mb-8 inline-block font-medium"
-            >
-              ← Back to Journal
-            </Link>
-            
-            <div className="mb-8">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-zinc-900 dark:text-zinc-50 leading-tight">
-                {post.title}
-              </h1>
-              
-              <div className="flex flex-wrap items-center text-zinc-500 dark:text-zinc-400 gap-4 text-sm font-medium border-b border-zinc-200 dark:border-zinc-800 pb-8">
-                <span>By {post.author}</span>
-                <span>•</span>
-                <span>{post.date}</span>
-                <span>•</span>
-                <span>{post.readTime}</span>
-              </div>
-            </div>
-          </ScrollReveal>
-          
-          <ScrollReveal delay={0.1}>
-            <div className="aspect-[16/9] w-full mb-12 rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 shadow-sm">
-              <img 
-                src={post.image} 
-                alt={post.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </ScrollReveal>
-          
-          <ScrollReveal delay={0.2}>
-            <div 
-              className="prose prose-lg dark:prose-invert prose-amber max-w-none 
-                         prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
-                         prose-p:text-zinc-600 dark:prose-p:text-zinc-300 prose-p:leading-relaxed prose-p:mb-6
-                         prose-a:text-amber-600 dark:prose-a:text-amber-500 hover:prose-a:text-amber-700
-                         prose-strong:text-zinc-900 dark:prose-strong:text-zinc-50"
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
-          </ScrollReveal>
-        </article>
-      </main>
-      
-      <Footer />
-    </div>
+      {/* Editorial Header */}
+      <div className="container mx-auto px-4 md:px-8 max-w-4xl text-center mb-16">
+        <Link 
+          href={`/journal`}
+          className="text-gold hover:text-gold-light transition-colors mb-12 inline-block font-semibold tracking-widest uppercase text-xs"
+        >
+          &larr; Return to Journal
+        </Link>
+        
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif text-ivory mb-8 leading-[1.1]">
+          {post.title}
+        </h1>
+        
+        <div className="flex items-center justify-center gap-4 text-xs tracking-widest uppercase text-ivory/50">
+          <span>{post.author}</span>
+          <span className="w-1 h-1 rounded-full bg-gold/50"></span>
+          <span>{post.date}</span>
+          <span className="w-1 h-1 rounded-full bg-gold/50"></span>
+          <span>{post.readTime}</span>
+        </div>
+      </div>
+
+      {/* Hero Image */}
+      <div className="container mx-auto px-4 md:px-8 max-w-6xl mb-24">
+        <div className="relative aspect-[21/9] w-full border border-ivory/10">
+          <Image 
+            src={post.image} 
+            alt={post.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      </div>
+
+      {/* Editorial Content */}
+      <article className="container mx-auto px-4 md:px-8 max-w-3xl">
+        <div 
+          className="prose prose-lg dark:prose-invert prose-atelier max-w-none 
+            prose-headings:font-serif prose-headings:font-normal prose-headings:text-ivory
+            prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8
+            prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6
+            prose-p:text-ivory/70 prose-p:font-light prose-p:leading-relaxed prose-p:mb-8
+            prose-a:text-gold hover:prose-a:text-gold-light prose-a:transition-colors
+            prose-strong:text-ivory prose-strong:font-normal
+            prose-blockquote:border-l-gold prose-blockquote:bg-ivory/5 prose-blockquote:p-6 prose-blockquote:text-ivory/90 prose-blockquote:font-serif prose-blockquote:italic
+            first-letter:float-left first-letter:text-7xl first-letter:pr-4 first-letter:font-serif first-letter:text-gold first-letter:leading-[0.8] first-line:uppercase first-line:tracking-widest"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
+        
+        <div className="mt-24 pt-12 border-t border-ivory/10 text-center">
+          <p className="text-ivory/40 italic font-serif text-xl">Fashion Look Tailors</p>
+        </div>
+      </article>
+    </main>
   );
 }

@@ -1,73 +1,110 @@
-export interface CoatStyle {
+export type StyleCategory = 'suits' | 'shirts' | 'details' | 'outerwear';
+
+export interface StyleItem {
+  id: string;
+  category: StyleCategory;
   title: string;
   description: string;
   image: string;
 }
 
-export const styleGuideCoats: CoatStyle[] = [
+export const styleGuideData: StyleItem[] = [
+  // SUITS
   {
-    title: "Coat",
-    description: "Coats are the oldest form of formal wear. They can be closed with buttons, zippers or hooks and loop fasteners. Other coat features may include collars and shoulder straps. They are worn in the winter months and in the fall months to keep warm.",
-    image: "https://www.fitcoat.com/wp-content/uploads/1/Coat.jpg"
+    id: "suit-2-piece",
+    category: "suits",
+    title: "The Two-Piece Suit",
+    description: "The quintessential foundation of any gentleman's wardrobe. Comprising a jacket and trousers cut from the same cloth, the two-piece suit offers versatility ranging from business professional to evening elegance.",
+    image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=800&auto=format&fit=crop"
   },
   {
-    title: "Blazer",
-    description: "The blazer resembles a jacket of the suit, but it is worn more casually and in severe casual situations. It differs from a sport jacket in more formal clothes and can be made of dense woven fabrics, and not of large splashes of different colors. Blazers also make statements on the person who is wearing it. This gives out an impact that can be positive or negative. The design and style of a particular blazer may reflect the characteristics of the person wearing it. Blazers can be worn with any type of clothing. You can wear it with a shirt and tie or even without a tie. Blazers look chic and smart with jeans or trousers.",
-    image: "https://www.fitcoat.com/wp-content/uploads/1/Blazer-for-Men-1.jpg"
+    id: "suit-3-piece",
+    category: "suits",
+    title: "The Three-Piece Suit",
+    description: "Adding a matching waistcoat elevates the formality and adds a layer of depth and sophistication. The three-piece suit is a sartorial statement that commands respect and attention.",
+    image: "https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?q=80&w=800&auto=format&fit=crop"
   },
   {
-    title: "Tuxedo",
-    description: "Tuxedo is a popular costume worn on formal occasions such as formal dinners, ballroom or dance parties, special social events, weddings, engagements, dinners, etc. They come in several designs, patterns and styles. When the occasion calls for it, rest assured that can be no classy or sophisticated formal attire for a man than a tuxedo.",
-    image: "https://www.fitcoat.com/wp-content/uploads/1/Tuxedo.jpg"
+    id: "suit-tuxedo",
+    category: "suits",
+    title: "The Tuxedo (Dinner Suit)",
+    description: "Reserved for the most formal of occasions. Distinguished by satin or grosgrain facings on the lapels and buttons, the bespoke tuxedo is the pinnacle of evening elegance.",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop"
+  },
+
+  // SHIRTS
+  {
+    id: "shirt-dress",
+    category: "shirts",
+    title: "The Dress Shirt",
+    description: "The canvas upon which the rest of your outfit is built. A bespoke dress shirt perfectly contours the body, eliminating billowing while maintaining complete freedom of movement.",
+    image: "https://images.unsplash.com/photo-1620012253295-c1590e048f46?q=80&w=800&auto=format&fit=crop"
   },
   {
+    id: "shirt-casual",
+    category: "shirts",
+    title: "The Casual Shirt",
+    description: "Tailored with softer collars and relaxed fabrics like linen or Oxford cloth. The bespoke casual shirt bridges the gap between weekend comfort and tailored precision.",
+    image: "https://images.unsplash.com/photo-1603252109303-2751441dd157?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    id: "shirt-tuxedo",
+    category: "shirts",
+    title: "The Tuxedo Shirt",
+    description: "Designed specifically for black tie. Featuring a pleated or piqué bib, stud front closures, and French cuffs to accommodate your finest cufflinks.",
+    image: "https://images.unsplash.com/photo-1598808503746-f34c53b9323e?q=80&w=800&auto=format&fit=crop"
+  },
+
+  // DETAILS
+  {
+    id: "detail-notch-lapel",
+    category: "details",
+    title: "Notch Lapel",
+    description: "The standard on single-breasted suits and blazers. The notch lapel is versatile, understated, and appropriate for virtually any business or casual setting.",
+    image: "https://images.unsplash.com/photo-1593032465175-481ac7f401a0?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    id: "detail-peak-lapel",
+    category: "details",
+    title: "Peak Lapel",
+    description: "Characterized by edges pointing upwards towards the shoulders. The peak lapel is more formal and assertive, traditionally found on double-breasted jackets and formalwear.",
+    image: "https://images.unsplash.com/photo-1588667504369-0099eb3c7c25?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    id: "detail-roped-shoulder",
+    category: "details",
+    title: "Roped Shoulder (Spalla Camicia)",
+    description: "A pronounced sleevehead that stands slightly above the shoulder line. This provides a structured, powerful silhouette heavily favored in British tailoring.",
+    image: "https://images.unsplash.com/photo-1598808503460-70f90e8a8dcc?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    id: "detail-french-cuff",
+    category: "details",
+    title: "French Cuff (Double Cuff)",
+    description: "A formal shirt cuff folded back and fastened with cufflinks. A subtle opportunity to introduce personal flair and luxury hardware to your ensemble.",
+    image: "https://images.unsplash.com/photo-1605364177579-da232c44ed95?q=80&w=800&auto=format&fit=crop"
+  },
+
+  // OUTERWEAR
+  {
+    id: "outerwear-single-overcoat",
+    category: "outerwear",
     title: "Single-Breasted Overcoat",
-    description: "This is the simplest coat style and therefore the easiest to wear and is suitable for all body shapes and heights. Technically speaking, overcoat should end below the knee with single vent at the back - each shorter and it should be to as an topcoat - but such tailoring beauties are no longer strictly enforced, so look for styles that are cropped to complete an inch or two above the knee.",
+    description: "The most versatile winter layer. Cut beautifully to drape over a suit or worn casually over knitwear, providing warmth without sacrificing a sharp silhouette.",
     image: "https://www.fitcoat.com/wp-content/uploads/1/Single-Breasted-Overcoat.jpg"
   },
   {
+    id: "outerwear-double-overcoat",
+    category: "outerwear",
     title: "Double-Breasted Overcoat",
-    description: "The double-breasted coat is the most formal design. As with suits and blazers, shorter men are often advised to avoid this style, as it can be wider in appearance and makes you feel shorter. For the same reason, it can make you look wider around the middle. To avoid this, always look for suitable coats so that the lapels and shoulders balance your upper half and give your body a flattering V-shaped silhouette.",
+    description: "The pinnacle of formal winter wear. A double-breasted overcoat features sweeping lapels and a wrap-around closure that exudes authority and commanding style.",
     image: "https://www.fitcoat.com/wp-content/uploads/1/Double-Breasted-Overcoat.jpg"
   },
   {
-    title: "Trench Coat",
-    description: "Trench coat is very light and therefore better suited for autumn clothing; Trench is a traditional and timeless model. The utmost raincoat was made in 1901 when the English War Ministry ordered a coat, which was supposed to be in the middle between a orderly raincoat and a military coat to the Burberry company. Its name comes from an English trench coat. Its line evolved in time, surviving at various fashions for a hundred years. Traditionally made in beige color, its design features shoulder straps, double-breasted clasps, chin strap, belt, triangular edge, overlapping for better fixation.",
-    image: "https://www.fitcoat.com/wp-content/uploads/1/Trench-Coat-Men.jpg"
-  },
-  {
-    title: "Peacoat",
-    description: "A peacoat or pea coat is a standard issue for brave men and women in the US Navy. These coats have been the foundation of Navy uniforms, since the beginning of the twentieth century. Navy men designed the coat to withstand the harsh and cold temperatures that many people encounter at sea. Even today you can see many civilians in the coat.",
+    id: "outerwear-peacoat",
+    category: "outerwear",
+    title: "The Peacoat",
+    description: "A shorter, double-breasted coat originally worn by sailors. Featuring broad lapels and a dense wool composition, it is the ultimate smart-casual outerwear piece.",
     image: "https://www.fitcoat.com/wp-content/uploads/1/Peacoat-Men.jpg"
-  },
-  {
-    title: "Morning Dress",
-    description: "Generally, morning dress is intended for formal affairs that occur in the morning or afternoon. Special considerations for weddings that start during the day and continue until the evening. In the UK, a morning suit is a less formal version of a morning dress suitable for races and summer weddings. This suit differs from the formal morning dress only in that the cutaway, trousers and vest are made of the same light and mid-gray material.",
-    image: "https://www.fitcoat.com/wp-content/uploads/1/Morning-Dress.jpg"
-  },
-  {
-    title: "Chesterfield Coat",
-    description: "Chesterfield is one of the ultimate single-breasted overcoat. In London, one of the first to adapt it in the mid-nineteenth century was Count of Chesterfield. The new overcoat made a stir because it lacked a horizontal cut along the waist line, which characterized the frock overcoat used at that time. Since then, the model has not changed much: a subtle thin line; reverses of medium size; two horizontal pockets with braids and flaps; left breast pocket, optional; cut on the back; length above the knees.",
-    image: "https://www.fitcoat.com/wp-content/uploads/1/Chesterfield-Coat-Men.jpg"
-  },
-  {
-    title: "Car Coat",
-    description: "Initially, a car coat was designed to keep drivers warm from the wind while driving old-fashioned open cars. The slight A-line cut and the wide cuffs were designed to provide a full range of motion during. The car coat is usually made of heavy wool and has a flat front panel over its closure to protect it from wind and rain. A typical car coat has a thigh-length with a straight collar and two welt pockets. The type of closure varies between a zipper and buttons, although buttons are the most common.",
-    image: "https://www.fitcoat.com/wp-content/uploads/1/Car-Coat-Men.jpg"
-  },
-  {
-    title: "Tailcoat",
-    description: "The trend of wearing tailcoats began in the 19th century. The tailcoat, also known as a swallow-tail coat or claw-hammer, fur became part of the gentlemen's everyday fashion in the 1830-1850s. Today, fur is considered one of the most popular types of formal wear for men. These clothing is usually worn by men for white ties or extremely formal occasions.",
-    image: "https://www.fitcoat.com/wp-content/uploads/1/Tailcoat.jpg"
-  },
-  {
-    title: "Waistcoat",
-    description: "Men's waistcoats are considered an integral part of the overall three-piece suit. It can be worn without a coat if need be and if fashion allows. It is considered purely formal clothing and has been the basis of men's clothing for centuries.",
-    image: "https://www.fitcoat.com/wp-content/uploads/1/Waistcoat.jpg"
-  },
-  {
-    title: "Frock Coat",
-    description: "Originally, the frock coat is known as a loose, long fitting garment with wide, like the habit of a monk or priest, usually belted. The term is constantly applied to various types of clothing, which usually refers to loosely fitting garments. Since the seventeenth century, the frock coat has been thigh-length or the full-length loosely fitting outer garment worn by shepherds, farm workers and workmen in Britain, usually made of a heavy linen with a wide, flat collar, which is now commonly referred to as a smock-frock.",
-    image: "https://www.fitcoat.com/wp-content/uploads/1/Frock-Coat-Men.jpg"
   }
 ];
