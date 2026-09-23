@@ -161,7 +161,9 @@
       "shirts": "Shirts",
       "outerwear": "Outerwear",
       "details": "Details"
-    }
+    },
+    "backToHome": "Back to Home",
+    "readMore": "Explore Collection"
   },
   "AEO": {
     "title": "At a Glance",
