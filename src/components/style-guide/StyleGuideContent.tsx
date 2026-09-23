@@ -1,32 +1,50 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
-import { MoveRight } from 'lucide-react';
-import { styleGuideData, StyleCategory } from '@/lib/style-guide-data';
+import { MoveRight, Loader2 } from 'lucide-react';
+import { getStyleGuideData, StyleGuideCategory, StyleGuideItem } from '@/lib/style-guide-data';
 import StyleCategoryMenu from './StyleCategoryMenu';
 
 export default function StyleGuideContent() {
   const t = useTranslations('StyleGuide');
-  const [activeCategory, setActiveCategory] = useState<StyleCategory | 'all'>('all');
+  const [activeCategory, setActiveCategory] = useState<string>('all');
+  const [categories, setCategories] = useState<StyleGuideCategory[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const filteredItems = styleGuideData.filter(item => 
-    activeCategory === 'all' ? true : item.category === activeCategory
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getStyleGuideData();
+      setCategories(data);
+      setLoading(false);
+    };
+    fetchData();
+  }, []);
+
+  const allItems: StyleGuideItem[] = categories.flatMap(cat => cat.items);
+  const filteredItems = allItems.filter(item => 
+    activeCategory === 'all' ? true : item.categoryId === activeCategory
   );
 
   return (
     <div className="pb-24 min-h-screen">
-      <StyleCategoryMenu activeCategory={activeCategory} onCategorySelect={setActiveCategory} />
+      <StyleCategoryMenu activeCategory={activeCategory as any} onCategorySelect={setActiveCategory} />
       
       <div className="container mx-auto px-4 md:px-8">
-        <motion.div 
-          layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16"
-        >
-          <AnimatePresence mode="popLayout">
+        {loading ? (
+          <div className="flex flex-col items-center justify-center py-32">
+            <Loader2 className="w-8 h-8 text-gold animate-spin mb-4" />
+            <p className="text-ivory/50">Loading Style Guide...</p>
+          </div>
+        ) : (
+          <motion.div 
+            layout
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16"
+          >
+            <AnimatePresence mode="popLayout">
             {filteredItems.map((item, index) => (
               <motion.div 
                 layout
@@ -52,7 +70,7 @@ export default function StyleGuideContent() {
                   {/* Category Tag */}
                   <div className="absolute top-4 left-4">
                     <span className="bg-black/50 backdrop-blur-sm border border-ivory/20 text-ivory px-3 py-1 text-[10px] uppercase tracking-widest">
-                      {item.category}
+                      {item.categoryName}
                     </span>
                   </div>
                 </div>
@@ -80,6 +98,7 @@ export default function StyleGuideContent() {
             ))}
           </AnimatePresence>
         </motion.div>
+        )}
       </div>
     </div>
   );

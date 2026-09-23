@@ -1,10 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import { collection, query, orderBy, onSnapshot, addDoc, updateDoc, deleteDoc, doc, serverTimestamp } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { Loader2, Plus, Edit2, Trash2, X } from 'lucide-react';
 import { BlogPost } from '@/lib/journal';
+
+const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
+import 'react-quill/dist/quill.snow.css';
 
 export default function JournalCMS() {
   const [posts, setPosts] = useState<BlogPost[]>([]);
@@ -164,9 +168,16 @@ export default function JournalCMS() {
               <input type="text" value={image} onChange={(e) => setImage(e.target.value)} className="w-full bg-black border border-ivory/20 text-ivory px-3 py-2 text-sm focus:border-gold outline-none" required />
             </div>
           </div>
-          <div>
+          <div className="text-black">
             <label className="block text-xs text-ivory/70 uppercase tracking-wider mb-1">Content (HTML allowed)</label>
-            <textarea value={content} onChange={(e) => setContent(e.target.value)} rows={10} className="w-full bg-black border border-ivory/20 text-ivory px-3 py-2 text-sm focus:border-gold outline-none font-mono" required />
+            <div className="bg-white">
+              <ReactQuill 
+                theme="snow" 
+                value={content} 
+                onChange={setContent}
+                className="h-64 mb-12"
+              />
+            </div>
           </div>
           
           <button type="submit" className="w-full bg-gold text-black uppercase tracking-widest py-3 font-medium hover:bg-ivory transition-colors">

@@ -8,6 +8,8 @@ import { Lock, ShieldCheck, Loader2, CalendarHeart, Gift, PenTool, Radio } from 
 import { motion } from 'framer-motion';
 import JournalCMS from '@/components/admin/JournalCMS';
 import PushBroadcast from '@/components/admin/PushBroadcast';
+import ShopCMS from '@/components/admin/ShopCMS';
+import StyleGuideCMS from '@/components/admin/StyleGuideCMS';
 
 type Booking = {
   id: string;
@@ -34,7 +36,7 @@ export default function AdminDashboard() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [passcode, setPasscode] = useState('');
   const [error, setError] = useState(false);
-  const [activeTab, setActiveTab] = useState<'bookings' | 'referrals' | 'journal' | 'push'>('bookings');
+  const [activeTab, setActiveTab] = useState<'bookings' | 'referrals' | 'journal' | 'push' | 'shop' | 'styleGuide'>('bookings');
   
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [referrals, setReferrals] = useState<Referral[]>([]);
@@ -202,6 +204,28 @@ export default function AdminDashboard() {
             <Radio size={16} />
             Push Broadcast
           </button>
+          <button
+            onClick={() => { setActiveTab('shop'); setLoading(false); }}
+            className={`flex items-center gap-2 px-6 py-3 border text-xs tracking-widest uppercase transition-colors ${
+              activeTab === 'shop'
+                ? 'border-gold text-gold bg-gold/10'
+                : 'border-ivory/20 text-ivory/50 hover:text-ivory hover:border-ivory/50'
+            }`}
+          >
+            <PenTool size={16} />
+            Shop CMS
+          </button>
+          <button
+            onClick={() => { setActiveTab('styleGuide'); setLoading(false); }}
+            className={`flex items-center gap-2 px-6 py-3 border text-xs tracking-widest uppercase transition-colors ${
+              activeTab === 'styleGuide'
+                ? 'border-gold text-gold bg-gold/10'
+                : 'border-ivory/20 text-ivory/50 hover:text-ivory hover:border-ivory/50'
+            }`}
+          >
+            <PenTool size={16} />
+            Style Guide CMS
+          </button>
         </div>
 
         {loading ? (
@@ -284,6 +308,10 @@ export default function AdminDashboard() {
           <JournalCMS />
         ) : activeTab === 'push' ? (
           <PushBroadcast />
+        ) : activeTab === 'shop' ? (
+          <ShopCMS />
+        ) : activeTab === 'styleGuide' ? (
+          <StyleGuideCMS />
         ) : null}
       </div>
     </div>

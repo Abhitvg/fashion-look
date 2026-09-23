@@ -1,17 +1,16 @@
 'use client';
 
-import { StyleCategory } from '@/lib/style-guide-data';
 import { useTranslations } from 'next-intl';
 
 interface Props {
-  activeCategory: StyleCategory | 'all';
-  onCategorySelect: (category: StyleCategory | 'all') => void;
+  activeCategory: string;
+  onCategorySelect: (category: string) => void;
 }
 
 export default function StyleCategoryMenu({ activeCategory, onCategorySelect }: Props) {
   const t = useTranslations('StyleGuide');
 
-  const categories: { id: StyleCategory | 'all', label: string }[] = [
+  const categories: { id: string, label: string }[] = [
     { id: 'all', label: t('categories.all') || 'All Collections' },
     { id: 'suits', label: t('categories.suits') || 'Suits & Tuxedos' },
     { id: 'shirts', label: t('categories.shirts') || 'Shirts' },
