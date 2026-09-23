@@ -7,36 +7,21 @@ import { useTranslations } from 'next-intl';
 import { openWhatsApp } from '@/lib/analytics';
 
 const services = [
-  {
-    id: "formalSuit",
-    image: "/images/services/formal_suit_premium_1790074047608.jpg",
-    key: "formalSuit"
-  },
-  {
-    id: "sherwani",
-    image: "/images/services/sherwani_premium_1790074071073.jpg",
-    key: "sherwani"
-  },
-  {
-    id: "tuxedo",
-    image: "/images/services/tuxedo_premium_1790074100036.jpg",
-    key: "tuxedo"
-  },
-  {
-    id: "pathani",
-    image: "/images/services/pathani_premium_1790074118250.jpg",
-    key: "pathani"
-  },
-  {
-    id: "safari",
-    image: "/images/services/safari_premium_1790074235825.jpg",
-    key: "safari"
-  },
-  {
-    id: "gifting",
-    image: "/images/services/gifting_premium_1790074250010.jpg",
-    key: "gifting"
-  }
+  { id: "shirtPant", image: "/images/services/shirt_pant.jpg", key: "shirtPant" },
+  { id: "kurtaPant", image: "/images/services/kurta_pant.jpg", key: "kurtaPant" },
+  { id: "pathani", image: "/images/services/pathani_premium_1790074118250.jpg", key: "pathani" },
+  { id: "safari", image: "/images/services/safari_premium_1790074235825.jpg", key: "safari" },
+  { id: "jacket", image: "/images/services/jacket.jpg", key: "jacket" },
+  { id: "vestCoat", image: "/images/services/vest_coat.jpg", key: "vestCoat" },
+  { id: "blazer", image: "/images/services/blazer.jpg", key: "blazer" },
+  { id: "formalSuit", image: "/images/services/formal_suit_premium_1790074047608.jpg", key: "formalSuit" },
+  { id: "threePiece", image: "/images/services/three_piece.jpg", key: "threePiece" },
+  { id: "jodhpuri", image: "/images/services/jodhpuri.jpg", key: "jodhpuri" },
+  { id: "sherwani", image: "/images/services/sherwani_premium_1790074071073.jpg", key: "sherwani" },
+  { id: "armaniShirtPant", image: "/images/services/armani_shirt_pant.jpg", key: "armaniShirtPant" },
+  { id: "armaniKurtaPajama", image: "/images/services/armani_kurta_pajama.jpg", key: "armaniKurtaPajama" },
+  { id: "tuxedo", image: "/images/services/tuxedo_premium_1790074100036.jpg", key: "tuxedo" },
+  { id: "gifting", image: "/images/services/gifting_premium_1790074250010.jpg", key: "gifting" }
 ];
 
 export default function ServicesGrid() {

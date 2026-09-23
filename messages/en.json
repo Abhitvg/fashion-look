@@ -68,6 +68,60 @@
         "alt": "Curated luxury gift box containing premium suit fabrics and accessories",
         "desc": "Curated gift boxes of premium fabrics, silk ties, and accessories. The perfect corporate or festive gift.",
         "price": "₹2,500"
+      },
+      "shirtPant": {
+        "title": "Bespoke Shirt & Pant",
+        "alt": "Man wearing a crisp bespoke shirt and tailored trousers",
+        "desc": "Everyday elegance redefined. Custom-fitted shirts and trousers crafted for supreme comfort and sharp aesthetics.",
+        "price": "₹1,100"
+      },
+      "kurtaPant": {
+        "title": "Tailored Kurta & Pant",
+        "alt": "Man wearing a richly tailored Kurta and pant set",
+        "desc": "Traditional comfort with a modern fit. Perfect for casual events and festive gatherings.",
+        "price": "₹1,300"
+      },
+      "jacket": {
+        "title": "Smart-Casual Jacket",
+        "alt": "Man wearing a textured smart-casual tailored jacket",
+        "desc": "A versatile wardrobe staple. Expertly constructed to easily transition between professional and social settings.",
+        "price": "₹1,300"
+      },
+      "vestCoat": {
+        "title": "Waistcoat / Vest Coat",
+        "alt": "Man wearing a premium tailored waistcoat",
+        "desc": "Elevate your ensemble with a structured waistcoat. Fine stitching details and premium linings.",
+        "price": "₹1,100"
+      },
+      "blazer": {
+        "title": "Formal Blazer",
+        "alt": "Man wearing a formal bespoke blazer with sharp lapels",
+        "desc": "The ultimate expression of individual style. Precisely cut to enhance your natural silhouette.",
+        "price": "₹2,800"
+      },
+      "threePiece": {
+        "title": "Three-Piece Suit",
+        "alt": "Man wearing a luxurious three-piece suit",
+        "desc": "The pinnacle of formal menswear. A coordinated jacket, trouser, and waistcoat tailored for flawless harmony.",
+        "price": "₹5,000"
+      },
+      "jodhpuri": {
+        "title": "Jodhpuri Bandhgala",
+        "alt": "Man wearing a majestic Jodhpuri suit",
+        "desc": "Regal Indian heritage fused with modern tailoring. The structured Bandhgala is a statement of aristocratic style.",
+        "price": "₹3,500"
+      },
+      "armaniShirtPant": {
+        "title": "Armani Shirt & Pant",
+        "alt": "Man wearing a luxurious Armani style shirt and pant",
+        "desc": "Ultra-premium Italian styling. Minimalist aesthetics combined with the most luxurious fabrics available.",
+        "price": "₹1,300"
+      },
+      "armaniKurtaPajama": {
+        "title": "Armani Kurta & Pajama",
+        "alt": "Man wearing a high-end designer Armani style Kurta Pajama",
+        "desc": "A fusion of elite designer influence and traditional attire. Impeccable drape for the modern gentleman.",
+        "price": "₹1,500"
       }
     }
   },
