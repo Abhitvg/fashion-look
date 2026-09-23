@@ -20,6 +20,11 @@ export default async function JournalIndexPage({
   if (journalPosts.length === 0) {
     return (
       <main className="min-h-screen bg-atelier pt-32 pb-24">
+        <div className="container mx-auto px-4 md:px-8 max-w-5xl mb-8">
+          <Link href="/" className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-ivory/50 hover:text-gold transition-colors group">
+            <span className="group-hover:-translate-x-1 transition-transform">&larr;</span> Back
+          </Link>
+        </div>
         <div className="container mx-auto px-4 md:px-8 max-w-5xl text-center">
           <h1 className="text-4xl font-serif text-ivory mb-6">The Atelier Journal</h1>
           <p className="text-ivory/60 font-light">No articles published yet.</p>
@@ -33,6 +38,13 @@ export default async function JournalIndexPage({
 
   return (
     <main className="min-h-screen bg-atelier pt-32 pb-24">
+      {/* Back Button */}
+      <div className="container mx-auto px-4 md:px-8 max-w-7xl mb-8">
+        <Link href="/" className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-ivory/50 hover:text-gold transition-colors group">
+          <span className="group-hover:-translate-x-1 transition-transform">&larr;</span> Back
+        </Link>
+      </div>
+
       {/* Magazine Header */}
       <div className="container mx-auto px-4 md:px-8 max-w-7xl mb-16 text-center">
         <h1 className="text-5xl md:text-7xl font-serif text-ivory mb-4 tracking-wide uppercase">

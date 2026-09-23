@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
-import { MoveRight, Loader2 } from 'lucide-react';
+import { MoveRight, Loader2, ArrowLeft } from 'lucide-react';
 import { getStyleGuideData, StyleGuideCategory, StyleGuideItem } from '@/lib/style-guide-data';
 import StyleCategoryMenu from './StyleCategoryMenu';
 
@@ -31,6 +31,13 @@ export default function StyleGuideContent() {
 
   return (
     <div className="pb-24 min-h-screen">
+      <div className="container mx-auto px-4 md:px-8 pt-8">
+        <Link href="/" className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-ivory/50 hover:text-gold transition-colors mb-6 group/back">
+          <ArrowLeft size={16} className="group-hover/back:-translate-x-1 transition-transform" />
+          {t('backToHome') || 'Back'}
+        </Link>
+      </div>
+
       <StyleCategoryMenu activeCategory={activeCategory as any} onCategorySelect={setActiveCategory} />
       
       <div className="container mx-auto px-4 md:px-8">
