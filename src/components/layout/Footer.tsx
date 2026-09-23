@@ -73,7 +73,7 @@ export default function Footer() {
               <span>WhatsApp</span>
             </button>
             <a
-              href="https://www.instagram.com/fashionlook_79?stkn=N3Jpc3E3a2pvdDdx"
+              href="https://www.instagram.com/fashionlook_inn?stkn=MWM3NGFma3ducXNtNQ%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-[#E1306C] hover:text-[#E1306C]/80 transition-colors w-fit mt-2"
