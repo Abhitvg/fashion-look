@@ -16,19 +16,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [];
   
   for (const route of allRoutes) {
+    const isHome = route === '';
+    const isLocation = route.startsWith('/locations');
+    
+    let priority = 0.8;
+    if (isHome) priority = 1;
+    if (isLocation) priority = 0.9;
+    
+    // Generate alternates for each locale
+    const languages: Record<string, string> = {};
     for (const locale of locales) {
-      const isHome = route === '';
-      const isLocation = route.startsWith('/locations');
-      
-      let priority = 0.8;
-      if (isHome) priority = 1;
-      if (isLocation) priority = 0.9;
-      
+      languages[locale] = `${baseUrl}/${locale}${route}`;
+    }
+    
+    for (const locale of locales) {
       sitemapEntries.push({
         url: `${baseUrl}/${locale}${route}`,
         lastModified: new Date(),
         changeFrequency: isHome ? 'daily' : 'weekly',
         priority,
+        alternates: {
+          languages,
+        },
       });
     }
   }
