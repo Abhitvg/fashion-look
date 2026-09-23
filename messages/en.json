@@ -37,31 +37,31 @@
         "title": "Two-Piece Formal Suit",
         "alt": "Man wearing a tailored bespoke two-piece formal suit in navy blue",
         "desc": "Impeccably tailored from premium wool and linen. Slim, regular, or relaxed fit — measured to your exact silhouette.",
-        "price": "₹7,500"
+        "price": "₹3,900"
       },
       "sherwani": {
         "title": "Royal Groom Sherwani",
         "alt": "Groom wearing a hand-embroidered royal wedding sherwani in silk",
         "desc": "Exquisite hand-embroidered wedding sherwanis in silk, velvet, and brocade. The centrepiece of your celebration.",
-        "price": "₹15,000"
+        "price": "₹4,200"
       },
       "tuxedo": {
         "title": "Premium Tuxedo",
         "alt": "Man wearing a premium black-tie tuxedo with satin peak lapels",
         "desc": "Black-tie perfection with satin peak lapels and hand-finished details. For galas, receptions, and landmark evenings.",
-        "price": "₹12,000"
+        "price": "₹5,000"
       },
       "pathani": {
         "title": "Classic Pathani",
         "alt": "Man wearing a classic Pathani suit in premium cotton blend",
         "desc": "Timeless Pathani suits in cotton and linen blends. Effortless elegance for festivals, prayers, and everyday refinement.",
-        "price": "₹3,500"
+        "price": "₹1,350"
       },
       "safari": {
         "title": "Executive Safari Suit",
         "alt": "Professional wearing an executive structured safari suit",
         "desc": "The power suit of Indian professionals. Structured shoulders, smart pockets, and a commanding presence in the boardroom.",
-        "price": "₹4,500"
+        "price": "₹1,600"
       },
       "gifting": {
         "title": "Luxury Fabric Gifting",

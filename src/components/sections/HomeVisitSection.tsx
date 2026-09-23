@@ -44,7 +44,7 @@ export default function HomeVisitSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <p className="text-xs tracking-[0.3em] text-gold uppercase mb-4">Complimentary Service</p>
+          <p className="text-xs tracking-[0.3em] text-gold uppercase mb-4">Atelier Service</p>
           <h2 className="text-4xl md:text-5xl font-serif tracking-wider uppercase">
             The Atelier Comes to You
           </h2>
@@ -52,7 +52,7 @@ export default function HomeVisitSection() {
           <p className="text-sm text-ivory/50 mt-8 max-w-xl mx-auto font-light leading-relaxed">
             No need to travel. Our master tailors bring the full Fashion Look experience — 
             fabric swatches, consultation, and precision measurement — directly to your home or office 
-            across Navi Mumbai. <span className="text-gold">No additional fee.</span>
+            across Navi Mumbai. <span className="text-gold">Home Delivery available for ₹250.</span>
           </p>
         </motion.div>
 
@@ -126,8 +126,8 @@ export default function HomeVisitSection() {
               <div className="flex items-start gap-3 p-4 border border-gold/10">
                 <Gift size={14} className="text-gold mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-xs text-ivory/70 font-light">Home visit fee</p>
-                  <p className="text-sm text-gold font-medium mt-0.5">Complimentary</p>
+                  <p className="text-xs text-ivory/70 font-light">Home Delivery Fee</p>
+                  <p className="text-sm text-gold font-medium mt-0.5">₹250 (Navi Mumbai)</p>
                 </div>
               </div>
               <button

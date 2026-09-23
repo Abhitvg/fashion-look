@@ -4,12 +4,19 @@ import { useState } from 'react';
 import { openWhatsApp } from '@/lib/analytics';
 
 const GARMENTS = [
-  { id: '2piece', name: 'Two-Piece Formal Suit', stitch: 7500, fabric: 3.0, extraFabric: 0 },
-  { id: '3piece', name: 'Three-Piece Suit', stitch: 9500, fabric: 3.0, extraFabric: 0.5 },
-  { id: 'tuxedo', name: 'Premium Tuxedo', stitch: 12000, fabric: 3.0, extraFabric: 0 },
-  { id: 'sherwani', name: 'Royal Groom Sherwani', stitch: 15000, fabric: 3.5, extraFabric: 0 },
-  { id: 'pathani', name: 'Classic Pathani', stitch: 3500, fabric: 4.5, extraFabric: 0 },
-  { id: 'safari', name: 'Executive Safari Suit', stitch: 4500, fabric: 3.0, extraFabric: 0 },
+  { id: 'shirt_pant', name: 'Shirt & Pant', stitch: 1100, fabric: 3.0, extraFabric: 0 },
+  { id: 'kurta_pant', name: 'Kurta & Pant', stitch: 1300, fabric: 3.5, extraFabric: 0 },
+  { id: 'pathani', name: 'Pathani & Shalwar', stitch: 1350, fabric: 4.5, extraFabric: 0 },
+  { id: 'safari', name: 'Safari Suit', stitch: 1600, fabric: 3.0, extraFabric: 0 },
+  { id: 'jacket', name: 'Jacket', stitch: 1300, fabric: 2.0, extraFabric: 0 },
+  { id: 'vest_coat', name: 'Vest Coat', stitch: 1100, fabric: 1.0, extraFabric: 0 },
+  { id: 'blazer', name: 'Blazer', stitch: 2800, fabric: 2.0, extraFabric: 0 },
+  { id: '2piece', name: '2 Piece Coat (Suit)', stitch: 3900, fabric: 3.0, extraFabric: 0 },
+  { id: '3piece', name: '3 Piece Coat (Suit)', stitch: 5000, fabric: 3.0, extraFabric: 0.5 },
+  { id: 'jodhpuri', name: 'Jodhpuri', stitch: 3500, fabric: 3.0, extraFabric: 0 },
+  { id: 'sherwani', name: 'Sherwani', stitch: 4200, fabric: 3.5, extraFabric: 0 },
+  { id: 'armani_shirt_pant', name: 'Armani Shirt & Pant', stitch: 1300, fabric: 3.0, extraFabric: 0 },
+  { id: 'armani_kurta_pajama', name: 'Armani Kurta & Pajama', stitch: 1500, fabric: 3.5, extraFabric: 0 },
 ];
 
 const SILHOUETTES = [
