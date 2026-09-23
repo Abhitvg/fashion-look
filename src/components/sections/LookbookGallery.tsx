@@ -31,6 +31,16 @@ const LOOKBOOK_IMAGES = [
     altKey: 'item5',
     className: 'md:col-span-2 md:row-span-1 h-[300px]',
   },
+  {
+    src: '/images/gallery/generations.png',
+    altKey: 'item6',
+    className: 'md:col-span-2 md:row-span-2 h-[400px] md:h-[600px]',
+  },
+  {
+    src: '/images/gallery/royal_groom.png',
+    altKey: 'item7',
+    className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
+  }
 ];
 
 export default function LookbookGallery() {
