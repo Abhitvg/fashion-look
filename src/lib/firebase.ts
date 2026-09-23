@@ -13,6 +13,6 @@ const firebaseConfig = {
 
 // Initialize Firebase only if it hasn't been initialized already (important for Next.js hot reloading)
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
-const db = getFirestore(app);
+const db = getFirestore(app, "default");
 
 export { app, db };
