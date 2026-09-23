@@ -70,6 +70,36 @@ const LOOKBOOK_IMAGES = [
     src: '/images/gallery/bespoke_formal_2.png',
     altKey: 'item13',
     className: 'md:col-span-2 md:row-span-2 h-[400px] md:h-[600px]',
+  },
+  {
+    src: '/images/gallery/bespoke_formal_boy.png',
+    altKey: 'item14',
+    className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
+  },
+  {
+    src: '/images/gallery/indian_elegance_older.png',
+    altKey: 'item15',
+    className: 'md:col-span-2 md:row-span-1 h-[300px]',
+  },
+  {
+    src: '/images/gallery/bespoke_ethnic_boy.png',
+    altKey: 'item16',
+    className: 'md:col-span-1 md:row-span-1 h-[300px]',
+  },
+  {
+    src: '/images/gallery/bespoke_formal_3.png',
+    altKey: 'item17',
+    className: 'md:col-span-1 md:row-span-1 h-[300px]',
+  },
+  {
+    src: '/images/gallery/bespoke_ethnic_2.png',
+    altKey: 'item18',
+    className: 'md:col-span-2 md:row-span-2 h-[400px] md:h-[600px]',
+  },
+  {
+    src: '/images/gallery/royal_sherwani_4.png',
+    altKey: 'item19',
+    className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
   }
 ];
 
