@@ -4,8 +4,10 @@ import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { collection, query, orderBy, onSnapshot } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
-import { Lock, ShieldCheck, Loader2, CalendarHeart, Gift } from 'lucide-react';
+import { Lock, ShieldCheck, Loader2, CalendarHeart, Gift, PenTool, Radio } from 'lucide-react';
 import { motion } from 'framer-motion';
+import JournalCMS from '@/components/admin/JournalCMS';
+import PushBroadcast from '@/components/admin/PushBroadcast';
 
 type Booking = {
   id: string;
@@ -32,7 +34,7 @@ export default function AdminDashboard() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [passcode, setPasscode] = useState('');
   const [error, setError] = useState(false);
-  const [activeTab, setActiveTab] = useState<'bookings' | 'referrals'>('bookings');
+  const [activeTab, setActiveTab] = useState<'bookings' | 'referrals' | 'journal' | 'push'>('bookings');
   
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [referrals, setReferrals] = useState<Referral[]>([]);
@@ -178,6 +180,28 @@ export default function AdminDashboard() {
             <Gift size={16} />
             {t('tabs.referrals')}
           </button>
+          <button
+            onClick={() => { setActiveTab('journal'); setLoading(false); }}
+            className={`flex items-center gap-2 px-6 py-3 border text-xs tracking-widest uppercase transition-colors ${
+              activeTab === 'journal'
+                ? 'border-gold text-gold bg-gold/10'
+                : 'border-ivory/20 text-ivory/50 hover:text-ivory hover:border-ivory/50'
+            }`}
+          >
+            <PenTool size={16} />
+            Journal CMS
+          </button>
+          <button
+            onClick={() => { setActiveTab('push'); setLoading(false); }}
+            className={`flex items-center gap-2 px-6 py-3 border text-xs tracking-widest uppercase transition-colors ${
+              activeTab === 'push'
+                ? 'border-gold text-gold bg-gold/10'
+                : 'border-ivory/20 text-ivory/50 hover:text-ivory hover:border-ivory/50'
+            }`}
+          >
+            <Radio size={16} />
+            Push Broadcast
+          </button>
         </div>
 
         {loading ? (
@@ -221,7 +245,7 @@ export default function AdminDashboard() {
               </table>
             </div>
           )
-        ) : (
+        ) : activeTab === 'referrals' ? (
           referrals.length === 0 ? (
             <div className="bg-atelier-soft border border-ivory/5 p-12 text-center">
               <p className="text-ivory/50">{t('emptyReferrals')}</p>
@@ -256,7 +280,11 @@ export default function AdminDashboard() {
               </table>
             </div>
           )
-        )}
+        ) : activeTab === 'journal' ? (
+          <JournalCMS />
+        ) : activeTab === 'push' ? (
+          <PushBroadcast />
+        ) : null}
       </div>
     </div>
   );

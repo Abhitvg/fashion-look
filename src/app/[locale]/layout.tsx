@@ -5,6 +5,8 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Noto_Sans_Devanagari, Noto_Nastaliq_Urdu } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google';
+import PushNotificationPrompt from '@/components/layout/PushNotificationPrompt';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -176,24 +178,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir={dir} className="scroll-smooth">
       <head>
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-WPGKRLGNN7`}
-        />
-        <Script
-          id="gtag-init"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-WPGKRLGNN7', {
-                page_path: window.location.pathname,
-              });
-            `,
-          }}
-        />
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs Context" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(getJsonLd(locale)) }}
@@ -202,7 +187,9 @@ export default async function RootLayout({
       <body className={`${fontClass} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           {children}
+          <PushNotificationPrompt />
         </NextIntlClientProvider>
+        <GoogleAnalytics gaId="G-WPGKRLGNN7" />
       </body>
     </html>
   );
