@@ -40,6 +40,11 @@ const LOOKBOOK_IMAGES = [
     src: '/images/gallery/royal_groom.png',
     altKey: 'item7',
     className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
+  },
+  {
+    src: '/images/gallery/timeless_style.png',
+    altKey: 'item8',
+    className: 'md:col-span-2 md:row-span-1 h-[300px]',
   }
 ];
 
