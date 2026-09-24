@@ -44,7 +44,7 @@ const styleGuideData = [
         title: "Half-Canvas Construction",
         subtitle: "The Standard of Quality",
         description: "Our signature half-canvas construction features a natural horsehair canvas breast piece that allows the jacket to drape naturally and mold to your body over time, while keeping the garment lightweight and breathable.",
-        image: "https://images.unsplash.com/photo-1594938298596-ec65b50373d5?q=80&w=800&auto=format&fit=crop",
+        image: "/images/styleguide/half-canvas.jpg",
       },
       {
         id: "the-napolitan-shoulder",
@@ -65,7 +65,7 @@ const styleGuideData = [
         title: "The Cutaway Collar",
         subtitle: "Modern & Bold",
         description: "An aggressive spread that points back toward the shoulders. The cutaway collar accommodates larger tie knots perfectly and looks exceptional when worn open without a tie for a smart-casual aesthetic.",
-        image: "https://images.unsplash.com/photo-1620012253295-c1590e048f46?q=80&w=800&auto=format&fit=crop",
+        image: "/images/styleguide/cutaway-collar.jpg",
       },
       {
         id: "mother-of-pearl-buttons",
@@ -86,7 +86,7 @@ const styleGuideData = [
         title: "The Cashmere Overcoat",
         subtitle: "Timeless Winter Elegance",
         description: "A staple for the colder months, our bespoke overcoats are crafted from pure cashmere. Cut generously to fit comfortably over a suit jacket, featuring peak lapels and a classic double-breasted closure for maximum warmth and style.",
-        image: "https://images.unsplash.com/photo-1520975954732-57dd22299614?q=80&w=800&auto=format&fit=crop",
+        image: "/images/styleguide/cashmere-overcoat.jpg",
       },
       {
         id: "the-trench-coat",

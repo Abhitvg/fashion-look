@@ -40,6 +40,7 @@ export default function Header() {
           <nav className="hidden xl:flex items-center space-x-8">
             <Link href="#services" className="text-sm tracking-widest uppercase hover:text-gold transition-colors">{t('services')}</Link>
             <Link href="#calculator" className="text-sm tracking-widest uppercase hover:text-gold transition-colors">{t('calculator')}</Link>
+            <Link href="/gallery" className="text-sm tracking-widest uppercase hover:text-gold transition-colors">{t('gallery')}</Link>
             <Link href="#gifts" className="text-sm tracking-widest uppercase hover:text-gold transition-colors">{t('gifts')}</Link>
             <Link href="#locations" className="text-sm tracking-widest uppercase hover:text-gold transition-colors">{t('locations')}</Link>
             <Link href="/style-guide" className="text-sm tracking-widest uppercase hover:text-gold transition-colors">{t('styleGuide')}</Link>
@@ -70,6 +71,7 @@ export default function Header() {
           <div id="mobile-nav" className="absolute top-full left-0 w-full bg-atelier border-b border-atelier-soft flex flex-col p-6 space-y-6 xl:hidden">
             <Link onClick={() => setMobileMenuOpen(false)} href="#services" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('services')}</Link>
             <Link onClick={() => setMobileMenuOpen(false)} href="#calculator" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('calculator')}</Link>
+            <Link onClick={() => setMobileMenuOpen(false)} href="/gallery" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('gallery')}</Link>
             <Link onClick={() => setMobileMenuOpen(false)} href="#gifts" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('gifts')}</Link>
             <Link onClick={() => setMobileMenuOpen(false)} href="#locations" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('locations')}</Link>
             <Link onClick={() => setMobileMenuOpen(false)} href="/style-guide" className="text-lg tracking-widest uppercase hover:text-gold transition-colors">{t('styleGuide')}</Link>

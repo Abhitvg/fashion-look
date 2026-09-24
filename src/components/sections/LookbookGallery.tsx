@@ -4,6 +4,12 @@ import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
+
+interface LookbookGalleryProps {
+  limit?: number;
+  showViewAll?: boolean;
+}
 
 const LOOKBOOK_IMAGES = [
   {
@@ -103,10 +109,12 @@ const LOOKBOOK_IMAGES = [
   }
 ];
 
-export default function LookbookGallery() {
+export default function LookbookGallery({ limit, showViewAll = false }: LookbookGalleryProps = {}) {
   const t = useTranslations('Gallery');
   const headerRef = useRef(null);
   const isInView = useInView(headerRef, { once: true });
+  
+  const displayImages = limit ? LOOKBOOK_IMAGES.slice(0, limit) : LOOKBOOK_IMAGES;
 
   return (
     <section id="gallery" className="py-24 md:py-32 bg-black border-t border-ivory/5">
@@ -124,7 +132,7 @@ export default function LookbookGallery() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-auto">
-          {LOOKBOOK_IMAGES.map((image, i) => (
+          {displayImages.map((image, i) => (
             <motion.div
               key={image.src}
               initial={{ opacity: 0, y: 30 }}
@@ -144,6 +152,23 @@ export default function LookbookGallery() {
             </motion.div>
           ))}
         </div>
+        
+        {showViewAll && (
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            className="mt-16 text-center"
+          >
+            <Link 
+              href="/gallery"
+              className="inline-block border border-gold/50 text-gold px-8 py-4 text-xs tracking-[0.2em] uppercase hover:bg-gold hover:text-black transition-colors duration-300"
+            >
+              {t('viewFullGallery', { fallback: 'View Full Gallery' })}
+            </Link>
+          </motion.div>
+        )}
       </div>
     </section>
   );

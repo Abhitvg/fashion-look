@@ -87,8 +87,8 @@ export default async function HomePage() {
         {/* 2. HERITAGE STATS BAND */}
         <HeritageBand />
 
-        {/* 3. LOOKBOOK GALLERY */}
-        <LookbookGallery />
+        {/* 3. LOOKBOOK GALLERY PREVIEW */}
+        <LookbookGallery limit={8} showViewAll={true} />
 
         {/* 4. BESPOKE SERVICES */}
         <ServicesGrid />

@@ -9,7 +9,8 @@
     "gifts": "Luxury Gifting",
     "locations": "Our Atelier",
     "bookHomeVisit": "Book Home Visit",
-    "styleGuide": "Style Guide"
+    "styleGuide": "Style Guide",
+    "gallery": "Gallery"
   },
   "Hero": {
     "established": "Precisely Yours Since 1998 · Seawoods, Navi Mumbai",
@@ -128,6 +129,7 @@
   "Gallery": {
     "sectionTop": "The Atelier Vibe",
     "sectionTitle": "Inspiration Gallery",
+    "viewFullGallery": "View Full Collection",
     "items": {
       "item1": "Master Tailor consultation for a bespoke suit fitting",
       "item2": "Close-up of premium Italian wool fabric selection",
