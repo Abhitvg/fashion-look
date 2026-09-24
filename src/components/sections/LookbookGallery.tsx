@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion, useInView, AnimatePresence } from 'framer-motion';
+import { useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 
@@ -12,107 +12,32 @@ interface LookbookGalleryProps {
 }
 
 const LOOKBOOK_IMAGES = [
-  {
-    src: '/images/hero/hero2.png',
-    altKey: 'item1',
-    className: 'md:col-span-2 md:row-span-2 h-[400px] md:h-[600px]',
-  },
-  {
-    src: '/images/2e71e062-f95f-4830-b665-0a6b9c735ec2.png',
-    altKey: 'item2',
-    className: 'md:col-span-1 md:row-span-1 h-[300px]',
-  },
-  {
-    src: '/images/4261d996-9ea9-49c7-971d-1339879347e8.png',
-    altKey: 'item3',
-    className: 'md:col-span-1 md:row-span-1 h-[300px]',
-  },
-  {
-    src: '/images/hero/hero3.png',
-    altKey: 'item4',
-    className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
-  },
-  {
-    src: '/images/a0459aa7-67cc-4e7e-9a3c-5cca4c8813d3.png',
-    altKey: 'item5',
-    className: 'md:col-span-2 md:row-span-1 h-[300px]',
-  },
-  {
-    src: '/images/gallery/generations.png',
-    altKey: 'item6',
-    className: 'md:col-span-2 md:row-span-2 h-[400px] md:h-[600px]',
-  },
-  {
-    src: '/images/gallery/royal_groom.png',
-    altKey: 'item7',
-    className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
-  },
-  {
-    src: '/images/gallery/timeless_style.png',
-    altKey: 'item8',
-    className: 'md:col-span-2 md:row-span-1 h-[300px]',
-  },
-  {
-    src: '/images/gallery/royal_groom_2.png',
-    altKey: 'item9',
-    className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
-  },
-  {
-    src: '/images/gallery/royal_groom_3.png',
-    altKey: 'item10',
-    className: 'md:col-span-2 md:row-span-1 h-[300px]',
-  },
-  {
-    src: '/images/gallery/bespoke_formal.png',
-    altKey: 'item11',
-    className: 'md:col-span-2 md:row-span-1 h-[300px]',
-  },
-  {
-    src: '/images/gallery/family_bespoke.png',
-    altKey: 'item12',
-    className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
-  },
-  {
-    src: '/images/gallery/bespoke_formal_2.png',
-    altKey: 'item13',
-    className: 'md:col-span-2 md:row-span-2 h-[400px] md:h-[600px]',
-  },
-  {
-    src: '/images/gallery/bespoke_formal_boy.png',
-    altKey: 'item14',
-    className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
-  },
-  {
-    src: '/images/gallery/indian_elegance_older.png',
-    altKey: 'item15',
-    className: 'md:col-span-2 md:row-span-1 h-[300px]',
-  },
-  {
-    src: '/images/gallery/bespoke_ethnic_boy.png',
-    altKey: 'item16',
-    className: 'md:col-span-1 md:row-span-1 h-[300px]',
-  },
-  {
-    src: '/images/gallery/bespoke_formal_3.png',
-    altKey: 'item17',
-    className: 'md:col-span-1 md:row-span-1 h-[300px]',
-  },
-  {
-    src: '/images/gallery/bespoke_ethnic_2.png',
-    altKey: 'item18',
-    className: 'md:col-span-2 md:row-span-2 h-[400px] md:h-[600px]',
-  },
-  {
-    src: '/images/gallery/royal_sherwani_4.png',
-    altKey: 'item19',
-    className: 'md:col-span-1 md:row-span-2 h-[400px] md:h-[600px]',
-  }
+  { src: '/images/hero/hero2.png', altKey: 'item1' },
+  { src: '/images/2e71e062-f95f-4830-b665-0a6b9c735ec2.png', altKey: 'item2' },
+  { src: '/images/4261d996-9ea9-49c7-971d-1339879347e8.png', altKey: 'item3' },
+  { src: '/images/hero/hero3.png', altKey: 'item4' },
+  { src: '/images/a0459aa7-67cc-4e7e-9a3c-5cca4c8813d3.png', altKey: 'item5' },
+  { src: '/images/gallery/generations.png', altKey: 'item6' },
+  { src: '/images/gallery/royal_groom.png', altKey: 'item7' },
+  { src: '/images/gallery/timeless_style.png', altKey: 'item8' },
+  { src: '/images/gallery/royal_groom_2.png', altKey: 'item9' },
+  { src: '/images/gallery/royal_groom_3.png', altKey: 'item10' },
+  { src: '/images/gallery/bespoke_formal.png', altKey: 'item11' },
+  { src: '/images/gallery/family_bespoke.png', altKey: 'item12' },
+  { src: '/images/gallery/bespoke_formal_2.png', altKey: 'item13' },
+  { src: '/images/gallery/bespoke_formal_boy.png', altKey: 'item14' },
+  { src: '/images/gallery/indian_elegance_older.png', altKey: 'item15' },
+  { src: '/images/gallery/bespoke_ethnic_boy.png', altKey: 'item16' },
+  { src: '/images/gallery/bespoke_formal_3.png', altKey: 'item17' },
+  { src: '/images/gallery/bespoke_ethnic_2.png', altKey: 'item18' },
+  { src: '/images/gallery/royal_sherwani_4.png', altKey: 'item19' }
 ];
 
 export default function LookbookGallery({ limit, showViewAll = false }: LookbookGalleryProps = {}) {
   const t = useTranslations('Gallery');
   const headerRef = useRef(null);
   const isInView = useInView(headerRef, { once: true });
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
   const displayImages = limit ? LOOKBOOK_IMAGES.slice(0, limit) : LOOKBOOK_IMAGES;
 
@@ -131,24 +56,32 @@ export default function LookbookGallery({ limit, showViewAll = false }: Lookbook
           <div className="w-16 h-px bg-gold/50 mx-auto mt-8" />
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {displayImages.map((image, i) => (
             <motion.div
               key={image.src}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.8 }}
-              className={`relative overflow-hidden group border border-ivory/5 hover:border-gold/30 transition-colors duration-500 ${image.className}`}
+              transition={{ delay: (i % 4) * 0.1, duration: 0.8 }}
+              className="relative overflow-hidden group border border-ivory/5 hover:border-gold/30 transition-colors duration-500 aspect-[3/4] cursor-pointer"
+              onClick={() => setSelectedImage(image.src)}
             >
               <Image
                 src={image.src}
                 alt={t(`items.${image.altKey}`)}
                 fill
                 className="object-cover transition-transform duration-1000 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500" />
+              
+              {/* Expand Icon */}
+              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-2 rounded-full text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+                </svg>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -170,6 +103,45 @@ export default function LookbookGallery({ limit, showViewAll = false }: Lookbook
           </motion.div>
         )}
       </div>
+
+      {/* Lightbox Overlay */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 md:p-8 cursor-zoom-out"
+          >
+            <button 
+              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors p-2 z-50"
+              onClick={() => setSelectedImage(null)}
+              aria-label="Close image"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className="relative w-full h-full max-w-6xl max-h-[90vh]"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Image
+                src={selectedImage}
+                alt="Expanded view"
+                fill
+                className="object-contain"
+                sizes="100vw"
+                priority
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
