@@ -14,7 +14,7 @@ const services = [
   { id: "jacket", image: "/images/services/jacket.jpg", key: "jacket" },
   { id: "vestCoat", image: "/images/services/vest_coat.jpg", key: "vestCoat" },
   { id: "blazer", image: "/images/services/blazer.jpg", key: "blazer" },
-  { id: "formalSuit", image: "/images/services/formal_suit_premium_1790074047608.jpg", key: "formalSuit" },
+  { id: "formalSuit", image: "/images/services/two_piece_suit_premium.jpg", key: "formalSuit" },
   { id: "threePiece", image: "/images/services/three_piece.jpg", key: "threePiece" },
   { id: "jodhpuri", image: "/images/services/jodhpuri.jpg", key: "jodhpuri" },
   { id: "sherwani", image: "/images/services/sherwani_premium_1790074071073.jpg", key: "sherwani" },
